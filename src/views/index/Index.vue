@@ -84,6 +84,10 @@
         <van-icon name="records" />
         <div class="mt-10 ta-c">表单</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/calendar')" class="nav__item">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">日历</div>
+      </a>
       <a href="javascript:void(0)" @click="$router.push('/tree-select')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">分类选择</div>
