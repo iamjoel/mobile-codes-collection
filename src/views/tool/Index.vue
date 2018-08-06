@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <h2 class="demo-classify-title">文档</h2>
     <ul>
       <li v-for="(item,index) in list">
         <a :href="item.url">{{item.label}}</a>

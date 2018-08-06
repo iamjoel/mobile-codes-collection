@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import componentRouter from './component'
 import resetRouter from './reset'
 import pageRouter from './page'
+import toolRouter from './tool'
 
 Vue.use(Router)
 
@@ -12,14 +13,7 @@ export default new Router({
     ...componentRouter,
     ...resetRouter,
     ...pageRouter,
-    {
-      path: `/doc`,
-      component: resolve => {
-        require.ensure([], function(require) {
-          resolve(require(`@/views/doc/Index.vue`));
-        })
-      },
-    },
+    ...toolRouter,
     // 出错的默认地址
     {
       path: '*',

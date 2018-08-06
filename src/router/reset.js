@@ -6,7 +6,6 @@ var routes = [
     meta: {
       title: '组件重置',
       activeTypeIndex: 2,
-      isShowFooter: false
     },
     component: resolve => {
       lazyLoading(resolve, 'index')

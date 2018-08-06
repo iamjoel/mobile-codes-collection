@@ -6,7 +6,6 @@ var routes = [
     meta: {
       title: '页面',
       activeTypeIndex: 2,
-      isShowFooter: false
     },
     component: resolve => {
       lazyLoading(resolve, 'index')
