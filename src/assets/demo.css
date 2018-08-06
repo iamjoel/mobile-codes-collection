@@ -1,4 +1,4 @@
-h2 {
+.demo-classify-title{
   font-size: 16px;
   margin: .2rem;
   padding-left: .2rem;
@@ -6,12 +6,6 @@ h2 {
   line-height: .4rem;
   border-left: 3px solid #fd9003;
 }
-.swipe {
-  height: 3rem;
+.demo--unfinished {
+  color: #f00;
 }
-.img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-

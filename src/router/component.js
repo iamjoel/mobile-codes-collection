@@ -1,7 +1,9 @@
+var PREFIX = 'component'
+
 // 路由配置
 var routes = [
   {
-    path: '/',
+    path: `/`,
     meta: {
       title: '首页',
       activeTypeIndex: 0,
@@ -11,7 +13,25 @@ var routes = [
     },
   },
   {
-    path: '/classify-list',
+    path: `/${PREFIX}/slider`,
+    meta: {
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'slider/Normal', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/slider/vertical`,
+    meta: {
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'slider/vertical')
+    },
+  },
+  {
+    path: `/${PREFIX}/classify-list`,
     meta: {
       title: '分类',
       activeTypeIndex: 1,
@@ -20,29 +40,10 @@ var routes = [
       lazyLoading(resolve, 'classify-list')
     },
   },
+  
+ 
   {
-    path: '/cart',
-    meta: {
-      title: '购物车',
-      activeTypeIndex: 2,
-      isShowFooter: false
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'cart')
-    },
-  },
-  {
-    path: '/member-center',
-    meta: {
-      title: '个人中心',
-      activeTypeIndex: 3,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'member-center')
-    },
-  },
-  {
-    path: '/media',
+    path: `/${PREFIX}/media`,
     meta: {
       title: 'Media',
       activeTypeIndex: 0,
@@ -52,7 +53,7 @@ var routes = [
     },
   },
   {
-    path: '/form',
+    path: `/${PREFIX}/form`,
     meta: {
       title: '表单',
       activeTypeIndex: 0,
@@ -62,7 +63,7 @@ var routes = [
     },
   },
   {
-    path: '/calendar',
+    path: `/${PREFIX}/calendar`,
     meta: {
       title: '表单',
       activeTypeIndex: 0,
@@ -72,7 +73,7 @@ var routes = [
     },
   },
   {
-    path: '/list/infinate-load',
+    path: `/${PREFIX}/list/infinate-load`,
     meta: {
       title: '列表无限加载',
       activeTypeIndex: 0,
@@ -82,7 +83,7 @@ var routes = [
     },
   },
   {
-    path: '/list/no-data',
+    path: `/${PREFIX}/list/no-data`,
     meta: {
       title: '列表无数据',
       activeTypeIndex: 0,
@@ -92,7 +93,7 @@ var routes = [
     },
   },
   {
-    path: '/list/filter',
+    path: `/${PREFIX}/list/filter`,
     meta: {
       title: '列表搜索条件',
       activeTypeIndex: 0,
@@ -102,7 +103,7 @@ var routes = [
     },
   },
   {
-    path: '/list/pull-refresh',
+    path: `/${PREFIX}/list/pull-refresh`,
     meta: {
       title: '下拉刷新',
       activeTypeIndex: 0,
@@ -112,7 +113,7 @@ var routes = [
     },
   },
   {
-    path: '/list/hor-scroll',
+    path: `/${PREFIX}/list/hor-scroll`,
     meta: {
       title: '横向滚动',
       activeTypeIndex: 0,
@@ -122,7 +123,7 @@ var routes = [
     },
   },
   {
-    path: '/tree-select',
+    path: `/${PREFIX}/tree-select`,
     meta: {
       title: '分类选择',
       activeTypeIndex: 0,
@@ -132,7 +133,7 @@ var routes = [
     },
   },
   {
-    path: '/img/lazyload',
+    path: `/${PREFIX}/img/lazyload`,
     meta: {
       title: '懒加载',
       activeTypeIndex: 0,
@@ -142,7 +143,7 @@ var routes = [
     },
   },
   {
-    path: '/img/img-preview',
+    path: `/${PREFIX}/img/img-preview`,
     meta: {
       title: '图片预览',
       activeTypeIndex: 0,
@@ -152,7 +153,7 @@ var routes = [
     },
   },
   {
-    path: '/img/img-badge',
+    path: `/${PREFIX}/img/img-badge`,
     meta: {
       title: '角标',
       activeTypeIndex: 0,
@@ -162,7 +163,7 @@ var routes = [
     },
   },
   {
-    path: '/singer',
+    path: `/${PREFIX}/singer`,
     meta: {
       title: '歌手',
       activeTypeIndex: 0,
@@ -172,7 +173,7 @@ var routes = [
     },
   },
   {
-    path: '/data',
+    path: `/${PREFIX}/data`,
     meta: {
       title: '数据获取',
       activeTypeIndex: 0,
@@ -182,7 +183,7 @@ var routes = [
     },
   },
   {
-    path: '/map/:lng/:lat/:name/:address',
+    path: `/${PREFIX}/map/:lng/:lat/:name/:address`,
     meta: {
       title: '地图',
       activeTypeIndex: 1,
@@ -198,7 +199,7 @@ var routes = [
 
 const lazyLoading = (resolve, name, index = true) => {
   require.ensure([], function(require) {
-    resolve(require(`@/views/${name}${index ? '/Index' : ''}.vue`));
+    resolve(require(`@/views/component/${name}${index ? '/Index' : ''}.vue`));
   })
 }
 

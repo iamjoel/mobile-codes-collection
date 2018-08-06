@@ -63,21 +63,3 @@ new Vue({
   store
 })
 
-// 项目信息
-console.group()
-console.info('%c项目基本信息', 'font-size: 18px;font-weight:bold;')
-console.info(`%c当前环境: ${process.env.NODE_ENV}`, 'font-size: 16px;font-weight:bold;')
-console.info('%c所有接口地址:', 'font-size: 16px;font-weight:bold;')
-import {urls} from '@/setting'
-console.info(`
-${JSON.stringify(urls, null, '\t')}
-`)
-console.info('%c所有路由:', 'font-size: 16px;font-weight:bold;')
-import menu from '@/router/menu'
-console.table(menu.map(item => {
-  return {
-    ...item,
-    meta: JSON.stringify(item.meta)
-  }
-}))
-console.groupEnd()

@@ -12,11 +12,11 @@
       <router-view></router-view>
     </div>
     <van-tabbar v-model="activeTypeIndex" v-show="$store.state.isShowFooter">
-      <van-tabbar-item icon="wap-home" url="#/">首页
+      <van-tabbar-item icon="wap-home" url="#/">组件
       </van-tabbar-item>
-      <van-tabbar-item icon="wap-nav" url="#/classify-list">分类</van-tabbar-item>
-      <van-tabbar-item icon="gift" url="#/cart" info="3">购物车</van-tabbar-item>
-      <van-tabbar-item icon="contact" url="#/member-center">我的</van-tabbar-item>
+      <van-tabbar-item icon="gift" url="#/reset/index">组件重置</van-tabbar-item>
+      <van-tabbar-item icon="wap-nav" url="#/page/index">页面</van-tabbar-item>
+      <van-tabbar-item icon="contact" url="#/doc">文档</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>
@@ -136,6 +136,7 @@ function getQueryObject(url) {
 <style src="@/assets/vendor/reset.css"></style>
 <style src="css-utils-collection"></style>
 <style src="@/assets/common.css"></style>
+<style src="@/assets/demo.css"></style>
 <style scoped>
   .main {
     padding-bottom: 40px;
