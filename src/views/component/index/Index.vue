@@ -61,6 +61,17 @@
         <div class="mt-10 ta-c">角标</div>
       </a>
     </div>
+    <h2 class="demo-classify-title">图标</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Vant</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">商城相关</div>
+      </a>
+    </div>
     <h2 class="demo-classify-title">其他</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/data')" class="nav__item">
@@ -86,6 +97,10 @@
       <a href="javascript:void(0)" @click="$router.push('/component/map/120.614/31.3661/联青大厦/吴中东路134号')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">地图</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">评分</div>
       </a>
     </div>
     
