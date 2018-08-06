@@ -31,6 +31,15 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/slider/notice-bar`,
+    meta: {
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'slider/notice-bar')
+    },
+  },
+  {
     path: `/${PREFIX}/classify-list`,
     meta: {
       title: '分类',

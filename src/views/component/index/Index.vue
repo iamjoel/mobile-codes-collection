@@ -2,16 +2,12 @@
   <div class="main">
     <!-- 搜索 -->
     <van-search placeholder="请输入组件名称" v-model="searchInput" @search="onSearch"/>
-    <!-- 跑马灯通知 -->
-    <van-notice-bar
-      text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
-      left-icon="/static/icon/chat.png"
-    />
+    
 
     <h1 class="ly ly-c title-with-line">
       <div class="title-with-line__text">组件</div>
     </h1>
-    <h2 class="demo-classify-title">轮播</h2>
+    <h2 class="demo-classify-title">轮播相关</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/slider')" class="nav__item">
         <van-icon name="wap-nav" />
@@ -20,6 +16,10 @@
       <a href="javascript:void(0)" @click="$router.push('/component/slider/vertical')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">垂直轮播<!-- 消息通知 --></div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/slider/notice-bar')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">通告栏</div>
       </a>
     </div>
 
