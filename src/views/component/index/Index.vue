@@ -58,31 +58,31 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Radio</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/checkbox')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/checkbox')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Checkbox</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/switch')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">开关</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/select-radio')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Select 单选</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/select-checkbox')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Select 多选</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/datetimePicker')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">日期&时间</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/uploader-single')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">单图片上传</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/uploader-more')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">多图片上传</div>
       </a>
@@ -90,7 +90,7 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">范围<!-- Range 滑块 --></div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/rate')" class="nav__item demo--unfinished">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">评分</div>
       </a>

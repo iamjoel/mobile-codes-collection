@@ -11,12 +11,35 @@
     </div>
     <div class="demo-block">
       <div class="label">
+        在同一行
+      </div>
+      <div class="ly ly-j ly-m line">
+        <div class="title">水果</div>
+        <van-radio-group v-model="radio">
+          <van-radio name="1">苹果</van-radio>
+          <van-radio name="2">西瓜</van-radio>
+        </van-radio-group>
+      </div>
+    </div>
+    <div class="demo-block">
+      <div class="label">
         禁用状态
       </div>
       <van-radio-group v-model="radio" disabled>
         <van-radio name="1">单选框 1</van-radio>
         <van-radio name="2">单选框 2</van-radio>
       </van-radio-group>
+    </div>
+    <div class="demo-block">
+      <div class="label">
+        自定义颜色
+      </div>
+      <div class="custom">
+        <van-radio-group v-model="radio">
+          <van-radio name="1">单选框 1</van-radio>
+          <van-radio name="2">单选框 2</van-radio>
+        </van-radio-group>
+      </div>
     </div>
     <div class="demo-block">
       <div class="label">
@@ -49,4 +72,11 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style>
+  .line .van-radio-group {
+    display: flex;
+  }
+  .custom .van-icon-checked {
+    color: #2196f3;
+  }
+</style>

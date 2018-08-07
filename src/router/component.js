@@ -102,6 +102,76 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/switch`,
+    meta: {
+      title: '开关',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'switch')
+    },
+  },
+  {
+    path: `/${PREFIX}/select-radio`,
+    meta: {
+      title: '弹出层单选',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'select-radio')
+    },
+  },
+  {
+    path: `/${PREFIX}/select-checkbox`,
+    meta: {
+      title: '弹出层多选',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'select-checkbox')
+    },
+  },
+  {
+    path: `/${PREFIX}/datetimePicker`,
+    meta: {
+      title: '时间选择',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'datetimePicker')
+    },
+  },
+  {
+    path: `/${PREFIX}/uploader-single`,
+    meta: {
+      title: '单图片上传',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'uploader-single')
+    },
+  },
+  {
+    path: `/${PREFIX}/uploader-more`,
+    meta: {
+      title: '多图片上传',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'uploader-more')
+    },
+  },
+  {
+    path: `/${PREFIX}/rate`,
+    meta: {
+      title: '评分',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'rate')
+    },
+  },
+  {
     path: `/${PREFIX}/calendar`,
     meta: {
       title: '表单',
