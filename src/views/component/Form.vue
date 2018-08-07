@@ -247,12 +247,12 @@ export default {
       this.model.select = this.fruitList.filter(item => item.name === curr)[0]
       this.showSelect = false
     },
-    selectedDate() {
-      this.model.date = this.tempDate
+    selectedDate(date) {
+      this.model.date = date
       this.showDatePicker = false
     },
-    selectedTime() {
-      this.model.time = this.tempTime
+    selectedTime(time) {
+      this.model.time = time
       this.showTimePicker = false
     },
     selectedArea(area) {

@@ -53,12 +53,12 @@ export default {
     }  
   },
   methods: {
-    selectedDate() {
-      this.date = this.tempDate
+    selectedDate(date) {
+      this.date = date
       this.showDatePicker = false
     },
-    selectedTime() {
-      this.time = this.tempTime
+    selectedTime(time) {
+      this.time = time
       this.showTimePicker = false
     },
   }
