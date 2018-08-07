@@ -1,7 +1,15 @@
 <template>
   <div class="main">
+    <h2 class="demo-classify-title">工具</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/tool/browser-detect')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">终端探测</div>
+      </a>
+    </div>
+    
     <h2 class="demo-classify-title">文档</h2>
-    <ul>
+    <ul class="doc-list">
       <li v-for="(item,index) in list">
         <a :href="item.url">{{item.label}}</a>
       </li>
@@ -34,7 +42,7 @@ export default {
     list-style-type: square;
     line-height: 1.5 ;
   }
-  a {
+  .doc-list a {
     text-decoration: underline;
   }
 </style>

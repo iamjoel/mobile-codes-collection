@@ -11,6 +11,16 @@ var routes = [
       lazyLoading(resolve, 'Index', false)
     },
   },
+  {
+    path: `/${PREFIX}/browser-detect`,
+    meta: {
+      title: '浏览器&设备探测',
+      activeTypeIndex: 3,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'Browser-detect', false)
+    },
+  },
 ]
 
 const lazyLoading = (resolve, name, index = true) => {
