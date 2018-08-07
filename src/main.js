@@ -40,6 +40,10 @@ Vue.prototype.$hideLoading = () => {
   Toast.clear()
 }
 
+import browserDetect from '@/assets/utils/browser-detect'
+Vue.prototype.isIOS = browserDetect.isIOS
+Vue.prototype.isAndroid = browserDetect.isAndroid
+
 import axios from 'axios'
 require('@/service/interceptor') // axios 拦截器，做通用报错等
 Vue.prototype.$http = axios
