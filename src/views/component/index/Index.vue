@@ -54,11 +54,11 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">输入框&域</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/radio')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/radio')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Radio</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/checkbox')" class="nav__item demo--unfinished">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Checkbox</div>
       </a>

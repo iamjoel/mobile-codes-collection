@@ -1,0 +1,88 @@
+<template>
+  <div class="main">
+    <div class="demo-block">
+      <div class="label">
+        基础用法
+      </div>
+      <van-checkbox v-model="checked">复选框</van-checkbox>
+    </div>
+    <div class="demo-block">
+      <div class="label">
+        禁用状态
+      </div>
+      <van-checkbox v-model="checked" disabled>复选框</van-checkbox>
+    </div>
+    <div class="demo-block">
+      <div class="label">
+        自定义图标
+      </div>
+      <van-checkbox v-model="checked">
+        自定义图标
+        <img
+          slot="icon"
+          slot-scope="props"
+          :src="props.checked ? icon.active : icon.normal"
+        >
+      </van-checkbox>
+    </div>
+    <div class="demo-block">
+      <div class="label">
+        checkbox组
+      </div>
+      <van-checkbox-group v-model="result">
+        <van-checkbox
+          v-for="(item, index) in list"
+          :key="item"
+          :name="item"
+        >
+          复选框 {{ item }}
+        </van-checkbox>
+      </van-checkbox-group>
+    </div>
+    <div class="demo-block">
+      <div class="label">
+        与cell组件一起使用
+      </div>
+      <van-checkbox-group v-model="result">
+        <van-cell-group>
+          <van-cell
+            v-for="(item, index) in list"
+            clickable
+            :key="item"
+            :title="`复选框 ${item}`"
+            @click="toggle(index)"
+          >
+            <van-checkbox :name="item" ref="checkboxes" />
+          </van-cell>
+        </van-cell-group>
+      </van-checkbox-group>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      checked: true,
+      icon: {
+        normal: 'https://img.yzcdn.cn/public_files/2017/10/13/c547715be149dd3faa817e4a948b40c4.png',
+        active: 'https://img.yzcdn.cn/public_files/2017/10/13/793c77793db8641c4c325b7f25bf130d.png'
+      },
+      list: ['a', 'b', 'c'],
+      result: [],
+    }  
+  },
+  methods: {
+    toggle(index) {
+      this.$refs.checkboxes[index].toggle();
+    }
+  }
+}
+</script>
+
+<style>
+  .van-checkbox img {
+    width: 20px;
+  }
+</style>

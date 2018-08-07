@@ -92,6 +92,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/checkbox`,
+    meta: {
+      title: '复选框',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'checkbox')
+    },
+  },
+  {
     path: `/${PREFIX}/calendar`,
     meta: {
       title: '表单',
