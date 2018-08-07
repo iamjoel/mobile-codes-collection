@@ -90,7 +90,7 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">范围<!-- Range 滑块 --></div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/rate')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/rate')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">评分</div>
       </a>

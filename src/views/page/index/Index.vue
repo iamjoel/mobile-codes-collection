@@ -63,11 +63,7 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">购买成功</div>
-      </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
-        <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">购买失败</div>
+        <div class="mt-10 ta-c">支付成功&失败</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="wap-nav" />
