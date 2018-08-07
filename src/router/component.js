@@ -72,6 +72,26 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/field`,
+    meta: {
+      title: '输入框',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'field')
+    },
+  },
+  {
+    path: `/${PREFIX}/radio`,
+    meta: {
+      title: '单选框',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'radio')
+    },
+  },
+  {
     path: `/${PREFIX}/calendar`,
     meta: {
       title: '表单',

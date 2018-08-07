@@ -1,3 +1,6 @@
+body {
+  background-color: #f8f8f8;
+}
 .demo-classify-title{
   font-size: 16px;
   margin: .2rem;
@@ -8,4 +11,14 @@
 }
 .demo--unfinished {
   color: #f00;
+}
+.label {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(69,90,100,.6);
+  padding: 40px 15px 15px;
+}
+.demo-block:first-of-type .label {
+  padding-top: 20px;
 }
