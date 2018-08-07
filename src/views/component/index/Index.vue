@@ -2,8 +2,6 @@
   <div class="main">
     <!-- 搜索 -->
     <van-search placeholder="请输入组件名称" v-model="searchInput" @search="onSearch"/>
-    
-
     <h1 class="ly ly-c title-with-line">
       <div class="title-with-line__text">组件</div>
     </h1>
@@ -46,8 +44,94 @@
         <div class="mt-10 ta-c">横向滚动</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">图片</h2>
+    <h2 class="demo-classify-title">表单</h2>
     <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/component/form')" class="nav__item">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">综合</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">输入框&域</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Radio</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Checkbox</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">开关</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Select 单选</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Select 多选</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">日期&时间</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">单图片上传</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">多图片上传</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">范围<!-- Range 滑块 --></div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">评分</div>
+      </a>
+    </div>
+    <h2 class="demo-classify-title">弹出框</h2>
+    <div class="ly ly-multi nav">
+      
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Alert</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">确认框<!-- Confirm --></div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">弹出框 <!-- Dialog--></div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Popup</div>
+      </a>
+    </div>
+    <h2 class="demo-classify-title">提示</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">轻提示<!--Toast--></div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">加载中</div>
+      </a>
+    </div>
+    <h2 class="demo-classify-title">图片&图文展示</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/component/media')" class="nav__item">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Media</div>
+      </a>
       <a href="javascript:void(0)" @click="$router.push('/component/img/lazyload')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">懒加载</div>
@@ -59,6 +143,10 @@
       <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">角标</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">瀑布流</div>
       </a>
     </div>
     <h2 class="demo-classify-title">图标</h2>
@@ -72,19 +160,34 @@
         <div class="mt-10 ta-c">商城相关</div>
       </a>
     </div>
+    <h2 class="demo-classify-title">容器</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">单元格(Cell)</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">折叠面板</div>
+      </a>
+    </div>
+    <h2 class="demo-classify-title">地图</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/component/map/120.614/31.3661/联青大厦/吴中东路134号')" class="nav__item">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">导航</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">选地址</div>
+      </a>
+
+    </div>
     <h2 class="demo-classify-title">其他</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/data')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">数据获取</div>
-      </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/media')" class="nav__item">
-        <van-icon name="records" />
-        <div class="mt-10 ta-c">Media</div>
-      </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/form')" class="nav__item">
-        <van-icon name="records" />
-        <div class="mt-10 ta-c">表单</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/calendar')" class="nav__item">
         <van-icon name="records" />
@@ -94,14 +197,8 @@
         <van-icon name="records" />
         <div class="mt-10 ta-c">分类选择</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/map/120.614/31.3661/联青大厦/吴中东路134号')" class="nav__item">
-        <van-icon name="records" />
-        <div class="mt-10 ta-c">地图</div>
-      </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
-        <van-icon name="photo" />
-        <div class="mt-10 ta-c">评分</div>
-      </a>
+      
+      
     </div>
     
     

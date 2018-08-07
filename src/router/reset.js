@@ -5,7 +5,7 @@ var routes = [
     path: `/${PREFIX}/index`,
     meta: {
       title: '组件重置',
-      activeTypeIndex: 2,
+      activeTypeIndex: 1,
     },
     component: resolve => {
       lazyLoading(resolve, 'index')
