@@ -9,7 +9,7 @@
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/slider')" class="nav__item">
         <van-icon name="photo" />
-        <div class="mt-10 ta-c">普通轮播</div>
+        <div class="mt-10 ta-c">Banner轮播</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/slider/vertical')" class="nav__item">
         <van-icon name="wap-nav" />
@@ -21,15 +21,19 @@
       </a>
     </div>
 
-    <h2 class="demo-classify-title">列表</h2>
+    <h2 class="demo-classify-title">列表相关</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/list/infinate-load')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">无限加载</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/list/infinate-load')" class="nav__item demo--unfinished">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">无限加载封装</div>
+      </a>
       <a href="javascript:void(0)" @click="$router.push('/component/list/no-data')" class="nav__item">
         <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">无数据</div>
+        <div class="mt-10 ta-c">列表无数据</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/list/filter')" class="nav__item">
         <van-icon name="search" />
@@ -38,6 +42,10 @@
       <a href="javascript:void(0)" @click="$router.push('/component/list/pull-refresh')" class="nav__item">
         <van-icon name="upgrade" />
         <div class="mt-10 ta-c">下拉刷新</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/list/')" class="nav__item demo--unfinished">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">记住滚动位置</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/list/hor-scroll')" class="nav__item">
         <van-icon name="wap-nav" />
@@ -56,23 +64,23 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/radio')" class="nav__item">
         <van-icon name="records" />
-        <div class="mt-10 ta-c">Radio</div>
+        <div class="mt-10 ta-c">单选(Radio)</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/checkbox')" class="nav__item">
         <van-icon name="records" />
-        <div class="mt-10 ta-c">Checkbox</div>
+        <div class="mt-10 ta-c">多选(Checkbox)</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/switch')" class="nav__item">
         <van-icon name="records" />
-        <div class="mt-10 ta-c">开关</div>
+        <div class="mt-10 ta-c">开关(Switch)</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/select-radio')" class="nav__item">
         <van-icon name="records" />
-        <div class="mt-10 ta-c">Select 单选</div>
+        <div class="mt-10 ta-c">选择器(Picker)单选</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/select-checkbox')" class="nav__item">
         <van-icon name="records" />
-        <div class="mt-10 ta-c">Select 多选</div>
+        <div class="mt-10 ta-c">选择器(Picker)多选</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/datetimePicker')" class="nav__item">
         <van-icon name="records" />
@@ -80,11 +88,11 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/uploader-single')" class="nav__item">
         <van-icon name="photo" />
-        <div class="mt-10 ta-c">单图片上传</div>
+        <div class="mt-10 ta-c">单张图片上传</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/uploader-more')" class="nav__item">
         <van-icon name="photo" />
-        <div class="mt-10 ta-c">多图片上传</div>
+        <div class="mt-10 ta-c">多张图片上传</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="records" />
@@ -94,32 +102,36 @@
         <van-icon name="records" />
         <div class="mt-10 ta-c">评分</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">防止多次提交</div>
+      </a>
     </div>
     <h2 class="demo-classify-title">弹出框</h2>
     <div class="ly ly-multi nav">
       
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="pending-evaluate" />
-        <div class="mt-10 ta-c">Alert</div>
+        <div class="mt-10 ta-c">信息提示(Alert)</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="pending-evaluate" />
-        <div class="mt-10 ta-c">确认框<!-- Confirm --></div>
+        <div class="mt-10 ta-c">信息确认(Confirm)</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="pending-evaluate" />
-        <div class="mt-10 ta-c">弹出框 <!-- Dialog--></div>
+        <div class="mt-10 ta-c">自定义弹出内容</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="pending-evaluate" />
-        <div class="mt-10 ta-c">Popup</div>
+        <div class="mt-10 ta-c">弹出层(Popup)</div>
       </a>
     </div>
     <h2 class="demo-classify-title">提示</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="info-o" />
-        <div class="mt-10 ta-c">轻提示<!--Toast--></div>
+        <div class="mt-10 ta-c">轻提示(Toast)</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="info-o" />
@@ -143,6 +155,10 @@
       <a href="javascript:void(0)" @click="$router.push('/component/img/img-preview')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">图片预览</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">图片底部有描述文字</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item">
         <van-icon name="photo" />
@@ -172,7 +188,7 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="info-o" />
-        <div class="mt-10 ta-c">折叠面板</div>
+        <div class="mt-10 ta-c">折叠面板(Collapse)</div>
       </a>
     </div>
     <h2 class="demo-classify-title">地图</h2>
@@ -185,14 +201,15 @@
         <van-icon name="location" />
         <div class="mt-10 ta-c">选地址</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+        <van-icon name="location" />
+        <div class="mt-10 ta-c">座标系之间的转化</div>
+      </a>
 
     </div>
     <h2 class="demo-classify-title">其他</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/component/data')" class="nav__item">
-        <van-icon name="records" />
-        <div class="mt-10 ta-c">数据获取</div>
-      </a>
+      
       <a href="javascript:void(0)" @click="$router.push('/component/calendar')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">日历</div>

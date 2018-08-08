@@ -29,15 +29,11 @@
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">新增</div>
+        <div class="mt-10 ta-c">新增&编辑</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">实时保存</div>
-      </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
-        <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">编辑</div>
+        <div class="mt-10 ta-c">新增实时保存</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="wap-nav" />

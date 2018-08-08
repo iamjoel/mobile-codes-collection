@@ -291,16 +291,7 @@ var routes = [
       lazyLoading(resolve, 'singer')
     },
   },
-  {
-    path: `/${PREFIX}/data`,
-    meta: {
-      title: '数据获取',
-      activeTypeIndex: 0,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'Data', false)
-    },
-  },
+  
   {
     path: `/${PREFIX}/map/:lng/:lat/:name/:address`,
     meta: {

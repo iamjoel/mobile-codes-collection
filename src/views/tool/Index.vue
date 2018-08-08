@@ -1,5 +1,20 @@
 <template>
   <div class="main">
+    <h2 class="demo-classify-title">axios</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">crud写法</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/tool/data')" class="nav__item">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">数据获取</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">自定义处理报错</div>
+      </a>
+    </div>
     <h2 class="demo-classify-title">工具</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/tool/browser-detect')" class="nav__item">

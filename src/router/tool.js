@@ -21,6 +21,16 @@ var routes = [
       lazyLoading(resolve, 'Browser-detect', false)
     },
   },
+  {
+    path: `/${PREFIX}/data`,
+    meta: {
+      title: '数据获取',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'Data', false)
+    },
+  },
 ]
 
 const lazyLoading = (resolve, name, index = true) => {
