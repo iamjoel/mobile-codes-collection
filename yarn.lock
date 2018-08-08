@@ -3326,6 +3326,10 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
+popper.js@1.12.5:
+  version "1.12.5"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.12.5.tgz#229e4dea01629e1f1a1e26991ffade5024220fa6"
+
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -4557,6 +4561,12 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vue-directive-tooltip@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/vue-directive-tooltip/-/vue-directive-tooltip-1.4.5.tgz#d55519132cd7d405d4e941d6bea0a0da01ef6278"
+  dependencies:
+    popper.js "1.12.5"
 
 vue-hot-reload-api@^2.2.0:
   version "2.3.0"

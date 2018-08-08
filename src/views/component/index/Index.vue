@@ -125,6 +125,10 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">加载中</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/tool-tip')" class="nav__item">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">ToolTip</div>
+      </a>
     </div>
     <h2 class="demo-classify-title">图片&图文展示</h2>
     <div class="ly ly-multi nav">

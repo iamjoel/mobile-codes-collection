@@ -272,6 +272,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/tool-tip`,
+    meta: {
+      title: '角标',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'tool-tip')
+    },
+  },
+  {
     path: `/${PREFIX}/singer`,
     meta: {
       title: '歌手',
