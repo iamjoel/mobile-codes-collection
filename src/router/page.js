@@ -12,6 +12,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/ui`,
+    meta: {
+      title: 'UI规范',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'ui')
+    },
+  },
+  {
     path: `/${PREFIX}/cart`,
     meta: {
       title: '购物车',
