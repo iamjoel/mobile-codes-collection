@@ -5,7 +5,7 @@
     <h1 class="ly ly-c title-with-line">
       <div class="title-with-line__text">组件</div>
     </h1>
-    <h2 class="demo-classify-title">轮播相关</h2>
+    <h2 class="demo-classify__title">轮播相关</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/slider')" class="nav__item">
         <van-icon name="photo" />
@@ -21,7 +21,7 @@
       </a>
     </div>
 
-    <h2 class="demo-classify-title">列表相关</h2>
+    <h2 class="demo-classify__title">列表相关</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/list/infinate-load')" class="nav__item">
         <van-icon name="wap-nav" />
@@ -30,6 +30,10 @@
       <a href="javascript:void(0)" @click="$router.push('/component/list/infinate-load')" class="nav__item demo--unfinished">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">无限加载封装</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/list/pagination')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">分页</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/list/no-data')" class="nav__item">
         <van-icon name="wap-nav" />
@@ -52,7 +56,7 @@
         <div class="mt-10 ta-c">横向滚动</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">表单</h2>
+    <h2 class="demo-classify__title">表单</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/form')" class="nav__item">
         <van-icon name="records" />
@@ -107,7 +111,7 @@
         <div class="mt-10 ta-c">防止多次提交</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">弹出框</h2>
+    <h2 class="demo-classify__title">弹出框</h2>
     <div class="ly ly-multi nav">
       
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
@@ -127,7 +131,7 @@
         <div class="mt-10 ta-c">弹出层(Popup)</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">提示</h2>
+    <h2 class="demo-classify__title">提示</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="info-o" />
@@ -142,7 +146,7 @@
         <div class="mt-10 ta-c">ToolTip</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">图片&图文展示</h2>
+    <h2 class="demo-classify__title">图片&图文展示</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/media')" class="nav__item">
         <van-icon name="photo" />
@@ -169,7 +173,7 @@
         <div class="mt-10 ta-c">瀑布流</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">图标</h2>
+    <h2 class="demo-classify__title">图标</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="photo" />
@@ -180,7 +184,7 @@
         <div class="mt-10 ta-c">商城相关</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">容器</h2>
+    <h2 class="demo-classify__title">容器</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
         <van-icon name="info-o" />
@@ -191,7 +195,7 @@
         <div class="mt-10 ta-c">折叠面板(Collapse)</div>
       </a>
     </div>
-    <h2 class="demo-classify-title">地图</h2>
+    <h2 class="demo-classify__title">地图</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/map/120.614/31.3661/联青大厦/吴中东路134号')" class="nav__item">
         <van-icon name="location" />
@@ -207,7 +211,7 @@
       </a>
 
     </div>
-    <h2 class="demo-classify-title">其他</h2>
+    <h2 class="demo-classify__title">其他</h2>
     <div class="ly ly-multi nav">
       
       <a href="javascript:void(0)" @click="$router.push('/component/calendar')" class="nav__item">

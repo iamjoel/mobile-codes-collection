@@ -192,6 +192,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/list/pagination`,
+    meta: {
+      title: '分页',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'list/Pagination', false)
+    },
+  },
+  {
     path: `/${PREFIX}/list/no-data`,
     meta: {
       title: '列表无数据',

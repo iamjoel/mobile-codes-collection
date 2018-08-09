@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         基础用法
       </div>
       <van-cell-group>
@@ -13,7 +13,7 @@
       </van-cell-group>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         输入框只读
       </div>
       <van-cell-group>
@@ -25,7 +25,7 @@
       </van-cell-group>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         禁用输入框
       </div>
       <van-cell-group>
@@ -37,7 +37,7 @@
       </van-cell-group>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         自定义输入框
       </div>
       <van-cell-group>
@@ -59,7 +59,7 @@
       </van-cell-group>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         自适应高度
       </div>
       <van-cell-group>
