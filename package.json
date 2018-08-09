@@ -13,6 +13,7 @@
     "axios": "^0.16.2",
     "css-utils-collection": "^1.5.1",
     "jquery": "^3.2.1",
+    "mockjs": "^1.0.1-beta3",
     "moment": "^2.18.1",
     "stickybits": "^3.3.2",
     "vant": "^1.1.3",

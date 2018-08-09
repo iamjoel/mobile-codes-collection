@@ -2,7 +2,7 @@
   <div class="main">
     <h2 class="demo-classify__title">axios</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/tool/axios/crud')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">crud写法</div>
       </a>

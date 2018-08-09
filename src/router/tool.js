@@ -12,6 +12,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/axios/crud`,
+    meta: {
+      title: 'CRUD',
+      activeTypeIndex: 3,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'axios/CRUD', false)
+    },
+  },
+  {
     path: `/${PREFIX}/browser-detect`,
     meta: {
       title: '浏览器&设备探测',

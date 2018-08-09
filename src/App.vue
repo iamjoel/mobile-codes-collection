@@ -24,7 +24,8 @@
 <script>
 import {urls} from '@/setting'
 import * as types from '@/store/mutation-types'
-
+// 接口mock
+require('@/service/mock')
 export default {
   name: 'app',
   data() {
