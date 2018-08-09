@@ -23,7 +23,6 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">登录</div>
       </a>
-      
     </div>
     <h2 class="demo-classify__title">表单</h2>
     <div class="ly ly-multi nav">
@@ -72,7 +71,17 @@
         <div class="mt-10 ta-c">购物车</div>
       </a>
     </div>
-
+    <h2 class="demo-classify__title">文章&新闻</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">列表</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">详情</div>
+      </a>
+    </div>
     <h2 class="demo-classify__title">其他</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
