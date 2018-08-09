@@ -15,6 +15,13 @@
         <div class="mt-10 ta-c">自定义处理报错</div>
       </a>
     </div>
+    <h2 class="demo-classify__title">多语言</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">多语言</div>
+      </a>
+    </div>
     <h2 class="demo-classify__title">工具</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/tool/browser-detect')" class="nav__item">

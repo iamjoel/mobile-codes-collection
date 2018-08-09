@@ -5,6 +5,18 @@
     <h1 class="ly ly-c title-with-line">
       <div class="title-with-line__text">组件</div>
     </h1>
+    <h2 class="demo-classify__title">常见</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/component/common/button')" class="nav__item">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">按钮</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/common/tag')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">标签</div>
+      </a>
+    </div>
+
     <h2 class="demo-classify__title">轮播相关</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/slider')" class="nav__item">

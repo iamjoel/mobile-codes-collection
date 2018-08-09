@@ -13,6 +13,26 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/common/button`,
+    meta: {
+      title: '按钮',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'common/Button', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/common/tag`,
+    meta: {
+      title: '标签',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'common/Tag', false)
+    },
+  },
+  {
     path: `/${PREFIX}/slider`,
     meta: {
       activeTypeIndex: 0,

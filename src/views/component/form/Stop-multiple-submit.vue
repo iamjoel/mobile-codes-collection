@@ -1,13 +1,13 @@
 <template>
   <div class="main">
     <div class="demo__title">用 Loading 图标提示正在提交中</div>
-    <div class="ly ly-c mv-20rem">
-      <van-button size="normal" type="primary" @click="save" :loading="isSubmiting">保存</van-button> 
+    <div class="ly ly-c mv-20rem ph-10rem">
+      <van-button size="large" type="primary" @click="save" :loading="isSubmiting">保存</van-button> 
     </div>
 
     <div class="demo__title">用文字提示正在提交中</div>
-    <div class="ly ly-c mv-20rem">
-      <van-button size="normal" type="primary" @click="save2">{{isSubmiting2 ? '提交中...' : '保存'}}</van-button> 
+    <div class="ly ly-c mv-20rem ph-10rem">
+      <van-button size="large" type="primary" @click="save2">{{isSubmiting2 ? '提交中...' : '保存'}}</van-button> 
     </div>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
       if(this.isSubmiting2) {
         return false
       }
-      
+
       this.isSubmiting2 = true
       setTimeout(()=> {
         this.$toast('已提交')
