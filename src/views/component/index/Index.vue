@@ -164,6 +164,10 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Media</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/img/img-description')" class="nav__item">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">图片底部有描述文字</div>
+      </a>
       <a href="javascript:void(0)" @click="$router.push('/component/img/lazyload')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">懒加载</div>
@@ -171,10 +175,6 @@
       <a href="javascript:void(0)" @click="$router.push('/component/img/img-preview')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">图片预览</div>
-      </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item demo--unfinished">
-        <van-icon name="photo" />
-        <div class="mt-10 ta-c">图片底部有描述文字</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item">
         <van-icon name="photo" />

@@ -302,6 +302,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/img/img-description`,
+    meta: {
+      title: '图片底部有描述文字',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'img/Img-description', false)
+    },
+  },
+  {
     path: `/${PREFIX}/img/img-preview`,
     meta: {
       title: '图片预览',

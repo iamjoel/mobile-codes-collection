@@ -1432,9 +1432,9 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
-css-utils-collection@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/css-utils-collection/-/css-utils-collection-1.4.0.tgz#63a5d13c8e54f4aecbd504fac52fe307983edfb5"
+css-utils-collection@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/css-utils-collection/-/css-utils-collection-1.5.1.tgz#715e106c65a99f9a44a400d5ed22417c5f89b8fa"
 
 css-what@2.1:
   version "2.1.0"
