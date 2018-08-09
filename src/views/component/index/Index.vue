@@ -184,6 +184,10 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">瀑布流</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">上传图片压缩裁切</div>
+      </a>
     </div>
     <h2 class="demo-classify__title">图标</h2>
     <div class="ly ly-multi nav">
