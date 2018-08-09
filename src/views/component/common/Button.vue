@@ -31,6 +31,7 @@
     <div class="demo__title">自定义按钮标签</div>
     <van-button type="primary" tag="a" href="http://www.luoo.net/" target="_blank">点我跳转到落网</van-button>
 
+    <div>缺少带图标的按钮</div>
   </div>
 </template>
 

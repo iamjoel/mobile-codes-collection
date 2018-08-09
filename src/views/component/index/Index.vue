@@ -8,11 +8,11 @@
     <h2 class="demo-classify__title">常见</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/common/button')" class="nav__item">
-        <van-icon name="photo" />
+        <van-icon name="success" />
         <div class="mt-10 ta-c">按钮</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/common/tag')" class="nav__item">
-        <van-icon name="wap-nav" />
+        <van-icon name="card" />
         <div class="mt-10 ta-c">标签</div>
       </a>
     </div>
@@ -99,7 +99,7 @@
         <div class="mt-10 ta-c">选择器(Picker)多选</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/datetimePicker')" class="nav__item">
-        <van-icon name="records" />
+        <van-icon name="clock" />
         <div class="mt-10 ta-c">日期&时间</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/uploader-single')" class="nav__item">
@@ -221,7 +221,18 @@
         <van-icon name="location" />
         <div class="mt-10 ta-c">座标系之间的转化</div>
       </a>
+    </div>
 
+    <h2 class="demo-classify__title">数据可视化</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">折线图</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">饼图</div>
+      </a>
     </div>
     <h2 class="demo-classify__title">其他</h2>
     <div class="ly ly-multi nav">
@@ -235,10 +246,7 @@
         <div class="mt-10 ta-c">分类选择</div>
       </a>
       
-      
     </div>
-    
-    
   </div>
 </template>
 

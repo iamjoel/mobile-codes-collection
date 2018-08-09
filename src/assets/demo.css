@@ -12,6 +12,10 @@ body {
 .demo--unfinished {
   color: #f00;
 }
+/* 待完善 */
+.demo--not-perfect {
+  color: yellow;
+}
 .demo__title {
   margin: 0;
   font-weight: 400;
