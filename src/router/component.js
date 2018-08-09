@@ -33,30 +33,30 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/slider`,
+    path: `/${PREFIX}/swipe`,
     meta: {
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'slider/Normal', false)
+      lazyLoading(resolve, 'swipe/Normal', false)
     },
   },
   {
-    path: `/${PREFIX}/slider/vertical`,
+    path: `/${PREFIX}/swipe/vertical`,
     meta: {
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'slider/vertical')
+      lazyLoading(resolve, 'swipe/vertical')
     },
   },
   {
-    path: `/${PREFIX}/slider/notice-bar`,
+    path: `/${PREFIX}/swipe/notice-bar`,
     meta: {
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'slider/notice-bar')
+      lazyLoading(resolve, 'swipe/notice-bar')
     },
   },
   {
@@ -179,6 +179,16 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'uploader-more')
+    },
+  },
+  {
+    path: `/${PREFIX}/form/slide`,
+    meta: {
+      title: '滑块(Slider)',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/Slide', false)
     },
   },
   {

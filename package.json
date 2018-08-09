@@ -20,6 +20,7 @@
     "vue-directive-tooltip": "^1.4.5",
     "vue-meta": "^1.4.3",
     "vue-router": "^3.0.0",
+    "vue-slider-component": "^2.7.5",
     "vuex": "^2.4.0",
     "yarn": "^1.0.0"
   },

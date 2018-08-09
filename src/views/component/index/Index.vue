@@ -19,15 +19,15 @@
 
     <h2 class="demo-classify__title">轮播相关</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/component/slider')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/component/swipe')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Banner轮播</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/slider/vertical')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/component/swipe/vertical')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">垂直轮播</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/slider/notice-bar')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/component/swipe/notice-bar')" class="nav__item">
         <van-icon name="more-o" />
         <div class="mt-10 ta-c">通告栏</div>
       </a>
@@ -110,9 +110,9 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">多张图片上传</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/form/slide')" class="nav__item">
         <van-icon name="records" />
-        <div class="mt-10 ta-c">范围<!-- Range 滑块 --></div>
+        <div class="mt-10 ta-c">滑块(Slider)</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/rate')" class="nav__item">
         <van-icon name="records" />
