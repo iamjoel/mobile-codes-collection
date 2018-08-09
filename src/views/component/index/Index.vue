@@ -13,7 +13,7 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/slider/vertical')" class="nav__item">
         <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">垂直轮播<!-- 消息通知 --></div>
+        <div class="mt-10 ta-c">垂直轮播</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/slider/notice-bar')" class="nav__item">
         <van-icon name="more-o" />
@@ -106,7 +106,7 @@
         <van-icon name="records" />
         <div class="mt-10 ta-c">评分</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/form/stop-multiple-submit')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">防止多次提交</div>
       </a>

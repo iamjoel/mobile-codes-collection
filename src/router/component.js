@@ -172,9 +172,19 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/form/stop-multiple-submit`,
+    meta: {
+      title: '防止多次提交',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/Stop-multiple-submit', false)
+    },
+  },
+  {
     path: `/${PREFIX}/calendar`,
     meta: {
-      title: '表单',
+      title: '日历',
       activeTypeIndex: 0,
     },
     component: resolve => {
