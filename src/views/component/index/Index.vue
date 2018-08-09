@@ -231,6 +231,10 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
         <van-icon name="photo" />
+        <div class="mt-10 ta-c">柱状图</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+        <van-icon name="photo" />
         <div class="mt-10 ta-c">饼图</div>
       </a>
     </div>
