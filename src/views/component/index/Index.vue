@@ -221,7 +221,7 @@
         <van-icon name="location" />
         <div class="mt-10 ta-c">导航</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/map/choose-loc')" class="nav__item">
         <van-icon name="location" />
         <div class="mt-10 ta-c">选地址</div>
       </a>

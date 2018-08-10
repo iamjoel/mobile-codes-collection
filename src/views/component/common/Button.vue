@@ -5,7 +5,6 @@
     <van-button type="primary">主要按钮</van-button>
     <van-button type="warning">警告按钮</van-button>
     <van-button type="danger">危险按钮</van-button>
-    <p>警告按钮UI 有问题。。。</p>
 
     <div class="demo__title">朴素按钮(幽灵按钮)</div>
     <van-button type="default" plain>default</van-button>

@@ -17,7 +17,10 @@
 </template>
 
 <script>
+// 百度地图url
 var mapUrl = 'http://api.map.baidu.com/marker?location={loc}&title={name}&content={address}&output=html'
+// 微信地图url
+// var mapUrl = 'https://apis.map.qq.com/uri/v1/marker?marker=coord:{loc};title:{name};addr:{address}'
 export default {
   data() {
     return {

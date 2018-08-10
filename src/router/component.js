@@ -371,7 +371,18 @@ var routes = [
       isShowFooter: false,
     },
     component: resolve => {
-      lazyLoading(resolve, 'map')
+      lazyLoading(resolve, 'map/Navigator', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/map/choose-loc`,
+    meta: {
+      title: '地图',
+      activeTypeIndex: 1,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'map/Choose-loc', false)
     },
   },
 ]
