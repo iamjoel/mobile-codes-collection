@@ -225,9 +225,9 @@
         <van-icon name="location" />
         <div class="mt-10 ta-c">选地址</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/map/convert')" class="nav__item">
         <van-icon name="location" />
-        <div class="mt-10 ta-c">座标系之间的转化</div>
+        <div class="mt-10 ta-c">坐标转换服务</div>
       </a>
     </div>
 

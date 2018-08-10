@@ -385,6 +385,17 @@ var routes = [
       lazyLoading(resolve, 'map/Choose-loc', false)
     },
   },
+  {
+    path: `/${PREFIX}/map/convert`,
+    meta: {
+      title: '坐标转换服务',
+      activeTypeIndex: 1,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'map/Convert', false)
+    },
+  },
 ]
 
 
