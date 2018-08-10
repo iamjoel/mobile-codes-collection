@@ -82,6 +82,17 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/container/tab`,
+    meta: {
+      title: '分类',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'container/Tab', false)
+    },
+  },
+
+  {
     path: `/${PREFIX}/form`,
     meta: {
       title: '表单',
