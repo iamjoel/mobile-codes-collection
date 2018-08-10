@@ -191,7 +191,7 @@
     </div>
     <h2 class="demo-classify__title">图标</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/icon/vant')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">Vant</div>
       </a>
@@ -243,7 +243,7 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
         <van-icon name="photo" />
-        <div class="mt-10 ta-c">饼图</div>
+        <div class="mt-10 ta-c">vant饼图</div>
       </a>
     </div>
     <h2 class="demo-classify__title">其他</h2>

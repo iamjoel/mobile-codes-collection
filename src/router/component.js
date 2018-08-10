@@ -343,6 +343,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/icon/vant`,
+    meta: {
+      title: 'Vant 图标',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'icon/Vant', false)
+    },
+  },
+  {
     path: `/${PREFIX}/tool-tip`,
     meta: {
       title: '角标',
