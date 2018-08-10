@@ -4,8 +4,8 @@ var routes = [
   {
     path: `/${PREFIX}/index`,
     meta: {
-      title: '工具和其他',
-      activeTypeIndex: 3,
+      title: '工具',
+      activeTypeIndex: 2,
     },
     component: resolve => {
       lazyLoading(resolve, 'Index', false)
@@ -15,7 +15,7 @@ var routes = [
     path: `/${PREFIX}/axios/crud`,
     meta: {
       title: 'CRUD',
-      activeTypeIndex: 3,
+      activeTypeIndex: 2,
     },
     component: resolve => {
       lazyLoading(resolve, 'axios/CRUD', false)
@@ -25,7 +25,7 @@ var routes = [
     path: `/${PREFIX}/browser-detect`,
     meta: {
       title: '浏览器&设备探测',
-      activeTypeIndex: 3,
+      activeTypeIndex: 2,
     },
     component: resolve => {
       lazyLoading(resolve, 'Browser-detect', false)
@@ -35,7 +35,7 @@ var routes = [
     path: `/${PREFIX}/data`,
     meta: {
       title: '数据获取',
-      activeTypeIndex: 0,
+      activeTypeIndex: 2,
     },
     component: resolve => {
       lazyLoading(resolve, 'Data', false)

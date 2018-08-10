@@ -5,7 +5,7 @@ var routes = [
     path: `/${PREFIX}/index`,
     meta: {
       title: '页面',
-      activeTypeIndex: 2,
+      activeTypeIndex: 1,
     },
     component: resolve => {
       lazyLoading(resolve, 'index')
@@ -15,7 +15,7 @@ var routes = [
     path: `/${PREFIX}/ui`,
     meta: {
       title: 'UI规范',
-      activeTypeIndex: 2,
+      activeTypeIndex: 1,
     },
     component: resolve => {
       lazyLoading(resolve, 'ui')
@@ -25,7 +25,7 @@ var routes = [
     path: `/${PREFIX}/cart`,
     meta: {
       title: '购物车',
-      activeTypeIndex: 2,
+      activeTypeIndex: 1,
       isShowFooter: false
     },
     component: resolve => {
@@ -36,7 +36,7 @@ var routes = [
     path: `/${PREFIX}/member-center`,
     meta: {
       title: '个人中心',
-      activeTypeIndex: 2,
+      activeTypeIndex: 1,
     },
     component: resolve => {
       lazyLoading(resolve, 'member-center')
