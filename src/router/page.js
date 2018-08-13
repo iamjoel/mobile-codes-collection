@@ -33,13 +33,23 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/member-center`,
+    path: `/${PREFIX}/common/member-center`,
     meta: {
       title: '个人中心',
       activeTypeIndex: 1,
     },
     component: resolve => {
-      lazyLoading(resolve, 'member-center')
+      lazyLoading(resolve, 'common/member-center')
+    },
+  },
+  {
+    path: `/${PREFIX}/common/register`,
+    meta: {
+      title: '个人中心',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'common/register')
     },
   },
  
