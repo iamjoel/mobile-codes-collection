@@ -1,6 +1,6 @@
 <template>
   <div class="register-page">
-    <div class="form__item">
+    <div class="form__item ly ly-j ly-m">
       <input type="text" class="form__item-input" placeholder="请输入手机号" v-model="model.tel">
       <a href="javascript:void(0);" class="get-code-btn" v-if="!hasSend" @click="send">获取验证码</a>
       <a href="javascript:void(0);" class="get-code-btn" v-else>{{countDown}}s后重新发送</a>

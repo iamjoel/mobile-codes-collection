@@ -45,11 +45,21 @@ var routes = [
   {
     path: `/${PREFIX}/common/register`,
     meta: {
-      title: '个人中心',
+      title: '注册',
       activeTypeIndex: 1,
     },
     component: resolve => {
       lazyLoading(resolve, 'common/register')
+    },
+  },
+  {
+    path: `/${PREFIX}/common/login`,
+    meta: {
+      title: '登录',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'common/login')
     },
   },
  

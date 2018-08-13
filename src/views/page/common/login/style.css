@@ -1,12 +1,7 @@
-.register-page{
+.login-page{
 	padding-top: .8rem;
 	height: 100vh;
 	background: #ffffff;
-}
-
-.full {
-	min-height: 100vh;
-	width: 6.4rem;
 }
 
 .form__item{
@@ -20,16 +15,6 @@
 	border: none;
 	font-size: 13px;
 	color: #a0a0a0;
-}
-
-.get-code-btn{
-	margin-right: .2rem;
-	padding: 0 .2rem;
-	height: .4rem;
-  line-height: .4rem;
-	border: .01rem solid #ededed;
-	border-radius: .2rem;
-	color: #909090;
 }
 
 .login-btn{
@@ -46,13 +31,6 @@
 	color: #ffffff;
 }
 
-.strong-text{
-	color: #ff8b33;
-}
-
-.tip{
-	font-size: 15px;
-}
 
 
 
