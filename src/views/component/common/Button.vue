@@ -30,7 +30,18 @@
     <div class="demo__title">自定义按钮标签</div>
     <van-button type="primary" tag="a" href="http://www.luoo.net/" target="_blank">点我跳转到落网</van-button>
 
-    <div>缺少带图标的按钮</div>
+    <div class="demo__title">带图标的按钮</div>
+    <van-button type="primary" size="small">
+      <div class="ly ly-m">
+        <van-icon name="add" class="mr-10rem"/>
+        主要按钮
+      </div>
+    </van-button>
+
+    <div class="demo__title">带阴影的按钮</div>
+    <div class="ly ly-c mv-20rem ph-10rem">
+      <van-button size="large" type="primary" class="btn--shadow">带阴影</van-button>
+    </div>
   </div>
 </template>
 
@@ -47,4 +58,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+  .btn--shadow {
+    box-shadow: 0px 3px 7px #000;
+  }
+</style>
