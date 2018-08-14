@@ -22,6 +22,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/axios/customer-error-handler`,
+    meta: {
+      title: '自定义错误处理',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'axios/Customer-error-handler', false)
+    },
+  },
+  {
     path: `/${PREFIX}/browser-detect`,
     meta: {
       title: '浏览器&设备探测',

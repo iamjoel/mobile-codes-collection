@@ -10,7 +10,7 @@
         <van-icon name="records" />
         <div class="mt-10 ta-c">数据获取</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/tool/axios/customer-error-handler')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">自定义处理报错</div>
       </a>
