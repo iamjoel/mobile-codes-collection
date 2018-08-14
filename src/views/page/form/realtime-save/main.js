@@ -1,8 +1,11 @@
+import autoSave from '@/mixin/auto-save'
+
 export default {
+  mixins: [autoSave],
   data() {
     return {
-      showArea: false,
-      model:{
+      saveKey: 'realtime-save-example',// 自动保存一定要有这个属性
+      model:{ // 自动保存 model 里的内容
         
       },
       previewUrl: {
