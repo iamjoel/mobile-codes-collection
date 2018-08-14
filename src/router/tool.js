@@ -42,6 +42,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/i18n`,
+    meta: {
+      title: '浏览器&设备探测',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'I18n', false)
+    },
+  },
+  {
     path: `/${PREFIX}/browser-detect`,
     meta: {
       title: '浏览器&设备探测',
