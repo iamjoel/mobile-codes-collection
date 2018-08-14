@@ -66,11 +66,31 @@ var routes = [
   {
     path: `/${PREFIX}/form/add-and-edit`,
     meta: {
-      title: '登录',
+      title: '新增&编辑',
       activeTypeIndex: 1,
     },
     component: resolve => {
       lazyLoading(resolve, 'form/add-and-edit')
+    },
+  },
+  {
+    path: `/${PREFIX}/form/realtime-save`,
+    meta: {
+      title: '新增实时保存',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/realtime-save')
+    },
+  },
+  {
+    path: `/${PREFIX}/form/valid`,
+    meta: {
+      title: '表单验证',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/valid')
     },
   },
  
