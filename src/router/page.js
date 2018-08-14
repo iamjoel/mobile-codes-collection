@@ -62,6 +62,17 @@ var routes = [
       lazyLoading(resolve, 'common/login')
     },
   },
+
+  {
+    path: `/${PREFIX}/form/add-and-edit`,
+    meta: {
+      title: '登录',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/add-and-edit')
+    },
+  },
  
 ]
 

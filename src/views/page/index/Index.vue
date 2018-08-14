@@ -30,7 +30,7 @@
     </div>
     <h2 class="demo-classify__title">表单</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/form/add-and-edit')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">新增&编辑</div>
       </a>
