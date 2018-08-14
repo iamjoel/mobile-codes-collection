@@ -15,6 +15,21 @@
         <div class="mt-10 ta-c">自定义处理报错</div>
       </a>
     </div>
+    <h2 class="demo-classify__title">微信相关</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/tool/wechat/fetch-user-info')" class="nav__item">
+        <van-icon name="contact" />
+        <div class="mt-10 ta-c">获取用户信息</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/tool/wechat/share')" class="nav__item">
+        <van-icon name="wechat" />
+        <div class="mt-10 ta-c">分享</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/tool/wechat/pay')" class="nav__item">
+        <van-icon name="debit-pay" />
+        <div class="mt-10 ta-c">支付</div>
+      </a>
+    </div>
     <h2 class="demo-classify__title">多语言</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/tool/i18n')" class="nav__item">

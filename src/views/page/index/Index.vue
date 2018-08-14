@@ -86,17 +86,6 @@
         <div class="mt-10 ta-c">详情</div>
       </a>
     </div>
-    <h2 class="demo-classify__title">微信相关</h2>
-    <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
-        <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">分享</div>
-      </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
-        <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">支付</div>
-      </a>
-    </div>
     <h2 class="demo-classify__title">其他</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">

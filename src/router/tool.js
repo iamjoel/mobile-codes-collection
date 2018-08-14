@@ -44,11 +44,41 @@ var routes = [
   {
     path: `/${PREFIX}/i18n`,
     meta: {
-      title: '浏览器&设备探测',
+      title: '多语言',
       activeTypeIndex: 2,
     },
     component: resolve => {
       lazyLoading(resolve, 'I18n', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/wechat/fetch-user-info`,
+    meta: {
+      title: '获取用户信息',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'wechat/Fetch-user-info', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/wechat/share`,
+    meta: {
+      title: '微信分享',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'wechat/Share', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/wechat/pay`,
+    meta: {
+      title: '微信支付',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'wechat/Pay', false)
     },
   },
   {
