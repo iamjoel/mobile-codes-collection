@@ -46,7 +46,7 @@
 
     <h2 class="demo-classify__title">商城相关</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/mall/goods-list')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">商品列表</div>
       </a>

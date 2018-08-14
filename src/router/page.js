@@ -22,6 +22,17 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/mall/goods-list`,
+    meta: {
+      title: '商城列表',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/goods-list')
+    },
+  },
+  {
     path: `/${PREFIX}/cart`,
     meta: {
       title: '购物车',
