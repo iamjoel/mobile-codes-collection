@@ -6,7 +6,7 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">crud写法</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/tool/data')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/tool/axios/data')" class="nav__item">
         <van-icon name="records" />
         <div class="mt-10 ta-c">数据获取</div>
       </a>
@@ -29,8 +29,6 @@
         <div class="mt-10 ta-c">终端探测</div>
       </a>
     </div>
-    
-    
   </div>
 </template>
 

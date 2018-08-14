@@ -1,9 +1,17 @@
 <template>
   <div class="main">
     <div class="demo__title">列表</div>
+
+    <van-search 
+      placeholder="请输入搜索关键词"
+      v-model="searchCondition.name"
+      @search="fetchList"
+    />
+
     <div class="ly ly-r p-10rem">
       <van-button type="primary" size="small" @click="addModel">新增</van-button>
     </div>
+    <div class="p-10rem">按热度排序:</div>
     <div class="list">
       <div class="item ly ly-j ly-m" v-for="item in list" :key="item.id">
         <span>{{item.name}}</span>
@@ -24,12 +32,15 @@ export default {
   data() {
     return {
       KEY: 'singer',
-      list: []
+      list: [],
+      searchCondition: {
+        name: null,
+      },
     }  
   },
   methods: {
     fetchList() {
-      fetchList(this.KEY).then(({data}) => {
+      fetchList(this.KEY, this.searchCondition, undefined, ['hot', 'desc']).then(({data}) => {
         this.list = data.data
       })
     },

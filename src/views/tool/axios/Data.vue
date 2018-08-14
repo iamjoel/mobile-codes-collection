@@ -2,7 +2,7 @@
   <div class="main">
     <h2>获取单个数据</h2>
     <DataFetcher 
-      :config="{key: 'care_service', id: '238af993-3b3d-486d-87a9-88af472ec168'}">
+      :config="{key: 'singer', id: '1'}">
       <template slot-scope="scope">
         接口1数据：{{scope.data.name}}
       </template>
@@ -11,8 +11,8 @@
     <h2>获取多个数据</h2>
     <DataFetcher 
       :config="[
-        {key: 'care_service', id: '238af993-3b3d-486d-87a9-88af472ec168'},
-        {key: 'single_service', id: '1'},
+        {key: 'singer', id: '1'},
+        {key: 'singer', id: '1'},
       ]">
       <template slot-scope="scope">
         接口1数据：{{scope.data[0].name}} <br>
@@ -22,7 +22,7 @@
 
     <h2>无限加载列表</h2>
     <van-cell-group>
-      <ListFetcher key-id="skill">
+      <ListFetcher key-id="singer">
         <template slot-scope="scope" v-if="scope.data">
           <van-cell :value="scope.data.name" />
         </template>
@@ -31,7 +31,7 @@
 
     <h2>非无限加载列表</h2>
     <van-cell-group>
-      <ListFetcher key-id="skill" :is-infinate="false" :page-limit="2" :order="['name', 'desc']">
+      <ListFetcher key-id="singer" :is-infinate="false" :page-limit="2" :order="['name', 'desc']">
         <template slot-scope="scope" v-if="scope.data">
           <van-cell :value="scope.data.name" />
         </template>

@@ -14,6 +14,7 @@ var singerList = [{
 
 
 Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/list`), 'get', ({ url, body }) => {
+  console.info(`Mock GET. URL: ${url}`)
   return {
     data: singerList,
     pager: {
@@ -23,6 +24,8 @@ Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/list`), 'get', ({ url, body }) => 
 })
 
 Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/add`), 'post', ({ url, body }) => {
+  console.info(`Mock POST. URL: ${url}`)
+
   singerList.unshift(JSON.parse(body))
   return {
     data: singerList,
@@ -32,7 +35,16 @@ Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/add`), 'post', ({ url, body }) => 
   }
 })
 
+Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/detail`), 'get', ({ url, body }) => {
+  console.info(`Mock GET. URL: ${url}`)
+  return {
+    data: singerList[0],
+  }
+})
+
 Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/edit`), 'post', ({ url, body }) => {
+  console.info(`Mock POST. URL: ${url}`)
+
   var data = JSON.parse(body)
   singerList = singerList.map(item => {
     if(item.id == data.id) {
@@ -54,6 +66,8 @@ Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/edit`), 'post', ({ url, body }) =>
 
 
 Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/del`), 'post', ({ url, body }) => {
+  console.info(`Mock POST. URL: ${url}`)
+
   var id = url.split('/').pop()
   singerList = singerList.filter(item => item.id != id)
   return {
@@ -66,6 +80,8 @@ Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/del`), 'post', ({ url, body }) => 
 
 // 报错
 Mock.mock(new RegExp(`${SERVER_PREFIX}/error/list`), 'get', ({ url, body }) => {
+  console.info(`Mock GET. URL: ${url}`)
+
   return {
     errorCode: -1,
     errorMessage: '获取列表错误！哈哈哈',

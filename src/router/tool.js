@@ -22,6 +22,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/axios/data`,
+    meta: {
+      title: '数据获取',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'axios/Data', false)
+    },
+  },
+  {
     path: `/${PREFIX}/axios/customer-error-handler`,
     meta: {
       title: '自定义错误处理',
@@ -41,16 +51,7 @@ var routes = [
       lazyLoading(resolve, 'Browser-detect', false)
     },
   },
-  {
-    path: `/${PREFIX}/data`,
-    meta: {
-      title: '数据获取',
-      activeTypeIndex: 2,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'Data', false)
-    },
-  },
+  
 ]
 
 const lazyLoading = (resolve, name, index = true) => {
