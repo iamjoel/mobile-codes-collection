@@ -233,6 +233,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/alert`,
+    meta: {
+      title: '信息提示',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'alert')
+    },
+  },
+  {
     path: `/${PREFIX}/calendar`,
     meta: {
       title: '日历',

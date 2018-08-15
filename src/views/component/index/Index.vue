@@ -127,7 +127,7 @@
     <h2 class="demo-classify__title">弹出框</h2>
     <div class="ly ly-multi nav">
       
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/alert')" class="nav__item demo--unfinished">
         <van-icon name="pending-evaluate" />
         <div class="mt-10 ta-c">信息提示(Alert)</div>
       </a>
