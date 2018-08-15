@@ -263,6 +263,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/dialog/popup`,
+    meta: {
+      title: '弹出层',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'dialog/popup')
+    },
+  },
+  {
     path: `/${PREFIX}/calendar`,
     meta: {
       title: '日历',
