@@ -214,6 +214,10 @@
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">折叠面板(Collapse)</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+        <van-icon name="info-o" />
+        <div class="mt-10 ta-c">底部导航</div>
+      </a>
     </div>
     <h2 class="demo-classify__title">地图</h2>
     <div class="ly ly-multi nav">
