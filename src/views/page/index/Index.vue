@@ -56,7 +56,7 @@
       </a>
     </div>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/mall/order-list')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">订单列表</div>
       </a>
@@ -64,7 +64,7 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">支付成功&失败</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/mall/order-comment/1')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">订单评论</div>
       </a>

@@ -44,6 +44,28 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/mall/order-list`,
+    meta: {
+      title: '订单列表',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/order-list')
+    },
+  },
+  {
+    path: `/${PREFIX}/mall/order-comment/:orderId`,
+    meta: {
+      title: '订单评价',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/order-comment')
+    },
+  },
+  {
     path: `/${PREFIX}/mall/result/:type/:code`,
     meta: {
       title: '支付成功&失败',
