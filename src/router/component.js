@@ -233,13 +233,33 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/alert`,
+    path: `/${PREFIX}/dialog/alert`,
     meta: {
       title: '信息提示',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'alert')
+      lazyLoading(resolve, 'dialog/alert')
+    },
+  },
+  {
+    path: `/${PREFIX}/dialog/confirm`,
+    meta: {
+      title: '信息确认',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'dialog/confirm')
+    },
+  },
+  {
+    path: `/${PREFIX}/dialog/dialog`,
+    meta: {
+      title: '自定义弹出内容',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'dialog/dialog')
     },
   },
   {
