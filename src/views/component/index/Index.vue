@@ -210,7 +210,7 @@
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">单元格(Cell)</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/container/collapse')" class="nav__item">
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">折叠面板(Collapse)</div>
       </a>

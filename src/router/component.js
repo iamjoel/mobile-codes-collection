@@ -84,11 +84,21 @@ var routes = [
   {
     path: `/${PREFIX}/container/tab`,
     meta: {
-      title: '分类',
+      title: 'Tab 标签页',
       activeTypeIndex: 0,
     },
     component: resolve => {
       lazyLoading(resolve, 'container/Tab', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/container/collapse`,
+    meta: {
+      title: '折叠面板',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'container/Collapse', false)
     },
   },
 
