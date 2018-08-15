@@ -44,6 +44,17 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/mall/result/:type/:code`,
+    meta: {
+      title: '支付成功&失败',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/order-result')
+    },
+  },
+  {
     path: `/${PREFIX}/mall/cart`,
     meta: {
       title: '购物车',
