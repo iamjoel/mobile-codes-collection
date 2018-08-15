@@ -63,7 +63,7 @@ var routes = [
     path: `/${PREFIX}/classify-list`,
     meta: {
       title: '分类',
-      activeTypeIndex: 1,
+      activeTypeIndex: 0,
     },
     component: resolve => {
       lazyLoading(resolve, 'classify-list')
@@ -85,7 +85,7 @@ var routes = [
     path: `/${PREFIX}/container/tab`,
     meta: {
       title: '分类',
-      activeTypeIndex: 1,
+      activeTypeIndex: 0,
     },
     component: resolve => {
       lazyLoading(resolve, 'container/Tab', false)
@@ -377,7 +377,7 @@ var routes = [
     path: `/${PREFIX}/map/:lng/:lat/:name/:address`,
     meta: {
       title: '地图',
-      activeTypeIndex: 1,
+      activeTypeIndex: 0,
       isShowFooter: false,
     },
     component: resolve => {
@@ -388,7 +388,7 @@ var routes = [
     path: `/${PREFIX}/map/choose-loc`,
     meta: {
       title: '地图',
-      activeTypeIndex: 1,
+      activeTypeIndex: 0,
       isShowFooter: false,
     },
     component: resolve => {
@@ -399,7 +399,7 @@ var routes = [
     path: `/${PREFIX}/map/convert`,
     meta: {
       title: '坐标转换服务',
-      activeTypeIndex: 1,
+      activeTypeIndex: 0,
       isShowFooter: false,
     },
     component: resolve => {

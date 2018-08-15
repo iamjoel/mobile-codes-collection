@@ -24,7 +24,7 @@ var routes = [
   {
     path: `/${PREFIX}/mall/goods-list`,
     meta: {
-      title: '商城列表',
+      title: '商品列表',
       activeTypeIndex: 1,
       isShowFooter: false
     },
@@ -33,14 +33,25 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/cart`,
+    path: `/${PREFIX}/mall/goods-detail/:id`,
+    meta: {
+      title: '商品详情',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/goods-detail')
+    },
+  },
+  {
+    path: `/${PREFIX}/mall/cart`,
     meta: {
       title: '购物车',
       activeTypeIndex: 1,
       isShowFooter: false
     },
     component: resolve => {
-      lazyLoading(resolve, 'cart')
+      lazyLoading(resolve, '/mall/cart')
     },
   },
   {

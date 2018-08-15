@@ -50,7 +50,7 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">商品列表</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/mall/goods-detail/3')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">商品详情</div>
       </a>
@@ -70,7 +70,7 @@
       </a>
     </div>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/page/cart')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/mall/page/cart')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">购物车</div>
       </a>
