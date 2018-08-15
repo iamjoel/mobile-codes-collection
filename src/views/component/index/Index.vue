@@ -146,15 +146,15 @@
     </div>
     <h2 class="demo-classify__title">提示</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/toast/toast')" class="nav__item">
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">轻提示(Toast)</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/toast/toast-loading')" class="nav__item">
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">加载中</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/tool-tip')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/component/toast/tool-tip')" class="nav__item">
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">ToolTip</div>
       </a>
@@ -207,7 +207,7 @@
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">标签页(Tab)</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/container/cell')" class="nav__item">
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">单元格(Cell)</div>
       </a>
@@ -215,7 +215,7 @@
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">折叠面板(Collapse)</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/container/tabbar')" class="nav__item demo--unfinished">
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">底部导航</div>
       </a>

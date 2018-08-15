@@ -92,6 +92,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/container/cell`,
+    meta: {
+      title: 'Cell 单元格',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'container/Cell', false)
+    },
+  },
+  {
     path: `/${PREFIX}/container/collapse`,
     meta: {
       title: '折叠面板',
@@ -99,6 +109,16 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'container/Collapse', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/container/tabbar`,
+    meta: {
+      title: '底部导航',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'container/Tabbar', false)
     },
   },
 
@@ -403,13 +423,33 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/tool-tip`,
+    path: `/${PREFIX}/toast/toast`,
+    meta: {
+      title: '轻提示',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'toast/toast')
+    },
+  },
+  {
+    path: `/${PREFIX}/toast/toast-loading`,
+    meta: {
+      title: '加载中',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'toast/toast-loading')
+    },
+  },
+  {
+    path: `/${PREFIX}/toast/tool-tip`,
     meta: {
       title: '角标',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'tool-tip')
+      lazyLoading(resolve, 'toast/tool-tip')
     },
   },
   {
