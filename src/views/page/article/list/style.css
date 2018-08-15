@@ -1,0 +1,12 @@
+.media__main {
+  flex-direction: column;
+  height: 1.35rem;
+  line-height: 1.5;
+}
+.media__title {
+  font-size: 14px;
+}
+
+.media__time {
+  color: #a1a1a1;
+}

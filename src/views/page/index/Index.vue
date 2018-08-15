@@ -70,18 +70,18 @@
       </a>
     </div>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/mall/page/cart')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/page/mall/cart')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">购物车</div>
       </a>
     </div>
     <h2 class="demo-classify__title">文章&新闻</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/article/list')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">列表</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/article/detail/3')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">详情</div>
       </a>

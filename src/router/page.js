@@ -21,6 +21,69 @@ var routes = [
       lazyLoading(resolve, 'ui')
     },
   },
+  
+  {
+    path: `/${PREFIX}/common/register`,
+    meta: {
+      title: '注册',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'common/register')
+    },
+  },
+  {
+    path: `/${PREFIX}/common/login`,
+    meta: {
+      title: '登录',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'common/login')
+    },
+  },
+
+  {
+    path: `/${PREFIX}/common/member-center`,
+    meta: {
+      title: '个人中心',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'common/member-center')
+    },
+  },
+
+  {
+    path: `/${PREFIX}/form/add-and-edit`,
+    meta: {
+      title: '新增&编辑',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/add-and-edit')
+    },
+  },
+  {
+    path: `/${PREFIX}/form/realtime-save`,
+    meta: {
+      title: '新增实时保存',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/realtime-save')
+    },
+  },
+  {
+    path: `/${PREFIX}/form/valid`,
+    meta: {
+      title: '表单验证',
+      activeTypeIndex: 1,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/valid')
+    },
+  },
   {
     path: `/${PREFIX}/mall/goods-list`,
     meta: {
@@ -84,68 +147,30 @@ var routes = [
       isShowFooter: false
     },
     component: resolve => {
-      lazyLoading(resolve, '/mall/cart')
-    },
-  },
-  {
-    path: `/${PREFIX}/common/member-center`,
-    meta: {
-      title: '个人中心',
-      activeTypeIndex: 1,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'common/member-center')
-    },
-  },
-  {
-    path: `/${PREFIX}/common/register`,
-    meta: {
-      title: '注册',
-      activeTypeIndex: 1,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'common/register')
-    },
-  },
-  {
-    path: `/${PREFIX}/common/login`,
-    meta: {
-      title: '登录',
-      activeTypeIndex: 1,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'common/login')
+      lazyLoading(resolve, 'mall/cart')
     },
   },
 
   {
-    path: `/${PREFIX}/form/add-and-edit`,
+    path: `/${PREFIX}/article/list`,
     meta: {
-      title: '新增&编辑',
+      title: '',
       activeTypeIndex: 1,
+      isShowFooter: false
     },
     component: resolve => {
-      lazyLoading(resolve, 'form/add-and-edit')
+      lazyLoading(resolve, 'article/list')
     },
   },
   {
-    path: `/${PREFIX}/form/realtime-save`,
+    path: `/${PREFIX}/article/detail/:id`,
     meta: {
-      title: '新增实时保存',
+      title: '',
       activeTypeIndex: 1,
+      isShowFooter: false
     },
     component: resolve => {
-      lazyLoading(resolve, 'form/realtime-save')
-    },
-  },
-  {
-    path: `/${PREFIX}/form/valid`,
-    meta: {
-      title: '表单验证',
-      activeTypeIndex: 1,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'form/valid')
+      lazyLoading(resolve, 'article/detail')
     },
   },
  
