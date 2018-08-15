@@ -1,0 +1,16 @@
+.main {
+  margin-top: .16rem;
+  padding: .3rem 0;
+  background-color: #fff;
+}
+
+.field__input{
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto .33rem;
+  border: 1px solid #c6c6c6;
+  width: 5.88rem;
+  height: 3.24rem;
+  padding: .2rem;
+  line-height: 1.2;
+}

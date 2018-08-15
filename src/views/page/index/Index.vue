@@ -88,15 +88,15 @@
     </div>
     <h2 class="demo-classify__title">其他</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/other/argument')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">用户协议</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/other/faq')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">常见问题</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/page/other/feedback')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">意见反馈</div>
       </a>

@@ -154,7 +154,7 @@ var routes = [
   {
     path: `/${PREFIX}/article/list`,
     meta: {
-      title: '',
+      title: '文章列表',
       activeTypeIndex: 1,
       isShowFooter: false
     },
@@ -165,12 +165,46 @@ var routes = [
   {
     path: `/${PREFIX}/article/detail/:id`,
     meta: {
-      title: '',
+      title: '文章详情',
       activeTypeIndex: 1,
       isShowFooter: false
     },
     component: resolve => {
       lazyLoading(resolve, 'article/detail')
+    },
+  },
+
+  {
+    path: `/${PREFIX}/other/argument`,
+    meta: {
+      title: '',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/argument/User', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/other/faq`,
+    meta: {
+      title: '',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/faq')
+    },
+  },
+  {
+    path: `/${PREFIX}/other/feedback`,
+    meta: {
+      title: '',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/feedback')
     },
   },
  
