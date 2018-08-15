@@ -1,0 +1,28 @@
+.main {
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* 修复 ios 上因为内容太多，滚动条滚动生涩的问题。*/
+}
+.content {
+  padding: .2rem;
+}
+.main h1 {
+  margin: .3rem 0;
+  font-size: 18px;
+  font-family: tahoma,arial,"STXihei","Microsoft YaHei New", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", SimSun;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.main p {
+  margin-bottom: 1em;
+}
+
+.main h2{
+  margin-bottom: .2rem;
+}

@@ -1,19 +1,19 @@
 <template>
   <div class="main">
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         基础用法
       </div>
       <van-checkbox v-model="checked">复选框</van-checkbox>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         禁用状态
       </div>
       <van-checkbox v-model="checked" disabled>复选框</van-checkbox>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         自定义图标
       </div>
       <van-checkbox v-model="checked">
@@ -26,7 +26,7 @@
       </van-checkbox>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         checkbox组
       </div>
       <van-checkbox-group v-model="result">
@@ -40,7 +40,7 @@
       </van-checkbox-group>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         与cell组件一起使用
       </div>
       <van-checkbox-group v-model="result">

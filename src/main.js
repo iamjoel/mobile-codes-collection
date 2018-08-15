@@ -3,6 +3,21 @@ require('@/assets/vendor/rem')
 import Vue from 'vue'
 Vue.config.productionTip = false
 
+// 多语言
+import VueI18n from 'vue-i18n'
+Vue.use(VueI18n)
+const i18n = new VueI18n({
+  locale: 'zh',
+  messages: {
+    zh: {// 中文
+
+    },
+    en: {// 英文
+
+    }
+  }
+})
+
 // vant ui
 import Vant from 'vant'
 import 'vant/lib/vant-css/index.css'
@@ -59,8 +74,11 @@ router.afterEach((to,from,next) => { // 进入新页面时，页面总是滚动�
 
 import App from './App.vue'
 
+
+
 new Vue({
   el: '#app',
+  i18n,
   router,
   template: '<App/>',
   components: { App },

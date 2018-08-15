@@ -1,7 +1,7 @@
 body {
   background-color: #f8f8f8;
 }
-.demo-classify-title{
+.demo-classify__title{
   font-size: 16px;
   margin: .2rem;
   padding-left: .2rem;
@@ -12,24 +12,14 @@ body {
 .demo--unfinished {
   color: #f00;
 }
-.label {
+/* 待完善 */
+.demo--not-perfect {
+  color: yellow;
+}
+.demo__title {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   color: rgba(69,90,100,.6);
-  padding: 40px 15px 15px;
-}
-.demo-block:first-of-type .label {
-  padding-top: 20px;
-}
-.btn {
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  background-color: #2196f3;
-  width: 60px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #2196f3;
-  border-radius: 5px;
+  padding: 15px;
 }

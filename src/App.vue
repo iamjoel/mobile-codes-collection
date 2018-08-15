@@ -14,9 +14,9 @@
     <van-tabbar v-model="activeTypeIndex" v-show="$store.state.isShowFooter">
       <van-tabbar-item icon="wap-home" url="#/">组件
       </van-tabbar-item>
-      <van-tabbar-item icon="gift" url="#/reset/index">组件重置</van-tabbar-item>
       <van-tabbar-item icon="wap-nav" url="#/page/index">页面</van-tabbar-item>
-      <van-tabbar-item icon="contact" url="#/tool/index">工具&其他</van-tabbar-item>
+      <van-tabbar-item icon="contact" url="#/tool/index">工具</van-tabbar-item>
+      <van-tabbar-item icon="info-o" url="#/doc">文档</van-tabbar-item>
     </van-tabbar>
   </div>
 </template>
@@ -24,7 +24,8 @@
 <script>
 import {urls} from '@/setting'
 import * as types from '@/store/mutation-types'
-
+// 接口mock
+require('@/service/mock')
 export default {
   name: 'app',
   data() {

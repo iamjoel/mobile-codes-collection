@@ -1,0 +1,148 @@
+.filter {
+  margin: .18rem 0;
+  padding: .12rem .2rem;
+  font-size: 13px;
+  background-color: #fff;
+}
+
+.filter-item {
+  display: block;
+  text-align: center;
+  border-radius: .4rem;
+  width: 1.3rem;
+  height: .52rem;
+  line-height: .52rem;
+  color: #383838;
+}
+
+.filter-item-active {
+  color: #fff;
+  background-color: #fe8d33;
+}
+
+.item {
+  margin: 0 .25rem .18rem;
+  border-radius: .12rem;
+  background-color: #fff;
+}
+
+.item-status {
+  padding: .16rem;
+  color: #ee5909;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.item-status--not-comment {
+  color: #64be79;
+}
+
+.item__info {
+  padding-top: .12rem;
+}
+
+.item__des {
+  margin-bottom: .18rem;
+}
+
+.item__label {
+  flex: .5;
+  /*margin-right: .27rem;*/
+  padding-left: .32rem;
+  background-repeat: no-repeat;
+  color: #aaaaaa;
+}
+
+.item__label--code {
+  background-size: .18rem .2rem;
+  background-image: url(./images/code.png);
+}
+
+.item__label--service {
+  background-size: .16rem .18rem;
+  background-image: url(./images/service.png);
+}
+
+.item__label--time {
+  background-size: .2rem .2rem;
+  background-image: url(./images/time.png);
+}
+
+.item__value {
+  flex: 1;
+}
+
+.item__comment {
+  margin-top: .22rem;
+}
+
+.item__btn {
+  text-align: center;
+  width: 1.02rem;
+  height: .38rem;
+  line-height: .38rem;
+  border: 1px solid #fe8d33;
+  color: #fe8d33;
+  border-radius: .12rem;
+}
+
+.status-btn {
+  padding-right: .63rem;
+  background-image: url(./images/unfold.png);
+  background-repeat: no-repeat;
+  background-size: .22rem .12rem;
+  background-position: .6rem center;
+  color: #b7b7b7;
+}
+
+.status-btn--close {
+background-image: url(./images/pack-up.png);
+}
+
+.order-table {
+  display: block;
+  margin-top: .1rem;
+  padding-left: .2rem;
+  padding-right: .52rem;
+}
+
+.order-table th {
+  margin-bottom: .24rem;
+  text-align: left;
+  color: #aaaaaa;
+}
+
+thead tr{
+  height: .47rem;
+}
+
+tbody tr {
+  height: .6rem;
+}
+
+th:first-child {
+  width: 2.3rem;
+}
+
+th:nth-child(2) {
+  width: 1.9rem;
+}
+
+th:last-child {
+  text-align: center;
+}
+
+.order-it-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.02rem;
+  height: .38rem;
+  color: #fff;
+  background-color: #ff6666;
+  border-radius: .12rem;
+  font-size: 12px;
+}
+
+.order-it-none {
+  text-align: center;
+}

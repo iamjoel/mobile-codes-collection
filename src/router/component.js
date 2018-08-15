@@ -13,37 +13,57 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/slider`,
+    path: `/${PREFIX}/common/button`,
     meta: {
+      title: '按钮',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'slider/Normal', false)
+      lazyLoading(resolve, 'common/Button', false)
     },
   },
   {
-    path: `/${PREFIX}/slider/vertical`,
+    path: `/${PREFIX}/common/tag`,
     meta: {
+      title: '标签',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'slider/vertical')
+      lazyLoading(resolve, 'common/Tag', false)
     },
   },
   {
-    path: `/${PREFIX}/slider/notice-bar`,
+    path: `/${PREFIX}/swipe`,
     meta: {
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'slider/notice-bar')
+      lazyLoading(resolve, 'swipe/Normal', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/swipe/vertical`,
+    meta: {
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'swipe/vertical')
+    },
+  },
+  {
+    path: `/${PREFIX}/swipe/notice-bar`,
+    meta: {
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'swipe/notice-bar')
     },
   },
   {
     path: `/${PREFIX}/classify-list`,
     meta: {
       title: '分类',
-      activeTypeIndex: 1,
+      activeTypeIndex: 0,
     },
     component: resolve => {
       lazyLoading(resolve, 'classify-list')
@@ -61,6 +81,27 @@ var routes = [
       lazyLoading(resolve, 'Media', false)
     },
   },
+  {
+    path: `/${PREFIX}/container/tab`,
+    meta: {
+      title: 'Tab 标签页',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'container/Tab', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/container/collapse`,
+    meta: {
+      title: '折叠面板',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'container/Collapse', false)
+    },
+  },
+
   {
     path: `/${PREFIX}/form`,
     meta: {
@@ -162,6 +203,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/form/slide`,
+    meta: {
+      title: '滑块(Slider)',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/Slide', false)
+    },
+  },
+  {
     path: `/${PREFIX}/rate`,
     meta: {
       title: '评分',
@@ -172,9 +223,19 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/form/stop-multiple-submit`,
+    meta: {
+      title: '防止多次提交',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/Stop-multiple-submit', false)
+    },
+  },
+  {
     path: `/${PREFIX}/calendar`,
     meta: {
-      title: '表单',
+      title: '日历',
       activeTypeIndex: 0,
     },
     component: resolve => {
@@ -189,6 +250,16 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'list/Infinate-load', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/list/pagination`,
+    meta: {
+      title: '分页',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'list/Pagination', false)
     },
   },
   {
@@ -252,6 +323,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/img/img-description`,
+    meta: {
+      title: '图片底部有描述文字',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'img/Img-description', false)
+    },
+  },
+  {
     path: `/${PREFIX}/img/img-preview`,
     meta: {
       title: '图片预览',
@@ -272,6 +353,26 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/icon/vant`,
+    meta: {
+      title: 'Vant 图标',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'icon/Vant', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/tool-tip`,
+    meta: {
+      title: '角标',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'tool-tip')
+    },
+  },
+  {
     path: `/${PREFIX}/singer`,
     meta: {
       title: '歌手',
@@ -281,25 +382,38 @@ var routes = [
       lazyLoading(resolve, 'singer')
     },
   },
-  {
-    path: `/${PREFIX}/data`,
-    meta: {
-      title: '数据获取',
-      activeTypeIndex: 0,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'Data', false)
-    },
-  },
+  
   {
     path: `/${PREFIX}/map/:lng/:lat/:name/:address`,
     meta: {
       title: '地图',
-      activeTypeIndex: 1,
+      activeTypeIndex: 0,
       isShowFooter: false,
     },
     component: resolve => {
-      lazyLoading(resolve, 'map')
+      lazyLoading(resolve, 'map/Navigator', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/map/choose-loc`,
+    meta: {
+      title: '地图',
+      activeTypeIndex: 0,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'map/Choose-loc', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/map/convert`,
+    meta: {
+      title: '坐标转换服务',
+      activeTypeIndex: 0,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'map/Convert', false)
     },
   },
 ]

@@ -1231,7 +1231,7 @@ colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
-commander@2.16.x, commander@^2.13.0, commander@~2.16.0:
+commander@*, commander@2.16.x, commander@^2.13.0, commander@~2.16.0:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.16.0.tgz#f16390593996ceb4f3eeb020b31d78528f7f8a50"
 
@@ -1432,9 +1432,9 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
-css-utils-collection@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/css-utils-collection/-/css-utils-collection-1.4.0.tgz#63a5d13c8e54f4aecbd504fac52fe307983edfb5"
+css-utils-collection@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/css-utils-collection/-/css-utils-collection-1.5.1.tgz#715e106c65a99f9a44a400d5ed22417c5f89b8fa"
 
 css-what@2.1:
   version "2.1.0"
@@ -2908,6 +2908,12 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mockjs@^1.0.1-beta3:
+  version "1.0.1-beta3"
+  resolved "https://registry.yarnpkg.com/mockjs/-/mockjs-1.0.1-beta3.tgz#d234f3c27256397564f2c955142e891909537209"
+  dependencies:
+    commander "*"
+
 moment@^2.18.1:
   version "2.22.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
@@ -3325,6 +3331,10 @@ pkg-dir@^2.0.0:
   resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
+
+popper.js@1.12.5:
+  version "1.12.5"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.12.5.tgz#229e4dea01629e1f1a1e26991ffade5024220fa6"
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
@@ -4537,9 +4547,9 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vant@^1.1.3:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/vant/-/vant-1.1.14.tgz#53df9a8c5e131fa165e995bd4ffc9606f72a3e90"
+vant@^1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/vant/-/vant-1.1.15.tgz#20e5f5ec1c008439fecf552f93a203bc412c1340"
   dependencies:
     babel-runtime "6.x"
     vue-lazyload "1.2.3"
@@ -4558,9 +4568,19 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-directive-tooltip@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/vue-directive-tooltip/-/vue-directive-tooltip-1.4.5.tgz#d55519132cd7d405d4e941d6bea0a0da01ef6278"
+  dependencies:
+    popper.js "1.12.5"
+
 vue-hot-reload-api@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
+
+vue-i18n@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.0.0.tgz#ae0c6e05ec8e36151bcf5f47c7b538c8af6d0282"
 
 vue-lazyload@1.2.3:
   version "1.2.3"
@@ -4595,6 +4615,10 @@ vue-meta@^1.4.3:
 vue-router@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
+
+vue-slider-component@^2.7.5:
+  version "2.7.5"
+  resolved "https://registry.yarnpkg.com/vue-slider-component/-/vue-slider-component-2.7.5.tgz#a0454cd2eb7b936765a755ec46c8b7e773cc961d"
 
 vue-style-loader@^3.0.0, vue-style-loader@^3.0.1:
   version "3.1.2"

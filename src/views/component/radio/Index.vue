@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         基础用法
       </div>
       <van-radio-group v-model="radio">
@@ -10,7 +10,7 @@
       </van-radio-group>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         在同一行
       </div>
       <div class="ly ly-j ly-m line">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         禁用状态
       </div>
       <van-radio-group v-model="radio" disabled>
@@ -31,7 +31,7 @@
       </van-radio-group>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         自定义颜色
       </div>
       <div class="custom">
@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="demo-block">
-      <div class="label">
+      <div class="demo__title">
         与cell组件一起使用
       </div>
       <van-radio-group v-model="radio">

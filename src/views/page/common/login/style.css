@@ -1,0 +1,36 @@
+.login-page{
+	padding-top: .8rem;
+	height: 100vh;
+	background: #ffffff;
+}
+
+.form__item{
+	height: .8rem;
+	padding: .1rem 0 .1rem .5rem;
+	border-bottom:.01rem solid #f0f0f0;
+}
+
+.form__item-input{
+	height: 100%;
+	border: none;
+	font-size: 13px;
+	color: #a0a0a0;
+}
+
+.login-btn{
+	display: block;
+	margin: .7rem auto .3rem;
+	text-align: center;
+	width: 4.35rem;
+	height: .75rem;
+	line-height: .75rem;
+	background-size: 100% 100%;
+	background-image: url(./images/login-btn-img.png);
+	background-repeat: no-repeat;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+
+
+
