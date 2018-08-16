@@ -3,6 +3,10 @@
     <van-cell title="选择水果" @click="show = true">
     </van-cell>
     <van-popup v-model="show" position="bottom" :overlay="true">
+      <div class="van-hairline--top-bottom van-picker__toolbar">
+        <div class="van-picker__cancel" @click="show = false">取消</div>
+        <div class="van-picker__confirm" @click="show = false">确认</div>
+      </div>
       <van-checkbox-group v-model="result">
         <van-cell-group>
           <van-cell

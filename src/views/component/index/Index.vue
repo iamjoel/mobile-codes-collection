@@ -215,7 +215,7 @@
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">折叠面板(Collapse)</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/container/tabbar')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/container/tabbar')" class="nav__item">
         <van-icon name="info-o" />
         <div class="mt-10 ta-c">底部导航</div>
       </a>
