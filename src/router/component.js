@@ -35,6 +35,7 @@ var routes = [
   {
     path: `/${PREFIX}/swipe`,
     meta: {
+      title: 'Banner轮播',
       activeTypeIndex: 0,
     },
     component: resolve => {
@@ -44,6 +45,7 @@ var routes = [
   {
     path: `/${PREFIX}/swipe/vertical`,
     meta: {
+      title: '垂直轮播',
       activeTypeIndex: 0,
     },
     component: resolve => {
@@ -53,32 +55,11 @@ var routes = [
   {
     path: `/${PREFIX}/swipe/notice-bar`,
     meta: {
+      title: '通告栏',
       activeTypeIndex: 0,
     },
     component: resolve => {
       lazyLoading(resolve, 'swipe/notice-bar')
-    },
-  },
-  {
-    path: `/${PREFIX}/classify-list`,
-    meta: {
-      title: '分类',
-      activeTypeIndex: 0,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'classify-list')
-    },
-  },
-  
- 
-  {
-    path: `/${PREFIX}/media`,
-    meta: {
-      title: 'Media',
-      activeTypeIndex: 0,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'Media', false)
     },
   },
   {
@@ -123,103 +104,113 @@ var routes = [
   },
 
   {
-    path: `/${PREFIX}/form`,
+    path: `/${PREFIX}/form/form`,
     meta: {
       title: '表单',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'Form', false)
+      lazyLoading(resolve, 'form/Form', false)
     },
   },
   {
-    path: `/${PREFIX}/field`,
+    path: `/${PREFIX}/form/field`,
     meta: {
       title: '输入框',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'field')
+      lazyLoading(resolve, 'form/field')
     },
   },
   {
-    path: `/${PREFIX}/radio`,
+    path: `/${PREFIX}/form/radio`,
     meta: {
       title: '单选框',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'radio')
+      lazyLoading(resolve, 'form/radio')
     },
   },
   {
-    path: `/${PREFIX}/checkbox`,
+    path: `/${PREFIX}/form/checkbox`,
     meta: {
       title: '复选框',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'checkbox')
+      lazyLoading(resolve, 'form/checkbox')
     },
   },
   {
-    path: `/${PREFIX}/switch`,
+    path: `/${PREFIX}/form/switch`,
     meta: {
       title: '开关',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'switch')
+      lazyLoading(resolve, 'form/switch')
     },
   },
   {
-    path: `/${PREFIX}/select-radio`,
+    path: `/${PREFIX}/form/select-radio`,
     meta: {
-      title: '弹出层单选',
+      title: '选择器(Picker)单选',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'select-radio')
+      lazyLoading(resolve, 'form/select-radio')
     },
   },
   {
-    path: `/${PREFIX}/select-checkbox`,
+    path: `/${PREFIX}/form/select-checkbox`,
     meta: {
-      title: '弹出层多选',
+      title: '选择器(Picker)多选',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'select-checkbox')
+      lazyLoading(resolve, 'form/select-checkbox')
     },
   },
   {
-    path: `/${PREFIX}/datetimePicker`,
+    path: `/${PREFIX}/form/datetimePicker`,
     meta: {
-      title: '时间选择',
+      title: '日期&时间',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'datetimePicker')
+      lazyLoading(resolve, 'form/datetimePicker')
     },
   },
   {
-    path: `/${PREFIX}/uploader-single`,
+    path: `/${PREFIX}/form/calendar`,
+    meta: {
+      title: '日历',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/calendar')
+    },
+  },
+  {
+    path: `/${PREFIX}/form/uploader-single`,
     meta: {
       title: '单图片上传',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'uploader-single')
+      lazyLoading(resolve, 'form/uploader-single')
     },
   },
   {
-    path: `/${PREFIX}/uploader-more`,
+    path: `/${PREFIX}/form/uploader-more`,
     meta: {
       title: '多图片上传',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'uploader-more')
+      lazyLoading(resolve, 'form/uploader-more')
     },
   },
   {
@@ -233,13 +224,23 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/rate`,
+    path: `/${PREFIX}/form/rate`,
     meta: {
       title: '评分',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'rate')
+      lazyLoading(resolve, 'form/rate')
+    },
+  },
+  {
+    path: `/${PREFIX}/form/tree-select`,
+    meta: {
+      title: '树形分类选择(TreeSelect)',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'form/TreeSelect', false)
     },
   },
   {
@@ -290,16 +291,6 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'dialog/popup')
-    },
-  },
-  {
-    path: `/${PREFIX}/calendar`,
-    meta: {
-      title: '日历',
-      activeTypeIndex: 0,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'calendar')
     },
   },
   {
@@ -363,23 +354,13 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/tree-select`,
+    path: `/${PREFIX}/img/media`,
     meta: {
-      title: '分类选择',
+      title: 'Media',
       activeTypeIndex: 0,
     },
     component: resolve => {
-      lazyLoading(resolve, 'TreeSelect', false)
-    },
-  },
-  {
-    path: `/${PREFIX}/img/lazyload`,
-    meta: {
-      title: '懒加载',
-      activeTypeIndex: 0,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'img/Lazyload', false)
+      lazyLoading(resolve, 'img/Media', false)
     },
   },
   {
@@ -390,6 +371,16 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'img/Img-description', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/img/lazyload`,
+    meta: {
+      title: '懒加载',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'img/Lazyload', false)
     },
   },
   {
@@ -452,17 +443,6 @@ var routes = [
       lazyLoading(resolve, 'toast/tool-tip')
     },
   },
-  {
-    path: `/${PREFIX}/singer`,
-    meta: {
-      title: '歌手',
-      activeTypeIndex: 0,
-    },
-    component: resolve => {
-      lazyLoading(resolve, 'singer')
-    },
-  },
-  
   {
     path: `/${PREFIX}/map/:lng/:lat/:name/:address`,
     meta: {
