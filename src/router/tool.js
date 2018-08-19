@@ -82,13 +82,23 @@ var routes = [
     },
   },
   {
-    path: `/${PREFIX}/browser-detect`,
+    path: `/${PREFIX}/other/time`,
+    meta: {
+      title: '时间',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/Time', false)
+    },
+  },
+  {
+    path: `/${PREFIX}/other/browser-detect`,
     meta: {
       title: '浏览器&设备探测',
       activeTypeIndex: 2,
     },
     component: resolve => {
-      lazyLoading(resolve, 'Browser-detect', false)
+      lazyLoading(resolve, 'other/Browser-detect', false)
     },
   },
   

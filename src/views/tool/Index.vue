@@ -37,9 +37,13 @@
         <div class="mt-10 ta-c">多语言</div>
       </a>
     </div>
-    <h2 class="demo-classify__title">工具</h2>
+    <h2 class="demo-classify__title">其他</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('/tool/browser-detect')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/tool/other/time')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">时间</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/tool/other/browser-detect')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">终端探测</div>
       </a>

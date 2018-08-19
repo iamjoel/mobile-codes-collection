@@ -21,6 +21,30 @@ Vue.filter('time', function (value, format="YYYY-MM-DD") {
   return moment(value).format(format)
 })
 
+// 距当前的时间
+Vue.filter('diffNow', function (value, notShowDetail, format="YYYY-MM-DD") {
+  if(!value) {
+    return ''
+  }
+  var diff = (Date.now() - moment(value).valueOf()) / 1000 // 秒
+  if(diff > 0) {
+    if(diff < 60) {
+      return '刚刚'
+    } else if(diff < 3600) {
+      return `${Math.floor(diff / 60)}分钟前`
+    } else if(diff < 24 * 3600) {
+      return `${Math.floor(diff / 3600)}小时前`
+    } else if(diff < 7 * 24 * 3600) {
+      return `${Math.floor(diff / (24 * 3600))}天前`
+    } else {
+      return notShowDetail ? '' : moment(value).format(format)
+    }
+  } else {
+    console.error('非法时间')
+    return ''// 非法时间
+  }
+})
+
 Vue.filter('money', function (value) {
   if(value === null) {
     return 0
