@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     onClickAlert() {
-      this.$dialog.alert({
+      this.$dialog.confirm({
         title: '标题',
         message: '弹窗内容',
         showCancelButton: true
