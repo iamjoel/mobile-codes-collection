@@ -245,15 +245,15 @@
 
     <h2 class="demo-classify__title">数据可视化</h2>
     <div class="ly ly-multi nav">
-      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/chart/line')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">折线图</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/chart/bar')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">柱状图</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/chart/pie')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">饼图</div>
       </a>

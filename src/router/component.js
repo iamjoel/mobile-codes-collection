@@ -476,6 +476,39 @@ var routes = [
       lazyLoading(resolve, 'map/Convert', false)
     },
   },
+  {
+    path: `/${PREFIX}/chart/line`,
+    meta: {
+      title: '折线图',
+      activeTypeIndex: 0,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'chart/line')
+    },
+  },
+  {
+    path: `/${PREFIX}/chart/bar`,
+    meta: {
+      title: '柱状图',
+      activeTypeIndex: 0,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'chart/bar')
+    },
+  },
+  {
+    path: `/${PREFIX}/chart/pie`,
+    meta: {
+      title: '饼图',
+      activeTypeIndex: 0,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'chart/pie')
+    },
+  },
 ]
 
 
