@@ -54,7 +54,12 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        include: [
+          resolve('src'),
+          resolve('test'),
+          resolve('node_modules/vue-echarts'), // echart 的。不加build会报错。
+          resolve('node_modules/resize-detector')
+        ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
