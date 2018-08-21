@@ -24,4 +24,3 @@
 <script src="./main.js">
   
 </script>
-<style scoped src="@/assets/chart.css"></style>

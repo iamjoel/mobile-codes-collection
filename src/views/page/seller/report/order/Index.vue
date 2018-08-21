@@ -68,5 +68,4 @@
 </script>
 
 <style scoped src="../common.css"></style>
-<style scoped src="@/assets/chart.css"></style>
 <style scoped src="./style.css"></style>

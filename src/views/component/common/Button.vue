@@ -5,6 +5,8 @@
     <van-button type="primary">主要按钮</van-button>
     <van-button type="warning">警告按钮</van-button>
     <van-button type="danger">危险按钮</van-button>
+    <van-button class="primary-btn">本项目的主要按钮</van-button>
+
 
     <div class="demo__title">朴素按钮(幽灵按钮)</div>
     <van-button type="default" plain>default</van-button>
@@ -20,6 +22,8 @@
     <van-button>默认大小</van-button>
     <van-button size="small">小号</van-button>
     <van-button size="mini">迷你</van-button>
+    <van-button style="width: 200px;height: 30px; line-height: 30px;">自定义大小</van-button>
+
 
     <div class="demo__title">禁用</div>
     <van-button disabled>禁用</van-button>

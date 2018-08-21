@@ -77,3 +77,6 @@ body.no-foot-tabbar {
 .notice strong {
   color: #fd9003;
 }
+
+@import 'ui/button.css'; /* 该项目的按钮*/
+@import 'ui/chart.css'; /* 报表*/

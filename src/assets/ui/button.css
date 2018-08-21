@@ -1,0 +1,9 @@
+.primary-btn {
+  display: block;
+  width: 5.4rem;
+  height: .8rem;
+  line-height: 30px;
+  color: #fff;
+  background-color: #f60;
+  border: 1px solid #f60;
+}
