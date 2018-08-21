@@ -192,7 +192,7 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">角标</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/img/img-badge')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/img/brick')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">瀑布流</div>
       </a>

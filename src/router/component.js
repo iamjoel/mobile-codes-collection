@@ -414,6 +414,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/img/brick`,
+    meta: {
+      title: '瀑布流',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'img/Brick', false)
+    },
+  },
+  {
     path: `/${PREFIX}/icon/vant`,
     meta: {
       title: 'Vant 图标',

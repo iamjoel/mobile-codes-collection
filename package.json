@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "bricks.js": "^1.8.0",
     "css-utils-collection": "^1.5.1",
     "jquery": "^3.2.1",
     "mockjs": "^1.0.1-beta3",
