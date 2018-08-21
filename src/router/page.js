@@ -151,6 +151,18 @@ var routes = [
     },
   },
 
+   {
+    path: `/${PREFIX}/seller/report/order`,
+    meta: {
+      title: '订单报表',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'seller/report/order')
+    },
+  },
+
   {
     path: `/${PREFIX}/article/list`,
     meta: {

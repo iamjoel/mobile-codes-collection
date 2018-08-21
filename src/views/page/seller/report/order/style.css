@@ -1,0 +1,56 @@
+.main {
+  color: #333;
+}
+
+.order-info {
+  margin-bottom: .2rem;
+  padding: .3rem 0;
+  background-color: #fff;
+}
+
+.order-info__item {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.order-info__item span {
+  color: #888;
+}
+
+.order-info__item:first-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: .24rem;
+  background-color: #ebebeb;
+}
+
+.order-data {
+  background-color: #fff;
+}
+
+.order-data__item {
+  padding: 0 .25rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.order-data__title {
+  padding: .2rem 0;
+  width: 50%;
+}
+
+.order-data__value {
+  padding: .2rem 0;
+  width: 50%;
+}
+
+.order-data__first {
+  width: 30%;
+}
+
+.order-data__second {
+  width: 20%;
+}

@@ -75,6 +75,13 @@
         <div class="mt-10 ta-c">购物车</div>
       </a>
     </div>
+    <h2 class="demo-classify__title">商家相关</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/page/seller/report/order')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">订单报表</div>
+      </a>
+    </div>
     <h2 class="demo-classify__title">文章&新闻</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/page/article/list')" class="nav__item">
