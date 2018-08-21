@@ -92,6 +92,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/other/img`,
+    meta: {
+      title: '图片资源',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/img')
+    },
+  },
+  {
     path: `/${PREFIX}/other/browser-detect`,
     meta: {
       title: '浏览器&设备探测',
