@@ -1,24 +1,26 @@
 <template>
   <div class="main">
-    <div class="demo__title">自定义弹出内容</div>
-    <div class="p-10 b d-ib ml-15 mr-20" @click="show = true">confirm</div>
-    <van-dialog
-      v-model="show"
-      show-cancel-button
-      :before-close="beforeClose"
-    >
-      <van-field
-        v-model="username"
-        label="用户名"
-        placeholder="请输入用户名"
-      />
-      <van-field
-        v-model="password"
-        type="password"
-        label="密码"
-        placeholder="请输入密码"
-      />
-    </van-dialog>
+    <section class="demo">
+      <div class="demo__title">自定义弹出内容</div>
+      <van-button @click="isShowDialog = true" size="small">弹出</van-button>
+      <van-dialog
+        v-model="isShowDialog"
+        show-cancel-button
+        :before-close="beforeClose"
+      >
+        <van-field
+          v-model="username"
+          label="用户名"
+          placeholder="请输入用户名"
+        />
+        <van-field
+          v-model="password"
+          type="password"
+          label="密码"
+          placeholder="请输入密码"
+        />
+      </van-dialog>
+    </section>
   </div>
 </template>
 
@@ -26,7 +28,7 @@
 export default {
   data() {
     return {
-      show: false,
+      isShowDialog: false,
       username: '',
       password: ''
     }  
@@ -34,7 +36,10 @@ export default {
   methods: {
     beforeClose(action, done) {
       if(action === 'confirm') {
-        setTimeout(done, 1000);
+        setTimeout(()=> {
+          done()
+          this.$toast('成功')
+        }, 1000);
       } else {
         done()
       }

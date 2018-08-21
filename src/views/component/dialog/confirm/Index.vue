@@ -1,7 +1,9 @@
 <template>
   <div class="main">
-    <div class="demo__title">消息确认</div>
-    <div class="p-10 b d-ib ml-15 mr-20" @click="onClickAlert">confirm</div>
+    <section class="demo">
+      <div class="demo__title">消息确认</div>
+      <van-button @click="showConfirm" size="small">confirm</van-button>
+    </section>
   </div>
 </template>
 
@@ -12,15 +14,14 @@ export default {
     }  
   },
   methods: {
-    onClickAlert() {
+    showConfirm() {
       this.$dialog.confirm({
-        title: '标题',
-        message: '弹窗内容',
+        message: '确认删除？',
         showCancelButton: true
       }).then(() => {
-
+        this.$toast('删除成功')
       }).catch(() => {
-
+        this.$toast('放弃删除')
       })
     }
   }

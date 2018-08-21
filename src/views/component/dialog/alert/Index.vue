@@ -1,8 +1,11 @@
 <template>
   <div class="main">
-    <div class="demo__title">消息提示</div>
-    <div class="p-10 b d-ib ml-15 mr-20" @click="onClickAlert">alert</div>
-    <div class="p-10 b d-ib" @click="onClickAlert2">无标题alert</div>
+    <section class="demo">
+      <div class="demo__title">消息提示</div>
+      <van-button @click="showAlert" size="small">alert</van-button>
+      <van-button @click="showNoTitleAlert" size="small">无标题alert</van-button>
+    </section>
+    
   </div>
 </template>
 
@@ -13,14 +16,14 @@ export default {
     }  
   },
   methods: {
-    onClickAlert() {
+    showAlert() {
       this.$dialog.alert({
         title: '标题',
         message: '弹窗内容'
       }).then(() => {
       })
     },
-    onClickAlert2() {
+    showNoTitleAlert() {
       this.$dialog.alert({
         message: '弹窗内容'
       }).then(() => {

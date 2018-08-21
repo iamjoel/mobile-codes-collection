@@ -16,10 +16,14 @@ body {
 .demo--not-perfect {
   color: yellow;
 }
+.demo {
+  max-width: .2rem 0;
+  padding: 0 .2rem;
+}
 .demo__title {
-  margin: 0;
+  margin-bottom: .1rem;
   font-weight: 400;
   font-size: 14px;
+  line-height: 2;
   color: rgba(69,90,100,.6);
-  padding: 15px;
 }
