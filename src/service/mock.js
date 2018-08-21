@@ -1,22 +1,21 @@
 import Mock from 'mockjs'
 import {SERVER_PREFIX} from '@/setting'
 
-var singerList = [{
-  id: 1,
-  name: '孙燕姿'
-},{
-  id: 2,
-  name: '王菲'
-},{
-  id: 3,
-  name: '任贤齐'
-},]
+var singerList = ['孙燕姿','王菲','任贤齐','Coldplay','Lenka','陈粒','陈慧琳','陈小春','杜德伟','飞儿','My Little Airport','小刚','那英','Green Day','花粥',].map((item, i) => {
+  return {
+    id: i,
+    name: item
+  }
+})
 
 
 Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/list`), 'get', ({ url, body }) => {
   console.info(`Mock GET. URL: ${url}`)
+  var pageAt = parseInt(/pageAt=(\d+)&/.exec(url)[1])
+  var pageNum = parseInt(/pageLimit=(\d+)/.exec(url)[1])
+  var start = (pageAt - 1) * pageNum
   return {
-    data: singerList,
+    data: singerList.slice(start, start + pageNum),
     pager: {
       total: singerList.length,
     }

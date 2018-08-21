@@ -304,6 +304,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/list/infinate-load-wrap`,
+    meta: {
+      title: '列表无限加载封装',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'list/Infinate-load-wrap', false)
+    },
+  },
+  {
     path: `/${PREFIX}/list/pagination`,
     meta: {
       title: '分页',

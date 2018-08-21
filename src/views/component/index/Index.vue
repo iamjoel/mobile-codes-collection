@@ -39,7 +39,7 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">无限加载</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/list/infinate-load')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/list/infinate-load-wrap')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">无限加载封装</div>
       </a>
