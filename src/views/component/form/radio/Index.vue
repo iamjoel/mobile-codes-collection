@@ -5,7 +5,16 @@
         基础用法
       </div>
       <van-radio-group v-model="radio">
-        <van-radio name="1">单选框 1</van-radio>
+        <van-radio name="1" class="mb-10">单选框 1</van-radio>
+        <van-radio name="2">单选框 2</van-radio>
+      </van-radio-group>
+    </div>
+    <div class="demo-block">
+      <div class="demo__title">
+        禁用状态
+      </div>
+      <van-radio-group v-model="radio" disabled>
+        <van-radio name="1" class="mb-10">单选框 1</van-radio>
         <van-radio name="2">单选框 2</van-radio>
       </van-radio-group>
     </div>
@@ -13,30 +22,32 @@
       <div class="demo__title">
         在同一行
       </div>
-      <div class="ly ly-j ly-m line">
+      <div class="ly ly-j ly-m line ph-10rem">
         <div class="title">水果</div>
         <van-radio-group v-model="radio">
-          <van-radio name="1">苹果</van-radio>
+          <van-radio name="1" class="mr-20rem">苹果</van-radio>
           <van-radio name="2">西瓜</van-radio>
         </van-radio-group>
       </div>
     </div>
+
     <div class="demo-block">
       <div class="demo__title">
-        禁用状态
+        Label 在左边
       </div>
-      <van-radio-group v-model="radio" disabled>
-        <van-radio name="1">单选框 1</van-radio>
-        <van-radio name="2">单选框 2</van-radio>
+      <van-radio-group v-model="radio">
+        <van-radio name="1" class="mb-10" label-position="left">单选框 1</van-radio>
+        <van-radio name="2" label-position="left">单选框 2</van-radio>
       </van-radio-group>
     </div>
+    
     <div class="demo-block">
       <div class="demo__title">
         自定义颜色
       </div>
       <div class="custom">
         <van-radio-group v-model="radio">
-          <van-radio name="1">单选框 1</van-radio>
+          <van-radio name="1" class="mb-10">单选框 1</van-radio>
           <van-radio name="2">单选框 2</van-radio>
         </van-radio-group>
       </div>
