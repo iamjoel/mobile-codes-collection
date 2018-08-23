@@ -1,6 +1,11 @@
 import Mock from 'mockjs'
 import {SERVER_PREFIX} from '@/setting'
 
+// 为了有Loading 的感觉。设置被拦截的 Ajax 请求的响应时间，单位是毫秒。
+Mock.setup({
+  timeout: 400
+})
+
 var singerList = ['孙燕姿','王菲','任贤齐','Coldplay','Lenka','陈粒','陈慧琳','陈小春','杜德伟','飞儿','My Little Airport','小刚','那英','Green Day','花粥',].map((item, i) => {
   return {
     id: i,
