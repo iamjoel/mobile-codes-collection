@@ -1,13 +1,23 @@
 <template>
   <div class="main">
-    <h1>横向滚动</h1>
-    <div class="ly list">
-      <img 
-        v-for="i in 8"
-        :key="i"
-        class="item" 
-        src="http://via.placeholder.com/200x100" alt=""/>
-    </div>
+    <section class="demo">
+      <h2 class="demo__title">用 CSS 实现</h2>
+      <div class="ly list">
+        <img 
+          v-for="i in 8"
+          :key="i"
+          class="item" 
+          :src="'http://via.placeholder.com/200x100?text=' + i"  alt=""/>
+      </div>
+    </section>
+
+    <section class="demo">
+      <h2 class="demo__title">滚动一屏幕2个半</h2>
+      TODO 
+      https://github.com/surmon-china/vue-awesome-swiper <br>
+      https://github.com/surmon-china/vue-awesome-swiper/blob/master/examples/12-slides-per-view-auto.vue
+    </section>
+    
   </div>
 </template>
 

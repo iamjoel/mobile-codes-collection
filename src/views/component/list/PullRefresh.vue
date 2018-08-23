@@ -1,10 +1,14 @@
 <template>
   <div class="main">
-    <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
-     <van-cell-group>
-      <van-cell :title="item" v-for="item in list" :key="item" />
-    </van-cell-group>
-    </van-pull-refresh>
+    <section class="demo">
+      <h2 class="demo__title">基础用法</h2>
+      <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+       <van-cell-group>
+        <van-cell :title="item" v-for="item in list" :key="item" />
+      </van-cell-group>
+      </van-pull-refresh>
+    </section>
+    
   </div>
 </template>
 
