@@ -25,7 +25,7 @@
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/swipe/vertical')" class="nav__item">
         <van-icon name="wap-nav" />
-        <div class="mt-10 ta-c">垂直轮播</div>
+        <div class="mt-10 ta-c">信息轮播</div>
       </a>
       <a href="javascript:void(0)" @click="$router.push('/component/swipe/notice-bar')" class="nav__item">
         <van-icon name="more-o" />
