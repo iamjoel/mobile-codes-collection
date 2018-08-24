@@ -39,7 +39,8 @@ h1 {
   margin: .1rem 0;
 }
 .list {
-  overflow-x: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .item {
   margin-right: .2rem;
