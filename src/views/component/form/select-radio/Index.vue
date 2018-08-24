@@ -8,7 +8,7 @@
       <van-cell title="选择你喜欢的水果" @click="show = true">
         {{select.name}}
       </van-cell>
-      <div>已选水果ID： {{select.id}}</div>
+      <div class="mt-5">已选水果ID： {{select.id}}</div>
       <van-popup 
         v-model="show"
         position="bottom"
