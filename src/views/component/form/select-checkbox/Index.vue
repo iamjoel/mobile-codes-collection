@@ -26,6 +26,13 @@
         </van-checkbox-group>
       </van-popup>
     </section>
+
+    <section class="demo">
+      <div class="demo__title">
+        级联多选
+      </div>
+      TODO
+    </section>
   </div>
 </template>
 
