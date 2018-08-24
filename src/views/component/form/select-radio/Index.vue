@@ -5,10 +5,10 @@
         基础用法
       </div>
 
-      <van-cell title="选择水果" @click="show = true">
+      <van-cell title="选择你喜欢的水果" @click="show = true">
         {{select.name}}
       </van-cell>
-      <div>已现在水果ID： </div>
+      <div>已选水果ID： {{select.id}}</div>
       <van-popup 
         v-model="show"
         position="bottom"
@@ -32,6 +32,7 @@ export default {
     return {
       show: false,
       select: {
+        id: null,
         name: null,
       },
       fruitList: [{
@@ -51,13 +52,14 @@ export default {
     }  
   },
   methods: {
-    selectFruit(curr, name) {
-      this.select = this.fruitList.filter(item => item.name === curr)[0]
+    selectFruit(name, index) {
+      this.select = this.fruitList.filter(item => item.name === name)[0]
       this.show = false
     },
   },
   mounted() {
     this.fruitNameList = this.fruitList.map(item => item.name)
+    this.select = this.fruitList[0]
   }
 }
 </script>
