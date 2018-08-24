@@ -1,29 +1,32 @@
 <template>
   <div class="main">
-    <div class="demo-block">
-      <div class="demo__title">基础用法</div>
+    <section class="demo">
+      <h2 class="demo__title">基础用法</h2>
       <van-rate v-model="value" />
-    </div>
-    <div class="demo-block">
-      <div class="demo__title">禁用状态</div>
+    </section>
+
+    <section class="demo">
+      <h2 class="demo__title">禁用状态</h2>
       <van-rate v-model="value"  disabled/>
-    </div>
-    <div class="demo-block">
-      <div class="demo__title">禁用状态自定义颜色</div>
+    </section>
+
+    <section class="demo">
+      <h2 class="demo__title">禁用状态自定义颜色</h2>
       <div class="custom">
         <van-rate v-model="value"  disabled/>
       </div>
-    </div>
-    <div class="demo-block">
-      <div class="demo__title">自定义颜色</div>
+    </section>
+
+    <section class="demo">
+      <h2 class="demo__title">自定义颜色&大小&总数</h2>
       <van-rate
         v-model="value"
-        :size="25"
-        :count="6"
+        :size="35"
+        :count="7"
         color="#2ba"
         void-color="#ceefe8"
       />
-    </div>
+    </section>
   </div>
 </template>
 
