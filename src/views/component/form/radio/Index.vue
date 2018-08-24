@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="demo-block">
+    <section class="demo">
       <div class="demo__title">
         基础用法
       </div>
@@ -8,8 +8,9 @@
         <van-radio name="1" class="mb-10">单选框 1</van-radio>
         <van-radio name="2">单选框 2</van-radio>
       </van-radio-group>
-    </div>
-    <div class="demo-block">
+    </section>
+
+    <section class="demo">
       <div class="demo__title">
         禁用状态
       </div>
@@ -17,8 +18,9 @@
         <van-radio name="1" class="mb-10">单选框 1</van-radio>
         <van-radio name="2">单选框 2</van-radio>
       </van-radio-group>
-    </div>
-    <div class="demo-block">
+    </section>
+
+    <section class="demo">
       <div class="demo__title">
         在同一行
       </div>
@@ -29,9 +31,9 @@
           <van-radio name="2">西瓜</van-radio>
         </van-radio-group>
       </div>
-    </div>
+    </section>
 
-    <div class="demo-block">
+    <section class="demo">
       <div class="demo__title">
         Label 在左边
       </div>
@@ -39,9 +41,9 @@
         <van-radio name="1" class="mb-10" label-position="left">单选框 1</van-radio>
         <van-radio name="2" label-position="left">单选框 2</van-radio>
       </van-radio-group>
-    </div>
+    </section>
     
-    <div class="demo-block">
+    <section class="demo">
       <div class="demo__title">
         自定义颜色
       </div>
@@ -51,8 +53,9 @@
           <van-radio name="2">单选框 2</van-radio>
         </van-radio-group>
       </div>
-    </div>
-    <div class="demo-block">
+    </section>
+    
+    <section class="demo">
       <div class="demo__title">
         与cell组件一起使用
       </div>
@@ -66,7 +69,7 @@
           </van-cell>
         </van-cell-group>
       </van-radio-group>
-    </div>
+    </section>
   </div>
 </template>
 

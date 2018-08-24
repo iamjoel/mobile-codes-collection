@@ -1,37 +1,41 @@
 <template>
   <div class="main">
-    <div class="demo-block">
+    <section class="demo">
       <div class="demo__title">
         基础用法
       </div>
       <van-switch v-model="checked" />
-    </div>
-    <div class="demo-block">
+    </section>
+
+    <section class="demo">
       <div class="demo__title">
         禁用状态
       </div>
       <van-switch v-model="checked" disabled/>
-    </div>
-    <div class="demo-block">
+    </section>
+
+    <section class="demo">
       <div class="demo__title">
         大尺寸
       </div>
       <van-switch v-model="checked" size="50px"/>
-    </div>
-    <div class="demo-block">
+    </section>
+
+    <section class="demo">
       <div class="demo__title">
         自定义颜色
       </div>
       <div class="custom">
         <van-switch v-model="checked"/>
       </div>
-    </div>
-    <div class="demo-block">
+    </section>
+    
+    <section class="demo">
       <div class="demo__title">
         切换前确认
       </div>
       <van-switch :value="checked" size="36px" @change="onInput" />
-    </div>
+    </section>
   </div>
 </template>
 
