@@ -59,7 +59,7 @@
         <van-icon name="upgrade" />
         <div class="mt-10 ta-c">下拉刷新</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/component/list/')" class="nav__item demo--unfinished">
+      <a href="javascript:void(0)" @click="$router.push('/component/list/remember-scroll-pos')" class="nav__item">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">记住滚动位置</div>
       </a>

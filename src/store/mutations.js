@@ -12,6 +12,9 @@ const mutations = {
   },
   [types.CHANGE_FOOTER_VISIBLE](state, isShow) {
     state.isShowFooter = isShow
+  },
+  setSingerListCache(state, data) {
+    state.singerListCache = data
   }
 }
 

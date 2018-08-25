@@ -354,6 +354,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/list/remember-scroll-pos`,
+    meta: {
+      title: '记住滚动位置',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'list/Remember-scroll-pos', false)
+    },
+  },
+  {
     path: `/${PREFIX}/list/hor-scroll`,
     meta: {
       title: '横向滚动',
