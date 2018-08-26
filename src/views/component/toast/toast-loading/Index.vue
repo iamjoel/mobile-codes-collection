@@ -12,6 +12,7 @@
         mask: true,
         message: '加载中...'
       })">显示加载中</van-button>
+      <div class="mt-10">默认持续显示3秒关闭(对应的配置duration:3000)</div>
     </section>
   </div>
 </template>
