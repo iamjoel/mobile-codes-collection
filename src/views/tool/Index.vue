@@ -1,5 +1,16 @@
 <template>
   <div class="main">
+    <h2 class="demo-classify__title">异步处理</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/tool/async/promise')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">Promise</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/tool/async/async-await')" class="nav__item">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">async/await</div>
+      </a>
+    </div>
     <h2 class="demo-classify__title">axios</h2>
     <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/tool/axios/crud')" class="nav__item">

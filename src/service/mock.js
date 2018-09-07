@@ -41,8 +41,9 @@ Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/add`), 'post', ({ url, body }) => 
 
 Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/detail`), 'get', ({ url, body }) => {
   console.info(`Mock GET. URL: ${url}`)
+  var index = parseInt(/detail\/(\d+)/.exec(url)[1])
   return {
-    data: singerList[0],
+    data: singerList[index],
   }
 })
 

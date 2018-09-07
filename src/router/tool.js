@@ -12,6 +12,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/async/promise`,
+    meta: {
+      title: 'Promise',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'async/Promise', false)
+    },
+  },
+  {
     path: `/${PREFIX}/axios/crud`,
     meta: {
       title: 'CRUD',

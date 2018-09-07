@@ -102,7 +102,9 @@
 
 <details>
   <summary>工具(10+)</summary>
-
+* 异步处理
+  * Promise
+  * async/await
 * axios
   * crud写法。
   * 数据获取。 列表获取，详情获取的封装。
