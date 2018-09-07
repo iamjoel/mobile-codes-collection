@@ -22,6 +22,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/async/async-await`,
+    meta: {
+      title: 'async/await',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'async/Async-await', false)
+    },
+  },
+  {
     path: `/${PREFIX}/axios/crud`,
     meta: {
       title: 'CRUD',
