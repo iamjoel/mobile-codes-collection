@@ -6,8 +6,11 @@ Vue.filter('img', function (value, size) {
   if(typeof value !== 'string' ) {
     return value
   }
-  // 绝对路径，不加前缀
-  if(/^http/.test(value.trim())) {
+  
+  if(
+    /^http/.test(value.trim()) // 绝对路径，不加前缀
+    || value.indexOf('data:image') !== -1 // base64
+  ) {
     return value
   }
   return `${IMGS_PREFIX}/${value}`

@@ -1,63 +1,131 @@
 <template>
   <div class="main">
-    <div class="item">
-      <div class="item__title">上传图片</div>
-      <div class="form__item--content ly ly-multi">
-        <div class="bac-img" v-for="(item,i) in BackgroundImages" :key="i">
-          <img src="http://via.placeholder.com/200x100"/>
-          <a href="javascript:void(0)" class="remove-img-btn"></a>
+    <section class="demo">
+      <h2 class="demo__title">上传多张图片</h2>
+      <div class="upload-img-wrap">
+        <div class="form__item--content ly ly-multi">
+          <div class="img-item-wrap" v-for="(item,i) in imgs.previewList" :key="i">
+            <img :src="item | img"/>
+            <a href="javascript:void(0)" class="remove-img-btn" @click="removeImg(i)"></a>
+          </div>
+          <a href="javascript:void(0)" class="img-upload" v-if="imgs.previewList.length < imgs.max">
+            <input type="file" ref="imgs"  accept="image/*" class="tpye-file-img" @change="uploadImgs" :multiple="isIOS">
+          </a>
         </div>
-        <a href="javascript:void(0)" class="img-upload">
-          <input type="file" ref="background"  accept="image/*" class="tpye-file-img">
-        </a>
       </div>
-    </div>
+      服务器端返回的图片URL:
+      <ol>
+        <li v-for="(item,i) in imgs.list" :key="i">{{item}}</li>
+      </ol>
+    </section>
+    
   </div>
 </template>
 
 <script>
+import {urls} from '@/setting'
+const MAX_UPLOAD_IMG_NUM = 9
+
 export default {
   data() {
     return {
-      BackgroundImages: {}
+      imgs: {
+        list: [],
+        previewList: [],
+        max: MAX_UPLOAD_IMG_NUM
+      }
     }  
   },
   methods: {
-    
+    uploadImgs() {
+      var files = this.$refs.imgs.files
+      if(files) {
+        for(var i = 0; i < files.length; i++) {
+          if(!this.$valiFileSize(files[i])) {
+            return
+          }
+        }
+        this.$showLoading()
+        var finishedNum = 0
+        for(var i = 0; i < files.length; i++) {
+          this.uploadEachOne(files.item(i), () => {
+            finishedNum++
+            if(finishedNum === files.length) {
+                this.$hideLoading()
+                this.$toast('上传成功!')
+                this.$refs.imgs.value = null
+            }
+          })
+        }
+      }
+    },
+    uploadEachOne(file, cb) {
+      var formData = new FormData();
+      formData.append('name', file)
+      // 图片预览
+      var reader = new FileReader()
+      reader.onloadend = () => {
+        this.imgs.previewList.push(reader.result)
+      }
+      reader.readAsDataURL(file)
+
+      this.$http({
+        url: urls.uploadImg,
+        method: 'post',
+        data: formData,
+        config: { headers: {'Content-Type': 'multipart/form-data' }}
+      }).then(({data}) => {
+        this.imgs.list.push(data.data)
+        cb()
+      }, () => {
+        this.$hideLoading()
+        this.$toast('上传失败!')
+        this.imgs.previewList.pop()
+      })
+    },
+    removeImg(index) {
+      this.$dialog.confirm({
+        message:'确认删除?'
+      }).then(() => {
+        this.imgs.list.splice(index, 1)
+        this.imgs.previewList.splice(index, 1)
+      })
+    } 
   }
 }
 </script>
 
 <style scoped>
-  .item {
+  .upload-img-wrap {
     margin-bottom: .25rem;
-    padding: 0 .27rem;
-  }
-  .item__title {
-    position: relative;
-    margin-bottom: .25rem;
-    font-size: 14px;
-    color: #555;
   }
   .form__item--content {
     box-sizing: border-box;
     padding: .27rem .32rem .16rem;
-    width: 5.87rem;
     background-color: #fff;
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .bac-img {
+  .img-item-wrap {
     position: relative;
     margin-right: .11rem;
     margin-bottom: .11rem;
     width: 1.21rem;
     height: 1.21rem;
   }
-  .bac-img:nth-child(4n) {
+  .img-item-wrap:nth-child(4n) {
     margin-right: 0;
   }
-  .bac-img img {
+  .remove-img-btn {
+    position: absolute;
+    top: -.1rem;
+    right: -.04rem;
+    width: .32rem;
+    height: .32rem;
+    background-image: url(./images/remove-btn.png);
+    background-size: 100% 100%;
+  }
+  .img-item-wrap img {
     width: 100%;
     height: 100%;
   }

@@ -53,6 +53,7 @@ export default {
         this.img.value = data.data
         this.$hideLoading()
         this.$toast('上传成功!')
+        this.$refs.img.value = null
       }, () => {
         this.$hideLoading()
         this.$toast('上传失败!')
