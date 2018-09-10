@@ -17,6 +17,7 @@ export const IMGS_PREFIX = imgPrefix
 export const APPID = appid
 
 export const urls = {
+  uploadImg: `${SERVER_PREFIX}/picture/upload`, // 上传图片
   wechat: {
     userInfo: `${SERVER_PREFIX}/wechat/userinfo`, // 微信基本信息
     registerWechat: `${SERVER_PREFIX}/wechat/sdkinfo`, // 注册 jssdk 信息

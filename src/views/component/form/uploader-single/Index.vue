@@ -1,40 +1,78 @@
 <template>
   <div class="main">
-    <div class="form-info">
-      <input type="file" ref="LicenceImage" accept="image/*" class="tpye-file"> 
+    <div class="form-info pos-r">
       <a href="javascript:void(0)" class="form__item form__item--upload">
         <div>上传图片</div>
         <div class="ly ly-m">
-          <img src="http://via.placeholder.com/200x100" alt="" class="upload-img"/>
-          <!-- <img src="./imagse/right.png" alt="" class="icon-right"> -->
+          <img :src="img.preview ? img.preview :  ($imgPrefix + '/' + img.value)" alt="" class="upload-img" v-if="img.preview || img.value"/>
+          <img src="http://via.placeholder.com/50x50" alt="" class="upload-img" v-else/>
         </div>
       </a>
+      <input class="input-file" type="file" ref="img" accept="image/*" @change="upload" > 
     </div>
+
+    服务器端返回的图片URL: {{img.value}}
   </div>
 </template>
 
 <script>
+import {urls} from '@/setting'
+
 export default {
   data() {
     return {
-
-    }  
+      img: {
+        value: null,
+        preview: null
+      }
+    }
   },
   methods: {
-    
+    upload() {
+      var file = this.$refs.img.files[0]
+      
+      if(!this.$valiFileSize(file)) {
+        return
+      }
+      this.$showLoading()
+      var formData = new FormData();
+      formData.append('name', file)
+      // 图片预览
+      var reader = new FileReader()
+      reader.onloadend = () => {
+        this.img.preview = reader.result
+      }
+      reader.readAsDataURL(file)
+
+      this.$http({
+        url: urls.uploadImg,
+        method: 'post',
+        data: formData,
+        config: { headers: {'Content-Type': 'multipart/form-data' }}
+      }).then(({data}) => {
+        this.img.value = data.data
+        this.$hideLoading()
+        this.$toast('上传成功!')
+      }, () => {
+        this.$hideLoading()
+        this.$toast('上传失败!')
+        this.img.preview = null
+      })
+    }
   }
 }
 </script>
 
 <style scoped>
   .form-info {
-    position: relative;
     margin-top: .15rem;
     padding: 0 .27rem;
     background-color: #fff;
   }
-  .tpye-file {
+  .input-file {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 1.5rem;
     opacity: .00001;
@@ -48,7 +86,6 @@ export default {
     background-size: cover;
     background-position-x: .27rem;
     background-position-y: .35rem;
-    border-bottom: 1px solid #ebebeb;
   }
   .form__item--upload {
     display: flex;

@@ -1,4 +1,5 @@
 import Mock from 'mockjs'
+import {Random} from 'mockjs'
 import {SERVER_PREFIX} from '@/setting'
 
 // 为了有Loading 的感觉。设置被拦截的 Ajax 请求的响应时间，单位是毫秒。
@@ -123,6 +124,12 @@ Mock.mock(new RegExp(`${SERVER_PREFIX}/news/detail`), 'get', ({ url, body }) => 
     pager: {
       total: newsList.length,
     }
+  }
+})
+// 图片上传
+Mock.mock(new RegExp(`${SERVER_PREFIX}/picture/upload`), 'post', ({ url, body }) => {
+  return {
+    data: 'http://via.placeholder.com/100x100?text=' + Random.integer(1,100)
   }
 })
 

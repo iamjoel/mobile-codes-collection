@@ -40,6 +40,16 @@ Vue.prototype.$preview = url => {
   }
   ImagePreview([url])
 }
+// 图片尺寸验证
+Vue.prototype.$valiFileSize = file => {
+  var fileSize = file.size
+  if(fileSize > 1024*1024*3) {
+    Toast('图片大小不能超过3M');
+    return false
+  } else {
+    return true
+  }
+}
 
 Vue.prototype.$showLoading = () => {
   Toast.loading({
