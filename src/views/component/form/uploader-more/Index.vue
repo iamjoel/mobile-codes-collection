@@ -24,7 +24,7 @@
 
 <script>
 import {urls} from '@/setting'
-const MAX_UPLOAD_IMG_NUM = 9
+const MAX_UPLOAD_IMG_NUM = 9 // 最多上传的图片数
 
 export default {
   data() {
@@ -40,17 +40,21 @@ export default {
     uploadImgs() {
       var files = this.$refs.imgs.files
       if(files) {
+        // 图片大小验证。图片太大，可能会导致后台响应太慢或浏览器崩溃
         for(var i = 0; i < files.length; i++) {
           if(!this.$valiFileSize(files[i])) {
             return
           }
         }
+
         this.$showLoading()
-        var finishedNum = 0
+        var uploadedSuccessNum = 0
         for(var i = 0; i < files.length; i++) {
-          this.uploadEachOne(files.item(i), () => {
-            finishedNum++
-            if(finishedNum === files.length) {
+          this.uploadEachOne(files.item(i), i, () => {
+            uploadedSuccessNum++
+            if(uploadedSuccessNum === files.length) {
+                this.imgs.list = this.imgs.list.filter(img => !!img)
+                this.imgs.previewList = this.imgs.previewList.filter(img => !!img)
                 this.$hideLoading()
                 this.$toast('上传成功!')
                 this.$refs.imgs.value = null
@@ -59,28 +63,28 @@ export default {
         }
       }
     },
-    uploadEachOne(file, cb) {
-      var formData = new FormData();
-      formData.append('name', file)
+    uploadEachOne(file, index, uploadedFn) {
       // 图片预览
       var reader = new FileReader()
       reader.onloadend = () => {
-        this.imgs.previewList.push(reader.result)
+        this.imgs.previewList[index] = reader.result
       }
       reader.readAsDataURL(file)
 
+      var formData = new FormData()
+      formData.append('name', file)
       this.$http({
         url: urls.uploadImg,
         method: 'post',
         data: formData,
         config: { headers: {'Content-Type': 'multipart/form-data' }}
       }).then(({data}) => {
-        this.imgs.list.push(data.data)
-        cb()
+        this.imgs.list[index] = (data.data)
+        uploadedFn()
       }, () => {
-        this.$hideLoading()
-        this.$toast('上传失败!')
-        this.imgs.previewList.pop()
+        uploadedSuccessFn()
+        // this.$toast('上传失败!')
+        this.imgs.previewList[index] = false
       })
     },
     removeImg(index) {
