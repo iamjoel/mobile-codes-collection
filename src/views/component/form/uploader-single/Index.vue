@@ -2,16 +2,28 @@
   <div class="main">
     <div class="form-info pos-r">
       <a href="javascript:void(0)" class="form__item form__item--upload">
-        <div>上传图片</div>
+        <div>头像</div>
         <div class="ly ly-m">
-          <img :src="img.preview ? img.preview :  ($imgPrefix + '/' + img.value)" alt="" class="upload-img" v-if="img.preview || img.value"/>
+          <img :src="avtarImg.preview ? avtarImg.preview :  ($imgPrefix + '/' + avtarImg.value)" alt="" class="upload-img" v-if="avtarImg.preview || avtarImg.value"/>
           <img src="http://via.placeholder.com/50x50" alt="" class="upload-img" v-else/>
         </div>
       </a>
-      <input class="input-file" type="file" ref="img" accept="image/*" @change="upload" > 
+      <input class="input-file" type="file" ref="avtarImg" accept="image/*" @change="upload('avtar')" > 
+    </div>
+    <div class="mt-10rem">服务器端返回的图片URL: {{avtarImg.value}}</div>
+
+    <div class="form-info pos-r">
+      <a href="javascript:void(0)" class="form__item form__item--upload">
+        <div>背景</div>
+        <div class="ly ly-m">
+          <img :src="backgroundImg.preview ? backgroundImg.preview :  ($imgPrefix + '/' + backgroundImg.value)" alt="" class="upload-img" v-if="backgroundImg.preview || backgroundImg.value"/>
+          <img src="http://via.placeholder.com/50x50" alt="" class="upload-img" v-else/>
+        </div>
+      </a>
+      <input class="input-file" type="file" ref="backgroundImg" accept="image/*" @change="upload('background')" > 
     </div>
 
-    服务器端返回的图片URL: {{img.value}}
+    <div class="mt-10rem">服务器端返回的图片URL: {{backgroundImg.value}}</div>
   </div>
 </template>
 
@@ -21,43 +33,48 @@ import {urls} from '@/setting'
 export default {
   data() {
     return {
-      img: {
+      avtarImg: {
         value: null,
         preview: null
-      }
+      },
+      backgroundImg: {
+        value: null,
+        preview: null
+      },
     }
   },
   methods: {
-    upload() {
-      var file = this.$refs.img.files[0]
-      
+    upload(type) {
+      var file = this.$refs[type + 'Img'].files[0]
+      // 图片大小验证。图片太大，可能会导致后台响应太慢或浏览器崩溃
       if(!this.$valiFileSize(file)) {
         return
       }
       this.$showLoading()
-      var formData = new FormData();
-      formData.append('name', file)
+      
       // 图片预览
       var reader = new FileReader()
       reader.onloadend = () => {
-        this.img.preview = reader.result
+        this[type + 'Img'].preview = reader.result
       }
       reader.readAsDataURL(file)
 
+      var formData = new FormData()
+      formData.append('name', file)
       this.$http({
         url: urls.uploadImg,
         method: 'post',
         data: formData,
         config: { headers: {'Content-Type': 'multipart/form-data' }}
       }).then(({data}) => {
-        this.img.value = data.data
+        this[type + 'Img'].value = data.data
         this.$hideLoading()
         this.$toast('上传成功!')
-        this.$refs.img.value = null
+        this.$refs[type + 'Img'].value = null
       }, () => {
         this.$hideLoading()
         this.$toast('上传失败!')
-        this.img.preview = null
+        this[type + 'Img'].preview = null
       })
     }
   }
