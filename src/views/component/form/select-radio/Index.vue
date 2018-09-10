@@ -5,7 +5,7 @@
         基础用法
       </div>
 
-      <van-cell title="选择你喜欢的水果" @click="isShowFruitPicker = true">
+      <van-cell title="选择水果" @click="isShowFruitPicker = true">
         {{selectedFruit.name}}
       </van-cell>
       <div class="mt-5">已选水果ID： {{selectedFruit.id}}</div>
@@ -22,8 +22,31 @@
         />
       </van-popup>
     </section>
+
+    <section class="demo mt-20rem">
+      <div class="demo__title">
+        下拉选择是接口获得的数据
+      </div>
+
+      <van-cell title="选择歌手" @click="isShowSingerPicker = true">
+        {{selectedSinger.name}}
+      </van-cell>
+      <div class="mt-5">已选歌手ID： {{selectedSinger.id}}</div>
+      <van-popup 
+        v-model="isShowSingerPicker"
+        position="bottom"
+      >
+        <van-picker
+          show-toolbar
+          title=""
+          :columns="singerNameList"
+          @cancel="isShowSingerPicker = false"
+          @confirm="selectSinger"
+        />
+      </van-popup>
+    </section>
     
-    <section class="demo">
+    <section class="demo mt-20rem">
       <div class="demo__title">
         多级联动
       </div>
@@ -49,6 +72,8 @@
 </template>
 
 <script>
+import {fetchList} from '@/service/api'
+
 const citys = [
 {
   id: 1,
@@ -79,15 +104,10 @@ const citys = [
   }]
 }]
   
-  
 export default {
   data() {
     return {
       isShowFruitPicker: false,
-      selectedFruit: {
-        id: null,
-        name: null,
-      },
       fruitList: [{
         id: 'water-melon',
         name: '西瓜',
@@ -102,6 +122,18 @@ export default {
         callback: this.selectFruit
       }],
       fruitNameList: [],
+      selectedFruit: {
+        id: null,
+        name: null,
+      },
+
+      isShowSingerPicker: false,
+      singerList: [],
+      singerNameList: [],
+      selectedSinger: {
+        id: null,
+        name: null,
+      },
 
       isShowCityPicker: false,
       cityColumns: [
@@ -125,6 +157,11 @@ export default {
       this.isShowFruitPicker = false
     },
 
+    selectSinger(name, index) {
+      this.selectedSinger = this.singerList[index]
+      this.isShowSingerPicker = false
+    },
+
     provChange(picker, values) {
       var prov = citys.filter(item => item.name === values[0])[0]
       picker.setColumnValues(1, prov.children.map(item => item.name));
@@ -138,6 +175,17 @@ export default {
   mounted() {
     this.fruitNameList = this.fruitList.map(item => item.name)
     this.selectedFruit = this.fruitList[0]
+
+    fetchList('singer', undefined, undefined, {
+      current: 1,
+      item: 20
+    }).then(({data}) => {
+      this.singerList = data.data
+      this.singerNameList = data.data.map(item => item.name)
+      if(this.singerList.length > 0) {
+        this.selectedSinger = this.singerList[0]
+      }
+    })
   }
 }
 </script>

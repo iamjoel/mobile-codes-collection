@@ -17,8 +17,12 @@ var singerList = ['孙燕姿','王菲','任贤齐','Coldplay','Lenka','陈粒','
 
 Mock.mock(new RegExp(`${SERVER_PREFIX}/singer/list`), 'get', ({ url, body }) => {
   console.info(`Mock GET. URL: ${url}`)
-  var pageAt = parseInt(/pageAt=(\d+)&/.exec(url)[1])
-  var pageNum = parseInt(/pageLimit=(\d+)/.exec(url)[1])
+  var pageAt = 1
+  var pageNum = 5
+  try {
+    pageAt = parseInt(/pageAt=(\d+)&/.exec(url)[1])
+    pageNum = parseInt(/pageLimit=(\d+)/.exec(url)[1])
+  } catch(e) {}
   var start = (pageAt - 1) * pageNum
   return {
     data: singerList.slice(start, start + pageNum),
