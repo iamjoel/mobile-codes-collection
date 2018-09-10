@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h2 class="title">填写店铺资料信息</h2>
+    <h2 class="demo__title">只有新增才有实时保存的需求</h2>
     <div class="form">
       <div class="form-info">
         <input type="file" ref="Thumb" accept="image/*" class="tpye-file" @change="uploadImg('Thumb')"> 
@@ -35,7 +35,7 @@
         </div>
       </div>
 
-      <div class="btn" @click="save">提交审核</div>
+      <div class="btn" @click="save">提交</div>
     </div>
   </div>
 </template>

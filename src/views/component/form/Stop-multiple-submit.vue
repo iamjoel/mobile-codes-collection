@@ -13,7 +13,8 @@
         <van-button size="large" type="primary" @click="save2">{{isSubmiting2 ? '提交中...' : '保存'}}</van-button> 
       </div>
     </section>
-    
+
+    <p>对于新增，需要有防止多次提交的处理。否则在接口响应慢的情况，会出现用户多次提交而造成多条一样的数据。</p>
   </div>
 </template>
 
