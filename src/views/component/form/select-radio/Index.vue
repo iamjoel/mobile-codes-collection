@@ -111,15 +111,12 @@ export default {
       fruitList: [{
         id: 'water-melon',
         name: '西瓜',
-        callback: this.selectFruit
       },{
         id: 'pear',
         name: '梨',
-        callback: this.selectFruit
       },{
         id: 'apple',
         name: '苹果',
-        callback: this.selectFruit
       }],
       fruitNameList: [],
       selectedFruit: {
