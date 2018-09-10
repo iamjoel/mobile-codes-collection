@@ -31,6 +31,14 @@
         <van-icon name="photo" />
         <div class="mt-10 ta-c">多张图片上传</div>
       </a>
+       <a href="javascript:void(0)" @click="$router.push('/component/dialog/dialog')" class="nav__item">
+        <van-icon name="pending-evaluate" />
+        <div class="mt-10 ta-c">自定义弹出内容</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/dialog/popup')" class="nav__item">
+        <van-icon name="pending-evaluate" />
+        <div class="mt-10 ta-c">弹出层(Popup)</div>
+      </a>
     </div>
     <h2 class="demo-classify__title">基础</h2>
     <div class="ly ly-multi nav">

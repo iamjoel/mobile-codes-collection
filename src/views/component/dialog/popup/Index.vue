@@ -21,7 +21,12 @@
       <van-popup v-model="isShowLeftPopup" position="left">内容</van-popup>
       <div class="vh">
         <van-popup v-model="isShowRightFullPopup" position="right">
-          
+          <van-nav-bar
+            title="全屏弹出"
+            left-text="返回"
+            left-arrow
+            @click-left="isShowRightFullPopup = false"
+          />
           内容
         </van-popup>
       </div>
