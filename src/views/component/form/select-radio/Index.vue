@@ -5,19 +5,19 @@
         基础用法
       </div>
 
-      <van-cell title="选择你喜欢的水果" @click="show = true">
-        {{select.name}}
+      <van-cell title="选择你喜欢的水果" @click="isShowFruitPicker = true">
+        {{selectedFruit.name}}
       </van-cell>
-      <div class="mt-5">已选水果ID： {{select.id}}</div>
+      <div class="mt-5">已选水果ID： {{selectedFruit.id}}</div>
       <van-popup 
-        v-model="show"
+        v-model="isShowFruitPicker"
         position="bottom"
       >
         <van-picker
           show-toolbar
           title=""
           :columns="fruitNameList"
-          @cancel="show = false"
+          @cancel="isShowFruitPicker = false"
           @confirm="selectFruit"
         />
       </van-popup>
@@ -83,8 +83,8 @@ const citys = [
 export default {
   data() {
     return {
-      show: false,
-      select: {
+      isShowFruitPicker: false,
+      selectedFruit: {
         id: null,
         name: null,
       },
@@ -121,8 +121,8 @@ export default {
   },
   methods: {
     selectFruit(name, index) {
-      this.select = this.fruitList.filter(item => item.name === name)[0]
-      this.show = false
+      this.selectedFruit = this.fruitList[index]
+      this.isShowFruitPicker = false
     },
 
     provChange(picker, values) {
@@ -137,7 +137,7 @@ export default {
   },
   mounted() {
     this.fruitNameList = this.fruitList.map(item => item.name)
-    this.select = this.fruitList[0]
+    this.selectedFruit = this.fruitList[0]
   }
 }
 </script>

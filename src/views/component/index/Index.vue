@@ -7,6 +7,33 @@
     </h1>
     <h2 class="demo-classify__title">常见</h2>
     <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/component/swipe')" class="nav__item">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">Banner轮播</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/list/infinate-load-wrap')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">无限加载封装</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/form/datetimePicker')" class="nav__item">
+        <van-icon name="clock" />
+        <div class="mt-10 ta-c">日期&时间</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/form/select-radio')" class="nav__item">
+        <van-icon name="records" />
+        <div class="mt-10 ta-c">选择器(Picker)单选</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/form/uploader-single')" class="nav__item">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">单张图片上传</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/form/uploader-more')" class="nav__item">
+        <van-icon name="photo" />
+        <div class="mt-10 ta-c">多张图片上传</div>
+      </a>
+    </div>
+    <h2 class="demo-classify__title">基础</h2>
+    <div class="ly ly-multi nav">
       <a href="javascript:void(0)" @click="$router.push('/component/common/button')" class="nav__item">
         <van-icon name="success" />
         <div class="mt-10 ta-c">按钮</div>

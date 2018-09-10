@@ -3,7 +3,7 @@
 <details>
   <summary>组件(数量50+)</summary>
 
-* 常见
+* 基础
   * 按钮
   * 标签
 * 轮播相关
