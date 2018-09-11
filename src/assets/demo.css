@@ -17,7 +17,6 @@ body {
   color: yellow;
 }
 .demo {
-  max-width: .2rem 0;
   padding: 0 .2rem;
 }
 .demo__title {

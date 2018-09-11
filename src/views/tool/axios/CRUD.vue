@@ -1,27 +1,34 @@
 <template>
   <div class="main">
-    <div class="demo__title">列表</div>
+    <section class="demo">
+      <div class="demo__title">增删改查</div>
+      <ul>
+        <li>获取列表: fetchList(KEY, 搜索条件, 分页, 排序)</li>
+        <li>新增: addModel(KEY, model)</li>
+        <li>编辑: editModel(KEY, model)</li>
+        <li>删除: deleteModel(KEY, id)</li>
+      </ul>
+      
+      <van-search 
+        placeholder="请输入搜索关键词"
+        v-model="searchCondition.name"
+        @search="fetchList"
+      />
 
-    <van-search 
-      placeholder="请输入搜索关键词"
-      v-model="searchCondition.name"
-      @search="fetchList"
-    />
-
-    <div class="ly ly-r p-10rem">
-      <van-button type="primary" size="small" @click="addModel">新增</van-button>
-    </div>
-    <div class="p-10rem">按热度排序:</div>
-    <div class="list">
-      <div class="item ly ly-j ly-m" v-for="item in list" :key="item.id">
-        <span>{{item.name}}</span>
-        <div>
-          <van-button type="primary" @click="editModel(item.id)" size="mini">编辑</van-button>
-          <van-button type="danger" @click="deleteItem(item.id)" size="mini">删除</van-button>
-        </div>
-        
+      <div class="ly ly-r p-10rem">
+        <van-button type="primary" size="small" @click="addModel">新增</van-button>
       </div>
-    </div>
+      <div class="p-10rem">按热度排序:</div>
+      <div class="list">
+        <div class="item ly ly-j ly-m" v-for="item in list" :key="item.id">
+          <span>{{item.name}}</span>
+          <div>
+            <van-button type="primary" @click="editModel(item.id)" size="mini">编辑</van-button>
+            <van-button type="danger" @click="deleteItem(item.id)" size="mini">删除</van-button>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -40,7 +47,10 @@ export default {
   },
   methods: {
     fetchList() {
-      fetchList(this.KEY, this.searchCondition, undefined, ['hot', 'desc']).then(({data}) => {
+      fetchList(this.KEY, this.searchCondition, {
+        current: 1,
+        item: 100
+      }, ['hot', 'desc']).then(({data}) => {
         this.list = data.data
       })
     },
