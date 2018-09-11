@@ -16,9 +16,15 @@ export default {
       list: [{
         label: 'Vue',
         url: 'http://vuejs.org/'
-      },{
+      }, {
         label: 'Vant UI',
         url: 'https://www.youzanyun.com/zanui/vant#/zh-CN/component/intro'
+      }, {
+        label: '前端常用网站导航',
+        url: 'https://iamjoel.github.io/bookmark-nav/src/front-end.html'
+      }, {
+        label: '常用数组方法',
+        url: 'https://www.jianshu.com/p/741009fda86b'
       }]
     }  
   },
