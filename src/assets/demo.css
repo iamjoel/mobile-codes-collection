@@ -26,3 +26,21 @@ body {
   line-height: 2;
   color: rgba(69,90,100,.6);
 }
+
+.search-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.search-res {
+  position: fixed;
+  top: 42px;
+  left: 0;
+  z-index: 10;
+  width: 100vh;
+  max-height: 60vh;
+  overflow-y: auto;
+  background-color: #fff;
+}

@@ -1,8 +1,25 @@
 <template>
   <div class="main">
     <!-- 搜索 -->
-    <van-search placeholder="请输入页面名称" v-model="searchInput" @search="onSearch"/>
-    <h1 class="ly ly-c title-with-line">
+    <van-search 
+      class="search-wrap"
+      placeholder="请输入组件名称" 
+      v-model="search.query"
+      @focus="search.isShowRes = true"
+      @blur="search.isShowRes = false"
+      @keyup="onSearch"
+      @search="onSearch"
+    />
+    <div class="search-res" v-show="search.isShowRes">
+      <van-cell-group>
+        <van-cell 
+          v-for="item in search.res" :key="item.path"
+          :value="item.meta.title || item.path"
+          @click="$router.push(item.path)"
+        />
+      </van-cell-group>
+    </div>
+    <h1 class="ly ly-c title-with-line" style="margin-top: 42px">
       <div class="title-with-line__text">页面</div>
     </h1>
     <h2 class="demo-classify__title">UI规范</h2>
