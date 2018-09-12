@@ -56,6 +56,7 @@
         <van-icon name="pending-evaluate" />
         <div class="mt-10 ta-c">弹出层(Popup)</div>
       </a>
+      
     </div>
     <h2 class="demo-classify__title">基础</h2>
     <div class="ly ly-multi nav">
@@ -205,6 +206,10 @@
       <a href="javascript:void(0)" @click="$router.push('/component/dialog/popup')" class="nav__item">
         <van-icon name="pending-evaluate" />
         <div class="mt-10 ta-c">弹出层(Popup)</div>
+      </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/dialog/mask')" class="nav__item">
+        <van-icon name="pending-evaluate" />
+        <div class="mt-10 ta-c">弹出遮罩(Mask)</div>
       </a>
     </div>
     <h2 class="demo-classify__title">提示</h2>

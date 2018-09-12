@@ -294,6 +294,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/dialog/mask`,
+    meta: {
+      title: '弹出遮罩(Mask)',
+      activeTypeIndex: 0,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'dialog/Mask', false)
+    },
+  },
+  {
     path: `/${PREFIX}/list/infinate-load`,
     meta: {
       title: '列表无限加载',
