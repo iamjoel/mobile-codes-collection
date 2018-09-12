@@ -47,6 +47,11 @@ export default {
           }
         }
 
+        if(this.imgs.previewList.length + files.length > this.imgs.max) {
+          this.$toast(`最多上次${this.imgs.max}张图片`)
+          return
+        }
+
         this.$showLoading()
         var uploadedSuccessNum = 0
         for(var i = 0; i < files.length; i++) {

@@ -17,7 +17,7 @@ axios.interceptors.response.use(response => {
   var errorCode = data.errorCode
   if(errorCode) { 
     Toast(data.errorMessage || '未知错误')
-    return Promise.reject()
+    return Promise.reject(data)
   }
   return response;
 }, error => {
