@@ -1,4 +1,4 @@
-.echarts {
-  width: 100%;
+body .echarts {
+  width: 95%;
   height: 100%;
 }
