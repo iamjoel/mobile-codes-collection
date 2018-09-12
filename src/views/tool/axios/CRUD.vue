@@ -1,14 +1,60 @@
 <template>
   <div class="main">
     <section class="demo">
-      <div class="demo__title">增删改查</div>
+      <div class="demo__title">接口说明</div>
       <ul>
-        <li>获取列表: fetchList(KEY, 搜索条件, 分页, 排序)</li>
-        <li>新增: addModel(KEY, model)</li>
-        <li>编辑: editModel(KEY, model)</li>
-        <li>删除: deleteModel(KEY, id)</li>
+        <li>
+          <h2>获取列表</h2>
+          <div>
+            <div class="des__item"><strong>调用方式:</strong>fetchList(KEY, 搜索条件, 分页, 排序)</div>
+            <div class="des__item"><strong>url:</strong> 服务器前缀/api/KEY/list?where={搜索key1:xx1,搜索key2:xx2}&pageAt=第几页&pageLimit=一页多少条&order=[排序key, 'desc|asc']</div>
+            <div class="des__item"><strong>响应: </strong>
+            <pre>
+{
+  data: [],
+  pager: {total: 总页数},
+  errorCode: 0, // 值不是0,为出错。
+  errorMessage: ''
+}
+            </pre></div>
+          </div>
+        </li>
+        <li>
+          <h2>新增</h2>
+          <div>
+            <div class="des__item"><strong>调用方式:</strong>addModel(KEY, model)</div>
+            <div class="des__item"><strong>[POST]url:</strong> 服务器前缀/api/KEY/add</div>
+            <div class="des__item"><strong>响应: </strong>
+              {
+              errorCode: 0,
+              errorMessage: ''
+            }</div>
+          </div>
+        </li>
+        <li>
+          <h2>编辑</h2>
+          <div>
+            <div class="des__item"><strong>调用方式:</strong>editModel(KEY, model)</div>
+            <div class="des__item"><strong>[POST]url:</strong> 服务器前缀/api/KEY/edit</div>
+            <div class="des__item"><strong>响应: </strong>{
+              errorCode: 0,
+              errorMessage: ''
+            }</div>
+          </div>
+        </li>
+        <li>
+          <h2>删除</h2>
+          <div>
+            <div class="des__item"><strong>调用方式:</strong>   deleteModel(KEY, id)</div>
+            <div class="des__item"><strong>[POST]url:</strong> 服务器前缀/api/KEY/del</div>
+            <div class="des__item"><strong>响应: </strong>{
+              errorCode: 0,
+              errorMessage: ''
+            }</div>
+          </div>
+        </li>
       </ul>
-      
+      <div class="demo__title">增删改查</div>
       <van-search 
         placeholder="请输入搜索关键词"
         v-model="searchCondition.name"
@@ -92,6 +138,20 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Microsoft Yahei';
+}
+.des__item {
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+.des__item strong{
+  display: inline-block;
+  font-weight: bold;
+}
 .item {
   padding: 0 .2rem;
   line-height: 3;

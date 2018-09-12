@@ -128,9 +128,13 @@
 * 华为，三星，小米，vivo，魅族，锤子。
 
 ## TODO
-* 考虑加入 [飞冰](https://github.com/alibaba/ice/) 的一些组件。
+* 待加入的组件
+  * [index-list](https://github.com/rt-zhangxuefei/vue2-index-list) 带字母索引的列表
+  * [飞冰](https://github.com/alibaba/ice/) 的一些组件。
+  * [clip](https://github.com/Chris-wei/vue-clip) 图片裁切压缩。
+* 待封装的组件
+  * 表单Item的封装。
 * 供练习用的综合页面。
-* 表单Item的封装。
 
 ## 运行
 1 安装依赖：  

@@ -34,7 +34,7 @@ var routes = [
   {
     path: `/${PREFIX}/axios/crud`,
     meta: {
-      title: 'CRUD',
+      title: '增删改查',
       activeTypeIndex: 2,
     },
     component: resolve => {
