@@ -219,7 +219,28 @@ var routes = [
       lazyLoading(resolve, 'other/feedback')
     },
   },
- 
+  {
+    path: `/${PREFIX}/other/community`,
+    meta: {
+      title: '',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/community/list')
+    },
+  },
+  {
+    path: `/${PREFIX}/other/community/create`,
+    meta: {
+      title: '',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/community/create')
+    },
+  },
 ]
 
 
