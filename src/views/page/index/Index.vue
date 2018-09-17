@@ -128,6 +128,10 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">朋友圈</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/page/other/todomvc')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">待办事宜</div>
+      </a>
     </div>
   </div>
 </template>

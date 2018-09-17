@@ -241,6 +241,17 @@ var routes = [
       lazyLoading(resolve, 'other/community/create')
     },
   },
+  {
+    path: `/${PREFIX}/other/todomvc`,
+    meta: {
+      title: '代办事宜',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/todomvc')
+    },
+  },
 ]
 
 
