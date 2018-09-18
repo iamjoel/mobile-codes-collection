@@ -51,11 +51,11 @@ export default {
           this.$toast(`最多上次${this.imgs.max}张图片`)
           return
         }
-
+        let prevUploadedImgNum = this.imgs.previewList.length
         this.$showLoading()
         var uploadedSuccessNum = 0
         for(var i = 0; i < files.length; i++) {
-          this.uploadEachOne(files.item(i), i, () => {
+          this.uploadEachOne(files.item(i), prevUploadedImgNum + i, () => {
             uploadedSuccessNum++
             if(uploadedSuccessNum === files.length) {
                 this.imgs.list = this.imgs.list.filter(img => !!img)
