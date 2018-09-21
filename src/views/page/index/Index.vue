@@ -124,7 +124,7 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">意见反馈</div>
       </a>
-      <a href="javascript:void(0)" @click="$router.push('/page/other/community')" class="nav__item">
+      <a href="javascript:void(0)" @click="$router.push('/page/other/community')" class="nav__item demo--unfinished">
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">朋友圈</div>
       </a>
