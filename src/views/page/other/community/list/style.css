@@ -14,9 +14,12 @@
   color: #000000;
 }
 .list{
-  padding: .3rem .15rem .4rem .15rem;
   margin-top: .2rem;
-  background: #ffffff;
+}
+.item {
+  margin-top: .2rem;
+  padding: .3rem .15rem .4rem .15rem;
+  background-color: #ffffff;
 }
 .user-avatar{
   margin-right: .2rem;
