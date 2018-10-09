@@ -62,6 +62,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/graphQL`,
+    meta: {
+      title: 'GraphQL',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'graphQL')
+    },
+  },
+  {
     path: `/${PREFIX}/i18n`,
     meta: {
       title: '多语言',

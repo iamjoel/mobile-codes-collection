@@ -25,6 +25,14 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">自定义处理报错</div>
       </a>
+      
+    </div>
+    <h2 class="demo-classify__title">GraphQL</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="$router.push('/tool/graphQL')" class="nav__item">
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">GraphQL</div>
+      </a>
     </div>
     <h2 class="demo-classify__title">微信相关</h2>
     <div class="ly ly-multi nav">
