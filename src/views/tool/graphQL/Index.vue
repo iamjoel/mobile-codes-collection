@@ -14,7 +14,7 @@
 
 <script>
 // https://github.com/settings/tokens
-const token = 'c20ce96139ded4b38d360b20b5fa1cec107e9424'
+const token = 'xxx' // 每次写真实的 token 提交 GitHub。GitHub 就会把那 token 删掉。。。
 
 import axios from 'axios'
 
