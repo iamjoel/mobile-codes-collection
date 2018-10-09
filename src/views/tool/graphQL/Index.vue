@@ -14,7 +14,7 @@
 
 <script>
 // https://github.com/settings/tokens
-const token = '25e1c1f826e6776647cf8547c8f4bccb0835c823'
+const token = 'c20ce96139ded4b38d360b20b5fa1cec107e9424'
 
 import axios from 'axios'
 
