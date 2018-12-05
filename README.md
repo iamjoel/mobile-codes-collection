@@ -69,7 +69,7 @@
   * 柱状图。
   * 饼图。
 * 其他
-  * 第三方客服。 用的[美洽](https://meiqia.com/)
+  * 第三方客服。 用的[美洽](https://meiqia.com/)。
 </details>
 
 <details>
