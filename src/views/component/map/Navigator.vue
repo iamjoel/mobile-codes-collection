@@ -35,6 +35,65 @@ export default {
         .replace('{address}', encodeURIComponent(this.$route.params.address))
       console.log(mapJumpUrl)
       return mapJumpUrl
+    },
+    // 微信地图上面加标注点
+    loadMap(pointList) {
+      if(pointList.length > 0) {
+        var center = new qq.maps.LatLng(pointList[0].lat, pointList[0].lng);
+        var map = new qq.maps.Map(document.getElementById('map'),{
+            center: center,
+            zoom: 13
+        })
+        this.map = map
+        
+        pointList.forEach(item => {
+          this.addMapIcon(item.lat, item.lng, item.name, item.id)
+        })
+      }
+    },
+    addMapIcon(lat, lng, name, id) {
+      var map = this.map
+
+      var point = new qq.maps.LatLng(lat, lng)
+      
+      var marker = new qq.maps.Marker({
+          position: point,
+          map: map,
+      })
+
+       var anchor = new qq.maps.Point(0, 39),
+            size = new qq.maps.Size(42, 68),
+            origin = new qq.maps.Point(0, 0),
+          markerIcon = new qq.maps.MarkerImage(
+        "https://3gimg.qq.com/lightmap/api_v2/2/4/99/theme/default/imgs/marker.png",
+        size, 
+        origin,
+        anchor
+      )
+      marker.setIcon(markerIcon)
+      
+      // 点击
+      var info = new qq.maps.InfoWindow({
+          map: map
+      })
+      qq.maps.event.addListener(marker, 'click', function() {
+          info.open();
+          info.setContent(`
+            <div style="text-align:center;white-space:nowrap;' +
+              'margin:10px;">
+              <div>${name}</div>
+              <a 
+                href="${location.origin}/#/common/carrier/detail/${id}"
+                class="d-b mt-10"
+              >查看详情</a>
+            </div>`)
+          // debugger
+          var pos = marker.getPosition()
+          // 弹出框位置的偏移
+          pos.lat += 0.002
+          pos.lng += 0.002
+          info.setPosition(pos);
+      })
     }
   },
   mounted() {
@@ -44,9 +103,11 @@ export default {
     map.centerAndZoom(point, 15)
     var marker = new BMap.Marker(point)
     map.addOverlay(marker)
+    // 微信地图 https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:39.96554,116.26719;title:成都;addr:北京市海淀区复兴路32号院|coord:39.87803,116.19025;title:成都园;addr:北京市丰台区射击场路15号北京园博园|coord:39.88129,116.27062;title:老成都;addr:北京市丰台区岳各庄梅市口路西府景园六号楼底商|coord:39.9982,116.19015;title:北京园博园成都园;addr:北京市丰台区园博园内&key=your key&referer=myapp
 
     this.getMapJumpUrl()
-  }
+  },
+
 }
 </script>
 
