@@ -86,7 +86,7 @@ import App from './App.vue'
 
 
 
-new Vue({
+var vm =  new Vue({
   el: '#app',
   i18n,
   router,
@@ -94,4 +94,10 @@ new Vue({
   components: { App },
   store
 })
+
+// 登录成功的跳转
+Vue.prototype.$loginedJump = function(url) {
+  var jumpUrl = this.$store.state.user.id ? url : '/login'
+  this.$router.push(jumpUrl)
+}.bind(vm)
 
