@@ -315,6 +315,14 @@
         <div class="mt-10 ta-c">饼图</div>
       </a>
     </div>
+
+    <h2 class="demo-classify__title">其他</h2>
+    <div class="ly ly-multi nav">
+      <a href="javascript:void(0)" @click="chat" class="nav__item">
+        <van-icon name="chat" />
+        <div class="mt-10 ta-c">客服</div>
+      </a>
+    </div>
   </div>
 </template>
 

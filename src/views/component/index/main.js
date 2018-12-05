@@ -10,6 +10,11 @@ export default {
       }
     }  
   },
+  mounted() {
+    // 初始化每洽
+    _MEIQIA('withoutBtn') // 不使用默认的聊天窗口
+    _MEIQIA('init')
+  },
   methods: {
     onSearch() {
       this.search.isShowRes = true
@@ -26,6 +31,9 @@ export default {
 
         return hasInTitle || item.path.indexOf(query) !== -1
       })
+    },
+    chat() {
+      _MEIQIA('showPanel') // 开始聊天
     }
   }
 }
