@@ -62,6 +62,10 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">时间</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/tool/other/phone')" class="nav__item">
+        <van-icon name="phone" />
+        <div class="mt-10 ta-c">手机</div>
+      </a>
       <a href="javascript:void(0)" @click="$router.push('/tool/other/img')" class="nav__item">
         <van-icon name="photo" />
         <div class="mt-10 ta-c">图片资源</div>

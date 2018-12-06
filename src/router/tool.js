@@ -122,6 +122,16 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/other/phone`,
+    meta: {
+      title: '手机',
+      activeTypeIndex: 2,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'other/Phone', false)
+    },
+  },
+  {
     path: `/${PREFIX}/other/img`,
     meta: {
       title: '图片资源',
