@@ -3,11 +3,13 @@
     <section class="demo">
       <h2 class="demo__title">无限加载列表</h2>
       <van-cell-group>
-        <ListFetcher key-id="singer">
+        <lj-list 
+          :url="$SERVER_PREFIX + '/singer/list'"
+        >
           <template slot-scope="scope" v-if="scope.data">
             <van-cell :value="scope.data.name" />
           </template>
-        </ListFetcher>
+        </lj-list>
       </van-cell-group>
     </section>
     
@@ -15,11 +17,11 @@
 </template>
 
 <script>
-import ListFetcher from '@/components/list-fetcher'
+import Vue from 'vue'
+import List from '@lucky-joel/vue-list'
+Vue.use(List)
+
 export default {
-  components: {
-    ListFetcher
-  },
   data() {
     return {
     }  

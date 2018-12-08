@@ -73,6 +73,9 @@ import axios from 'axios'
 require('@/service/interceptor') // axios 拦截器，做通用报错等
 Vue.prototype.$http = axios
 
+import {SERVER_PREFIX} from '@/setting'
+Vue.prototype.$SERVER_PREFIX = SERVER_PREFIX
+
 require('@/filters')
 
 import store from '@/store'
