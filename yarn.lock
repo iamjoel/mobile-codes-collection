@@ -23,6 +23,12 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
+"@lucky-joel/vue-fetch-model@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@lucky-joel/vue-fetch-model/-/vue-fetch-model-1.0.3.tgz#00d12c99e98ff04bd997b44156ba44172a685025"
+  dependencies:
+    axios "^0.18.0"
+
 "@lucky-joel/vue-list@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@lucky-joel/vue-list/-/vue-list-1.0.0.tgz#8b6597cee9bba287e8a1edeebd67e7a542ab3356"

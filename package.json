@@ -2,7 +2,10 @@
   "name": "moblie",
   "version": "1.1.0",
   "description": "moblie template",
-  "author": "author }}",
+  "author": {
+    "name": "Joel",
+    "email": "iamjoel007@gmail.com"
+  },
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -10,7 +13,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "@lucky-joel/vue-list": "^1.0.0",
+    "@lucky-joel/vue-fetch-model": "^1.1.0",
+    "@lucky-joel/vue-list": "^1.1.0",
     "axios": "^0.16.2",
     "bricks.js": "^1.8.0",
     "css-utils-collection": "^1.5.1",

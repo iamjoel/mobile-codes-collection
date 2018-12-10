@@ -18,6 +18,7 @@ export default {
     }
   },
   mounted() {
+    debugger
     var isMulti = Array.isArray(this.config)
     var config = isMulti ? this.config : [this.config]
 
