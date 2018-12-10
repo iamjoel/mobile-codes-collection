@@ -20,7 +20,7 @@ const i18n = new VueI18n({
 
 // vant ui
 import Vant from 'vant'
-import 'vant/lib/vant-css/index.css'
+import 'vant/lib/index.css'
 import { Lazyload, Toast, ImagePreview } from 'vant';
 Vue.use(Vant)
 // lazyLoad https://www.youzanyun.com/zanui/vant#/zh-CN/lazyload
