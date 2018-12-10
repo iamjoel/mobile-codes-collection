@@ -9,8 +9,8 @@
           <a href="javascript:void(0)" class="primary-md-btn" @click="$router.push('/page/other/community/create')">发布</a>
         </div>
         <div class="list">
-          <ListFetcher 
-            key-id="community"
+          <lj-list 
+            :url="$SERVER_PREFIX + '/community/list'"
           >
             <template slot-scope="scope" v-if="scope.data">
               <div>
@@ -58,7 +58,7 @@
                 </div>
               </van-popup>
             </template>
-          </ListFetcher>
+          </lj-list>
         </div>
       </van-tab>
 
@@ -68,8 +68,8 @@
           <a href="javascript:void(0)" class="primary-md-btn" @click="$router.push('/page/other/community/create')">发布</a>
         </div>
         <div class="list">
-          <ListFetcher 
-            key-id="community"
+          <lj-list 
+            :url="$SERVER_PREFIX + '/community/list'"
           >
             <template slot-scope="scope" v-if="scope.data">
               <div>
@@ -115,7 +115,7 @@
                 </div>
               </van-popup>
             </template>
-          </ListFetcher>
+          </lj-list>
         </div>
       </van-tab>
     </van-tabs>

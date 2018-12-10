@@ -20,14 +20,10 @@
 </template>
 
 <script>
-import ListFetcher from '@/components/list-fetcher'
 import {fetchList} from '@/service/api'
 import $ from 'jquery'
 
 export default {
-  components: {
-    ListFetcher
-  },
   data() {
     return {
       list: [],

@@ -1,11 +1,13 @@
-import ListFetcher from '@/components/list-fetcher'
+import Vue from 'vue'
+import List from '@lucky-joel/vue-list'
+Vue.use(List)
+
 import Media from '@/components/media'
 export default {
   props: {
     type: String
   },
   components: {
-    ListFetcher,
     Media
   },
   data() {

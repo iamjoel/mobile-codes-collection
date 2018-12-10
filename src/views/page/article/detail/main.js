@@ -1,8 +1,8 @@
-import DataFetcher from '@/components/data-fetcher'
+import Vue from 'vue'
+import fetchModel from '@lucky-joel/vue-fetch-model'
+Vue.use(fetchModel)
+
 export default {
-  components: {
-    DataFetcher
-  },
   data() {
     return {
 

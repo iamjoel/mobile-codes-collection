@@ -1,15 +1,14 @@
 <template>
   <div class="main">
-    <data-fetcher :config="{
-      key: 'news',
-      id: $route.params.id
-    }">
+    <lj-fetch-model
+      :url="$SERVER_PREFIX + '/news/detail/' + $route.params.id"
+    >
       <template slot-scope="scope" v-if="scope.data">
         <h1 class="title ff-yahei">{{scope.data.title}}</h1>
         <h1 class="time">{{scope.data.createTime | time('YYYY-MM-DD hh:mm')}}</h1>
         <div class="rich-editor-result" v-html="scope.data.detail"></div>
       </template>
-    </data-fetcher>
+    </lj-fetch-model>
   </div>
 </template>
 

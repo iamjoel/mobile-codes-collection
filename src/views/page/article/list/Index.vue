@@ -1,8 +1,7 @@
 <template>
   <div class="main">
-    <list-fetcher key-id="news" 
-      page-limit="5" 
-      :isInfinate="true"
+    <lj-list
+      :url="$SERVER_PREFIX + '/news/list'"
     >
       <template slot-scope="scope" v-if="scope.data">
         <media
@@ -27,7 +26,7 @@
           
         </media>
       </template>
-    </list-fetcher>
+    </lj-list>
   </div>
 </template>
 

@@ -1,11 +1,10 @@
 import { addModel} from '@/service/api'
-import ListFetcher from '@/components/list-fetcher'
+import Vue from 'vue'
+import List from '@lucky-joel/vue-list'
+Vue.use(List)
 
 var openid = '1'
 export default {
-  components: {
-    ListFetcher
-  },
   data() {
     return {
       isShowComment: false,

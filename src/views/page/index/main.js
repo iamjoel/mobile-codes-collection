@@ -30,30 +30,5 @@ export default {
     }
   },
   mounted() {
-    // this.$http.post('http://127.0.0.1:7001/api/login', {
-    //   account: 'b',
-    //   password: 'c4ca4238a0b923820dcc509a6f75849b'
-    // }).then(({data}) => {
-    //   // debugger
-    // })
-    // return
-    this.$http.get('http://127.0.0.1:7001/api/item/list', {
-      headers: {
-        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50IjoiYiIsInJvbGUiOjIsImV4cCI6MTU0MDU1MzQ4MDU5NH0.sStb17FOr_fkWhF2t81dOyCPYwOPpBs_4pyQpksd8Ow'
-      }
-    }).then(({data}) => {
-      // debugger
-    })
-    // this.$http.post('http://127.0.0.1:7001/api/category/add', {
-    //   name: 'tes',
-    //   detail: 'bdfdfdffdfdf'
-    // }, {
-    //   headers: {
-    //     token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50IjoiYiIsInJvbGUiOjIsImV4cCI6MTU0MDU1MzQ4MDU5NH0.sStb17FOr_fkWhF2t81dOyCPYwOPpBs_4pyQpksd8Ow'
-    //   }
-    // }).then(({data}) => {
-    //   // debugger
-    // })
-
   }
 }
