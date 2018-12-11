@@ -15,6 +15,7 @@
   "dependencies": {
     "@lucky-joel/vue-fetch-model": "^1.1.1",
     "@lucky-joel/vue-list": "^1.1.1",
+    "@lucky-joel/vue-media": "^1.0.0",
     "axios": "^0.16.2",
     "bricks.js": "^1.8.0",
     "css-utils-collection": "^1.5.1",

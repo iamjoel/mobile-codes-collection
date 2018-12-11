@@ -36,6 +36,10 @@
     vant "^1.4.8"
     vue "^2.5.17"
 
+"@lucky-joel/vue-media@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@lucky-joel/vue-media/-/vue-media-1.0.0.tgz#87336b44b18e1aa81e711b7242f5c258f3f5161a"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

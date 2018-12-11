@@ -3,29 +3,29 @@
     <section class="demo">
       <h2 class="demo__title">默认Media</h2>
       <div>
-        <media v-for="i in 3" :key="i" style="padding: .1rem">
+        <lj-media v-for="i in 3" :key="i" style="padding: .1rem">
           <h3 class="mb-10">标题</h3>
           <p>内容内容内容内容内容内容内容内容内容</p>
-        </media>
+        </lj-media>
       </div>
     </section>
     
     <section class="demo">
       <h2 class="demo__title">垂直的Media</h2>
       <div class="ly ly-multi">
-        <media v-for="i in 3" :key="Math.random()"
+        <lj-media v-for="i in 3" :key="Math.random()"
           style="padding: .1rem;width: 3rem;"
           dir-ver
         >
           <h3 class="mb-10">标题</h3>
           <p>内容内容内容内容内容内容内容内容内容</p>
-        </media>
+        </lj-media>
       </div>
     </section>
     
     <section class="demo">
       <h2 class="demo__title">可配置项目的Media</h2>
-      <media v-for="i in 3" :key="Math.random()"
+      <lj-media v-for="i in 3" :key="Math.random()"
         style="padding: .1rem"
         :img="{
           src: '/static/demo/2.jpeg',
@@ -37,7 +37,7 @@
       >
         <h3 class="mb-10">标题</h3>
         <p>内容内容内容内容内容内容内容内容内容</p>
-      </media>
+      </lj-media>
     </section>
     
 
@@ -46,11 +46,11 @@
 </template>
 
 <script>
-import Media from '@/components/media'
+import Vue from 'vue'
+import VueMedia from '@lucky-joel/vue-media'
+Vue.use(VueMedia)
 export default {
-  components: {
-    Media
-  },
+  
   data() {
     return {
 
