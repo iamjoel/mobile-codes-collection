@@ -1,6 +1,10 @@
 <template>
   <div class="main">
-    <calendar />
+    <calendar >
+      <template slot-scope="data">
+        <span>{{data.data}}</span>
+      </template>
+    </calendar>
   </div>
 </template>
 

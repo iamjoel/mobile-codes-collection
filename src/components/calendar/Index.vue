@@ -15,8 +15,9 @@
       <div class="calender__body-item " v-for="item in emptyBeforeCellNum" :key="Math.random()"></div>
       <div class="calender__body-item ly ly-c" v-for="(item,i) in dayNum" :key="item">
         <div class="calender__body-item__inner ly ly-c">
-        {{item}}
-      </div>
+          {{item}}
+          <slot :data="item"/>
+        </div>
       </div>
       <div class="calender__body-item " v-for="item in emptyAfterCellNum" :key="Math.random()"></div>
     </div>
