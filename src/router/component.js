@@ -517,6 +517,17 @@ var routes = [
     },
   },
   {
+    path: `/${PREFIX}/map/geo-location`,
+    meta: {
+      title: '获取地址',
+      activeTypeIndex: 0,
+      isShowFooter: false,
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'map/Geolocation', false)
+    },
+  },
+  {
     path: `/${PREFIX}/chart/line`,
     meta: {
       title: '折线图',

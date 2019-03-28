@@ -298,6 +298,10 @@
         <van-icon name="location" />
         <div class="mt-10 ta-c">坐标转换服务</div>
       </a>
+      <a href="javascript:void(0)" @click="$router.push('/component/map/geo-location')" class="nav__item">
+        <van-icon name="location" />
+        <div class="mt-10 ta-c">定位</div>
+      </a>
     </div>
 
     <h2 class="demo-classify__title">数据可视化</h2>
