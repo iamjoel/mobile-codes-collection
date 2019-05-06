@@ -10,7 +10,9 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@lucky-joel/vue-fetch-model": "^1.1.1",
@@ -34,7 +36,8 @@
     "vue-router": "^3.0.0",
     "vue-slider-component": "^2.7.5",
     "vuex": "^2.4.0",
-    "yarn": "^1.0.0"
+    "yarn": "^1.0.0",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -80,5 +83,6 @@
   "browserslist": [
     "Android >= 4.0",
     "iOS >= 7"
-  ]
+  ],
+  "snyk": true
 }
