@@ -1,22 +1,19 @@
 <template>
   <div class="main">
-    <img class="img" src="/static/demo/1.jpeg" alt="" @click="preview">
+    <img class="img" src="/static/demo/1.jpeg" alt="" @click="preview" />
   </div>
 </template>
 
 <script>
 import { ImagePreview } from 'vant'
 export default {
-  data() {
+  data () {
     return {
-      list: [
-        '/static/demo/1.jpeg',
-        '/static/demo/2.jpeg',
-      ]
-    }  
+      list: ['/static/demo/1.jpeg', '/static/demo/2.jpeg']
+    }
   },
   methods: {
-    preview() {
+    preview () {
       ImagePreview(this.list)
     }
   }
@@ -24,7 +21,7 @@ export default {
 </script>
 
 <style scoped>
-  .img {
-    max-width: 100%;
-  }
+.img {
+  max-width: 100%;
+}
 </style>

@@ -1,73 +1,71 @@
-.main{
-	background: #ffffff;
+.main {
+  background: #ffffff;
 }
-.create{
-	padding: 0 .25rem .35rem .25rem;
-	border-top: 2px solid #f6f6f6;
-	border-bottom: 2px solid #e8e8e8;
-
+.create {
+  padding: 0 0.25rem 0.35rem 0.25rem;
+  border-top: 2px solid #f6f6f6;
+  border-bottom: 2px solid #e8e8e8;
 }
-.text{
-	border:none;
-	width: 5.85rem;
-	height: 2rem;
-	color: #999999;
-	font-size: 13px;
-	padding-top: .25rem;
+.text {
+  border: none;
+  width: 5.85rem;
+  height: 2rem;
+  color: #999999;
+  font-size: 13px;
+  padding-top: 0.25rem;
 }
 
 .img-wrap {
-	margin-bottom: .1rem;
-	margin-right: .1rem;
+  margin-bottom: 0.1rem;
+  margin-right: 0.1rem;
 }
-.img-wrap:nth-child(3n){
-	margin-right: 0rem;
+.img-wrap:nth-child(3n) {
+  margin-right: 0rem;
 }
 
-
-.img{
-	width: 1.9rem;
-	height: 1.9rem;
-}
-.create-img{
-	margin-left: auto;
-	margin-right: auto;
-	width: .65rem;
-	height: .65rem;
-}
-.upload-img-btn-wrap{
-	margin-right: 0;
-	position: relative;
-	display: flex;
-	align-items: center;
+.img {
   width: 1.9rem;
-	height: 1.9rem;
-	background: #f3f3f3;
+  height: 1.9rem;
 }
-.upload{
-	position: absolute;
-	opacity: .00001;
-	left: 0;
-	width: 1.9rem;
-	height: 1.9rem;
+.create-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0.65rem;
+  height: 0.65rem;
 }
-.confirm-button-wrap{
-	padding: .6rem .3rem;
+.upload-img-btn-wrap {
+  margin-right: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  background: #f3f3f3;
+}
+.upload {
+  position: absolute;
+  opacity: 0.00001;
+  left: 0;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.confirm-button-wrap {
+  padding: 0.6rem 0.3rem;
 }
 .remove-img-btn {
   position: absolute;
-  top: -.1rem;
-  right: -.1rem;
-  width: .32rem;
-  height: .32rem;
+  top: -0.1rem;
+  right: -0.1rem;
+  width: 0.32rem;
+  height: 0.32rem;
   background-image: url(./images/remove-btn.png);
   background-size: 100% 100%;
 }
 .primary-lg-btn {
   display: block;
   width: 100%;
-  height: .8rem;
-  line-height: .8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
   text-align: center;
   color: #fff;
   font-size: 13px;

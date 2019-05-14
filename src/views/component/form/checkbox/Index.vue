@@ -24,7 +24,7 @@
           slot="icon"
           slot-scope="props"
           :src="props.checked ? icon.active : icon.normal"
-        >
+        />
       </van-checkbox>
     </section>
 
@@ -33,11 +33,7 @@
         checkbox组
       </div>
       <van-checkbox-group v-model="result">
-        <van-checkbox
-          v-for="(item, index) in list"
-          :key="item"
-          :name="item"
-        >
+        <van-checkbox v-for="(item, index) in list" :key="item" :name="item">
           复选框 {{ item }}
         </van-checkbox>
       </van-checkbox-group>
@@ -66,27 +62,29 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       checked: true,
       icon: {
-        normal: 'https://img.yzcdn.cn/public_files/2017/10/13/c547715be149dd3faa817e4a948b40c4.png',
-        active: 'https://img.yzcdn.cn/public_files/2017/10/13/793c77793db8641c4c325b7f25bf130d.png'
+        normal:
+          'https://img.yzcdn.cn/public_files/2017/10/13/c547715be149dd3faa817e4a948b40c4.png',
+        active:
+          'https://img.yzcdn.cn/public_files/2017/10/13/793c77793db8641c4c325b7f25bf130d.png'
       },
       list: ['a', 'b', 'c'],
-      result: [],
-    }  
+      result: []
+    }
   },
   methods: {
-    toggle(index) {
-      this.$refs.checkboxes[index].toggle();
+    toggle (index) {
+      this.$refs.checkboxes[index].toggle()
     }
   }
 }
 </script>
 
 <style>
-  .van-checkbox img {
-    width: 20px;
-  }
+.van-checkbox img {
+  width: 20px;
+}
 </style>

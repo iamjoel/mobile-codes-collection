@@ -1,56 +1,48 @@
 export default {
-  data() {
+  data () {
     return {
       showArea: false,
-      model:{
-        
-      },
+      model: {},
       previewUrl: {
         Thumb: null,
         LicenceImage: null,
         IdFront: null,
         IdBack: null,
         BackgroundImage: []
-      },
-    }  
+      }
+    }
   },
-  
+
   methods: {
-    valid() {
+    valid () {
       var errMsg
       var model = this.model
       if (!model.Name) {
         errMsg = '请输入店铺名称'
-      } else if(!model.Title) {
+      } else if (!model.Title) {
         errMsg = '请输入经营内容'
-      } else if(!model.Mobile) {
+      } else if (!model.Mobile) {
         errMsg = '请输入店铺手机'
-      } else if(!model.Telphone) {
+      } else if (!model.Telphone) {
         errMsg = '请输入店铺电话'
-      }  else if(!model.Description) {
+      } else if (!model.Description) {
         errMsg = '请输入店铺简介'
-      } else if(!model.Address) {
+      } else if (!model.Address) {
         errMsg = '请输入地址'
       }
 
-      if(errMsg) {
+      if (errMsg) {
         this.$toast(errMsg)
         return false
       }
       return !errMsg
     },
-    save() {
-      if(this.valid()){
+    save () {
+      if (this.valid()) {
         this.doSave()
       }
     },
-    doSave() {
-      
-    },
+    doSave () {}
   },
-  mounted() {
-    
-
-    
-  }
+  mounted () {}
 }

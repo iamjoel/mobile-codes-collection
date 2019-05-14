@@ -6,21 +6,18 @@
       left-icon="./images/chat.png"
     />
     <div class="mt-20rem ph-10rem">
-      注意： 左侧图标(left-icon): 必须是绝对路径。所以将图标放到 static 下面，用绝对路径，就可以显示出来了...
+      注意： 左侧图标(left-icon): 必须是绝对路径。所以将图标放到 static
+      下面，用绝对路径，就可以显示出来了...
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 

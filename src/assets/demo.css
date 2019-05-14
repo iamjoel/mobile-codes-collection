@@ -1,12 +1,12 @@
 body {
   background-color: #f8f8f8;
 }
-.demo-classify__title{
+.demo-classify__title {
   font-size: 16px;
-  margin: .2rem;
-  padding-left: .2rem;
-  height: .4rem;
-  line-height: .4rem;
+  margin: 0.2rem;
+  padding-left: 0.2rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
   border-left: 3px solid #fd9003;
 }
 .demo--unfinished {
@@ -17,14 +17,14 @@ body {
   color: yellow;
 }
 .demo {
-  padding: 0 .2rem;
+  padding: 0 0.2rem;
 }
 .demo__title {
-  margin-bottom: .1rem;
+  margin-bottom: 0.1rem;
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
-  color: rgba(69,90,100,.6);
+  color: rgba(69, 90, 100, 0.6);
 }
 
 .search-wrap {

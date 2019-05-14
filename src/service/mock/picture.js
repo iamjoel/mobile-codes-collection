@@ -1,6 +1,6 @@
 import Mock from 'mockjs'
-import {SERVER_PREFIX} from '@/setting'
-import {Random} from 'mockjs'
+import { SERVER_PREFIX } from '@/setting'
+import { Random } from 'mockjs'
 
 // 图片上传
 // Mock.mock(new RegExp(`${SERVER_PREFIX}/picture/upload`), 'post', ({ url, body }) => {

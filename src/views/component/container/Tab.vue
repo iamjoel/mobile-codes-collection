@@ -53,12 +53,13 @@
         内容3
       </van-tab>
     </van-tabs>
-    
 
     <div class="demo__title">滑动滚动</div>
     <van-tabs swipeable>
       <van-tab :title="'选项' + i" v-for="i in 3" :key="i">
-        <div class="ta-c" style="height: 100px;line-height: 100px">内容{{i}}</div>
+        <div class="ta-c" style="height: 100px;line-height: 100px">
+          内容{{ i }}
+        </div>
       </van-tab>
     </van-tabs>
     <div class="demo__title">粘性布局(滚动到顶部时会自动吸顶)</div>
@@ -73,24 +74,20 @@
 
 <script>
 export default {
-  data() {
-    return {
-
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
 <style scoped></style>
 
 <style>
-  .change-tab-color .van-tab--active {
-    color: #0f0;
-  }
-  .change-tab-color .van-tabs__line {
-    background-color: #0f0;
-  }
+.change-tab-color .van-tab--active {
+  color: #0f0;
+}
+.change-tab-color .van-tabs__line {
+  background-color: #0f0;
+}
 </style>

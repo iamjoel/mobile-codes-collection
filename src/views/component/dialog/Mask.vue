@@ -1,20 +1,15 @@
 <template>
   <div class="main">
-    <div class="mask">
-    </div>
+    <div class="mask"></div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
@@ -26,6 +21,6 @@ export default {
   left: 0;
   width: 6.4rem;
   height: 100vh;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 </style>

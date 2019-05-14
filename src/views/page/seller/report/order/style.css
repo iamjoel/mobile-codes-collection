@@ -3,8 +3,8 @@
 }
 
 .order-info {
-  margin-bottom: .2rem;
-  padding: .3rem 0;
+  margin-bottom: 0.2rem;
+  padding: 0.3rem 0;
   background-color: #fff;
 }
 
@@ -24,7 +24,7 @@
   top: 0;
   right: 0;
   width: 1px;
-  height: .24rem;
+  height: 0.24rem;
   background-color: #ebebeb;
 }
 
@@ -33,17 +33,17 @@
 }
 
 .order-data__item {
-  padding: 0 .25rem;
+  padding: 0 0.25rem;
   border-bottom: 1px solid #ebebeb;
 }
 
 .order-data__title {
-  padding: .2rem 0;
+  padding: 0.2rem 0;
   width: 50%;
 }
 
 .order-data__value {
-  padding: .2rem 0;
+  padding: 0.2rem 0;
   width: 50%;
 }
 

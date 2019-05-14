@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="demo__title">基本用法</div>
-     <van-cell-group>
+    <van-cell-group>
       <van-cell title="单元格" value="内容" />
       <van-cell title="单元格" value="内容" label="描述信息" />
     </van-cell-group>
@@ -29,25 +29,23 @@
       </van-cell>
       <van-cell title="单元格" icon="location" is-link />
       <van-cell title="单元格">
-        <van-icon slot="right-icon" name="search" class="van-cell__right-icon" />
+        <van-icon
+          slot="right-icon"
+          name="search"
+          class="van-cell__right-icon"
+        />
       </van-cell>
     </van-cell-group>
-
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
-<style scoped>
- 
-</style>
+<style scoped></style>

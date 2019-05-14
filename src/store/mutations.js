@@ -7,13 +7,13 @@ const mutations = {
   [types.OPENID] (state, openid) {
     state.openid = openid
   },
-  [types.CHANGE_ACTIVE_TYPE](state, type) {
+  [types.CHANGE_ACTIVE_TYPE] (state, type) {
     state.activeTypeIndex = type
   },
-  [types.CHANGE_FOOTER_VISIBLE](state, isShow) {
+  [types.CHANGE_FOOTER_VISIBLE] (state, isShow) {
     state.isShowFooter = isShow
   },
-  setSingerListCache(state, data) {
+  setSingerListCache (state, data) {
     state.singerListCache = data
   }
 }

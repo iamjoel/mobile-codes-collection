@@ -26,20 +26,20 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       isShowDialog: false,
       username: '',
       password: ''
-    }  
+    }
   },
   methods: {
-    beforeClose(action, done) {
-      if(action === 'confirm') {
-        setTimeout(()=> {
+    beforeClose (action, done) {
+      if (action === 'confirm') {
+        setTimeout(() => {
           done()
           this.$toast('成功')
-        }, 1000);
+        }, 1000)
       } else {
         done()
       }
@@ -48,6 +48,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -8,25 +8,21 @@
 
 <script>
 export default {
-  data() {
-    return {
-
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
 <style scoped>
-  .placeholder {
-    height: 1rem;
-    line-height: 1rem;
-    text-align: center;
-    background-color: #ddd;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border: none;
-  }
+.placeholder {
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  background-color: #ddd;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border: none;
+}
 </style>

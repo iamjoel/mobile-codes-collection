@@ -5,84 +5,84 @@ var routes = [
     path: `/${PREFIX}/index`,
     meta: {
       title: '页面',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'index')
-    },
+    }
   },
   {
     path: `/${PREFIX}/ui`,
     meta: {
       title: 'UI规范',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'ui')
-    },
+    }
   },
-  
+
   {
     path: `/${PREFIX}/common/register`,
     meta: {
       title: '注册',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'common/register')
-    },
+    }
   },
   {
     path: `/${PREFIX}/common/login`,
     meta: {
       title: '登录',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'common/login')
-    },
+    }
   },
 
   {
     path: `/${PREFIX}/common/member-center`,
     meta: {
       title: '个人中心',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'common/member-center')
-    },
+    }
   },
 
   {
     path: `/${PREFIX}/form/add-and-edit`,
     meta: {
       title: '新增&编辑',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'form/add-and-edit')
-    },
+    }
   },
   {
     path: `/${PREFIX}/form/realtime-save`,
     meta: {
       title: '新增实时保存',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'form/realtime-save')
-    },
+    }
   },
   {
     path: `/${PREFIX}/form/valid`,
     meta: {
       title: '表单验证',
-      activeTypeIndex: 1,
+      activeTypeIndex: 1
     },
     component: resolve => {
       lazyLoading(resolve, 'form/valid')
-    },
+    }
   },
   {
     path: `/${PREFIX}/mall/goods-list`,
@@ -93,7 +93,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'mall/goods-list')
-    },
+    }
   },
   {
     path: `/${PREFIX}/mall/goods-detail/:id`,
@@ -104,7 +104,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'mall/goods-detail')
-    },
+    }
   },
   {
     path: `/${PREFIX}/mall/order-list`,
@@ -115,7 +115,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'mall/order-list')
-    },
+    }
   },
   {
     path: `/${PREFIX}/mall/order-comment/:orderId`,
@@ -126,7 +126,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'mall/order-comment')
-    },
+    }
   },
   {
     path: `/${PREFIX}/mall/result/:type/:code`,
@@ -137,7 +137,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'mall/order-result')
-    },
+    }
   },
   {
     path: `/${PREFIX}/mall/cart`,
@@ -148,10 +148,10 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'mall/cart')
-    },
+    }
   },
 
-   {
+  {
     path: `/${PREFIX}/seller/report/order`,
     meta: {
       title: '订单报表',
@@ -160,7 +160,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'seller/report/order')
-    },
+    }
   },
 
   {
@@ -172,7 +172,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'article/list')
-    },
+    }
   },
   {
     path: `/${PREFIX}/article/detail/:id`,
@@ -183,7 +183,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'article/detail')
-    },
+    }
   },
 
   {
@@ -195,7 +195,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'other/argument/User', false)
-    },
+    }
   },
   {
     path: `/${PREFIX}/other/faq`,
@@ -206,7 +206,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'other/faq')
-    },
+    }
   },
   {
     path: `/${PREFIX}/other/feedback`,
@@ -217,7 +217,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'other/feedback')
-    },
+    }
   },
   {
     path: `/${PREFIX}/other/community`,
@@ -228,7 +228,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'other/community/list')
-    },
+    }
   },
   {
     path: `/${PREFIX}/other/community/create`,
@@ -239,7 +239,7 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'other/community/create')
-    },
+    }
   },
   {
     path: `/${PREFIX}/other/todomvc`,
@@ -250,15 +250,13 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'other/todomvc')
-    },
-  },
+    }
+  }
 ]
 
-
-
 const lazyLoading = (resolve, name, index = true) => {
-  require.ensure([], function(require) {
-    resolve(require(`@/views/page/${name}${index ? '/Index' : ''}.vue`));
+  require.ensure([], function (require) {
+    resolve(require(`@/views/page/${name}${index ? '/Index' : ''}.vue`))
   })
 }
 

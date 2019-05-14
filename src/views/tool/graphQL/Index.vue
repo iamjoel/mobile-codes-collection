@@ -3,12 +3,11 @@
     我 GitHub 上 Star 最多的3个库
     <ul>
       <li v-for="(item, i) in list" :key="i">
-        {{item.node.name}}
-        Star数: {{item.node.stargazers.totalCount}}
-        语言: {{item.node.primaryLanguage.name}}
+        {{ item.node.name }}
+        Star数: {{ item.node.stargazers.totalCount }} 语言:
+        {{ item.node.primaryLanguage.name }}
       </li>
     </ul>
-
   </div>
 </template>
 
@@ -19,15 +18,13 @@ const token = 'xxx' // 每次写真实的 token 提交 GitHub。GitHub 就会把
 import axios from 'axios'
 
 export default {
-  data() {
+  data () {
     return {
       list: []
     }
   },
-  methods: {
-
-  },
-  mounted() {
+  methods: {},
+  mounted () {
     var query = `
 {
   user(login: "iamjoel") {
@@ -62,25 +59,22 @@ export default {
     //   debugger
     // })
 
-    // fetch 的 type 就是 fetch，不是xhr，不会发 option 请求，所以能ok。 
+    // fetch 的 type 就是 fetch，不是xhr，不会发 option 请求，所以能ok。
     fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: {
-        'Authorization': `bearer ${token}`,
+        Authorization: `bearer ${token}`,
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        Accept: 'application/json'
       },
-      body: JSON.stringify({query})
+      body: JSON.stringify({ query })
     })
-    .then(r => r.json())
-    .then(({data}) => {
-      this.list = data.user.repositories.edges
-    })
-    
+      .then(r => r.json())
+      .then(({ data }) => {
+        this.list = data.user.repositories.edges
+      })
   }
 }
-
-
 </script>
 
 <style scoped></style>

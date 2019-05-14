@@ -8,7 +8,9 @@
       class="field__input"
     ></textarea>
     <div class="ly ly-c mv-20rem ph-10rem">
-      <van-button size="large" type="primary" @click="save">提交反馈</van-button>
+      <van-button size="large" type="primary" @click="save"
+        >提交反馈</van-button
+      >
     </div>
   </div>
 </template>

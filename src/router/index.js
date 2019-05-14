@@ -6,7 +6,6 @@ import toolRouter from './tool'
 
 Vue.use(Router)
 
-
 export default new Router({
   routes: [
     ...componentRouter,
@@ -16,11 +15,11 @@ export default new Router({
       path: `/doc`,
       meta: {
         title: '文档',
-        activeTypeIndex: 3,
+        activeTypeIndex: 3
       },
       component: resolve => {
         lazyLoading(resolve, 'doc/Index', false)
-      },
+      }
     },
     // 出错的默认地址
     {
@@ -31,9 +30,7 @@ export default new Router({
 })
 
 const lazyLoading = (resolve, name, index = true) => {
-  require.ensure([], function(require) {
-    resolve(require(`@/views/${name}${index ? '/Index' : ''}.vue`));
+  require.ensure([], function (require) {
+    resolve(require(`@/views/${name}${index ? '/Index' : ''}.vue`))
   })
 }
-
-

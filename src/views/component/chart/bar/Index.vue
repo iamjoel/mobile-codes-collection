@@ -9,20 +9,18 @@
         </div>
       </div>
     </section>
-    
+
     <p>其他内容</p>
 
     <div class="p-10rem">
-      注意：需要在 webpack.base.conf.js 中的 loader: 'babel-loader' 加 <br>
-      <code >
-        resolve('node_modules/vue-echarts'),<br>
-        resolve('node_modules/resize-detector') <br>
+      注意：需要在 webpack.base.conf.js 中的 loader: 'babel-loader' 加 <br />
+      <code>
+        resolve('node_modules/vue-echarts'),<br />
+        resolve('node_modules/resize-detector') <br />
       </code>
       不加 npm run build 时会报错。
     </div>
   </div>
 </template>
 
-<script src="./main.js">
-  
-</script>
+<script src="./main.js"></script>

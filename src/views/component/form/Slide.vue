@@ -4,26 +4,21 @@
     <section class="demo">
       <h2 class="demo__title">基础用法</h2>
       <div class="mv-10">van-slider 只支持选择范围为：0~100</div>
-      <van-slider 
-        v-model="slideValue" 
-        :min="10"
-        :max="90"
-        :step="5"
-      />
-      <div class="mv-10">当前值: {{slideValue}}</div>
+      <van-slider v-model="slideValue" :min="10" :max="90" :step="5" />
+      <div class="mv-10">当前值: {{ slideValue }}</div>
     </section>
     <h1 class="ff-yahei" style="margin-top: 50px;">vue-slider-component</h1>
     <div class="m-20">vue-slider-component 支持更多的功能</div>
     <section class="demo">
       <h2 class="demo__title">基础用法</h2>
-        <div class="ly ly-m p-20rem">
-          音量值:
-          <div style="flex-grow: 1">
-             <vue-slider v-model="value1"></vue-slider>
-          </div>
+      <div class="ly ly-m p-20rem">
+        音量值:
+        <div style="flex-grow: 1">
+          <vue-slider v-model="value1"></vue-slider>
+        </div>
       </div>
     </section>
-    
+
     <section class="demo">
       <h2 class="demo__title">范围</h2>
       <div class="ly ly-m p-20rem">
@@ -33,18 +28,16 @@
           piecewise: 画价格点
          -->
         <div style="flex-grow: 1">
-           <vue-slider 
+          <vue-slider
             v-model="value2"
             :min="10"
             :max="100"
             :interval="10"
             piecewise
-            ></vue-slider>
+          ></vue-slider>
         </div>
       </div>
     </section>
-    
-    
   </div>
 </template>
 
@@ -55,23 +48,21 @@ export default {
   components: {
     vueSlider
   },
-  data() {
+  data () {
     return {
       slideValue: 20,
       value1: 5,
-      value2: [20, 50],
-    }  
+      value2: [20, 50]
+    }
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
 <style scoped>
 h1 {
-  margin: .1rem 0;
-  padding: 0 .2rem;
+  margin: 0.1rem 0;
+  padding: 0 0.2rem;
   font-size: 18px;
   font-weight: bold;
 }

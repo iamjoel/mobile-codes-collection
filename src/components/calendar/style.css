@@ -2,71 +2,73 @@
   background-color: #fff;
   font-size: 16px;
 }
-.calender__head{
-  padding-top: .3rem;
+.calender__head {
+  padding-top: 0.3rem;
 }
 
-.calender__body{
-  padding-top: .15rem;
-  padding-bottom: .4rem;
+.calender__body {
+  padding-top: 0.15rem;
+  padding-bottom: 0.4rem;
 }
 
-.calender__head,.calender__body{
-  padding-left: .2rem;
+.calender__head,
+.calender__body {
+  padding-left: 0.2rem;
 }
 
-.calender__body-item, .calender__head-item {
+.calender__body-item,
+.calender__head-item {
   box-sizing: border-box;
   width: 14.28%;
   line-height: 1.5;
   text-align: center;
 }
 
-.calender__title{
-  padding: .2rem .55rem .2rem 1.35rem;
+.calender__title {
+  padding: 0.2rem 0.55rem 0.2rem 1.35rem;
   border-bottom: 1px solid #f2f2f2;
 }
 
-.calender__year{
+.calender__year {
   color: #9b9b9b;
 }
 
-.calender__month{
+.calender__month {
   color: #9b9b9b;
 }
 
-.calender__btn{
+.calender__btn {
   text-indent: -99999px;
-  width: .2rem;
-  height: .15rem;
+  width: 0.2rem;
+  height: 0.15rem;
   background-size: 100% 100%;
 }
 
-.calender__btn--prev{
+.calender__btn--prev {
   background-image: url(./images/calender__btn--prev-img.png);
-  margin-right: .45rem;
+  margin-right: 0.45rem;
 }
 
-.calender__btn--next{
+.calender__btn--next {
   background-image: url(./images/calender__btn--next-img.png);
-  margin-left: .45rem;
+  margin-left: 0.45rem;
 }
 
-.calender__head-item{
+.calender__head-item {
   color: #333333;
 }
 
-.calender__body-item__inner{
-  height: .5rem;
+.calender__body-item__inner {
+  height: 0.5rem;
   color: #333;
   flex-direction: column;
 }
-.calender__body-item__inner.is-full{
+.calender__body-item__inner.is-full {
   color: #999;
 }
 
-.calender__body-item{
-  margin-bottom: .2rem;
+.calender__body-item {
+  margin-bottom: 0.2rem;
 }
 
 /*.holiday,.workDay {

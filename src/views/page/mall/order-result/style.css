@@ -1,10 +1,10 @@
 .box {
-  margin: .25rem;
+  margin: 0.25rem;
   background-color: #fff;
 }
 
 .box__title {
-  padding-left: .18rem;
+  padding-left: 0.18rem;
   height: 1.02rem;
   line-height: 1.02rem;
   border-bottom: 1px solid #f8f8f8;
@@ -13,7 +13,7 @@
 .result {
   position: relative;
   text-align: center;
-  padding-left: .78rem;
+  padding-left: 0.78rem;
   height: 1.83rem;
   line-height: 1.83rem;
   font-size: 15px;
@@ -24,10 +24,10 @@
 .result--success:before {
   content: '';
   position: absolute;
-  top: .64rem;
+  top: 0.64rem;
   left: 1.97rem;
-  width: .55rem;
-  height: .55rem;
+  width: 0.55rem;
+  height: 0.55rem;
   background-image: url(./images/success.png);
   background-size: 100% 100%;
 }
@@ -35,16 +35,16 @@
 .result--fail:before {
   content: '';
   position: absolute;
-  top: .64rem;
+  top: 0.64rem;
   left: 1.97rem;
-  width: .55rem;
-  height: .55rem;
+  width: 0.55rem;
+  height: 0.55rem;
   background-image: url(./images/fail.png);
   background-size: 100% 100%;
 }
 
 .btns {
-  padding: .4rem;
+  padding: 0.4rem;
 }
 
 .btn {
@@ -52,8 +52,8 @@
   justify-content: center;
   align-items: center;
   width: 2.3rem;
-  height: .68rem;
-  border-radius: .12rem;
+  height: 0.68rem;
+  border-radius: 0.12rem;
   font-size: 13px;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .return {
-  padding: .4rem 0;
+  padding: 0.4rem 0;
 }
 
 .fail-btn {
@@ -77,9 +77,9 @@
   align-items: center;
   margin: 0 auto;
   width: 4.27rem;
-  height: .68rem;
+  height: 0.68rem;
   font-size: 13px;
   color: #fff;
   background-color: #ff6666;
-  border-radius: .12rem;
+  border-radius: 0.12rem;
 }

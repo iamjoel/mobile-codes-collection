@@ -3,9 +3,9 @@
     <section class="demo">
       <div class="demo__title">基础用法</div>
       <van-cell title="选择水果" @click="isShow = true">
-        {{selectedNames}}
+        {{ selectedNames }}
       </van-cell>
-      <div class="mt-5">已选水果ID：{{selectedIds}}</div>
+      <div class="mt-5">已选水果ID：{{ selectedIds }}</div>
       <van-popup v-model="isShow" position="bottom" :overlay="true">
         <div class="van-hairline--top-bottom van-picker__toolbar">
           <div class="van-picker__cancel" @click="isShow = false">取消</div>
@@ -37,19 +37,23 @@
 </template>
 
 <script>
-var list = [{
-  id: 1,
-  name: '桃子'
-}, {
-  id: 2,
-  name: '梨子',
-}, {
-  id: 3,
-  name: '西瓜'
-}]
+var list = [
+  {
+    id: 1,
+    name: '桃子'
+  },
+  {
+    id: 2,
+    name: '梨子'
+  },
+  {
+    id: 3,
+    name: '西瓜'
+  }
+]
 
 export default {
-  data() {
+  data () {
     return {
       isShow: false,
       list,
@@ -62,25 +66,21 @@ export default {
       })(),
       selected: [],
       temp: []
-    }  
+    }
   },
   computed: {
-    selectedNames() {
-      return this.selected
-                .map(item => item.name)
-                .join(',')
+    selectedNames () {
+      return this.selected.map(item => item.name).join(',')
     },
-    selectedIds() {
-      return this.selected
-                .map(item => item.id)
-                .join(',')
-    },
+    selectedIds () {
+      return this.selected.map(item => item.id).join(',')
+    }
   },
   methods: {
-    toggle(index) {
+    toggle (index) {
       this.$refs.checkboxes[index].toggle()
     },
-    confirm() {
+    confirm () {
       this.selected = this.temp.map(id => {
         return this.listObj[id]
       })
@@ -90,6 +90,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

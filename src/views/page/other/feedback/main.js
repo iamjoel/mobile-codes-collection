@@ -1,23 +1,23 @@
-import {addModel} from '@/service/api'
+import { addModel } from '@/service/api'
 
 export default {
-  data() {
+  data () {
     return {
       model: {
         openid: this.$store.state.openid,
         from: this.$route.params.type,
-        detail: '',
+        detail: ''
       }
-    }  
+    }
   },
   methods: {
-    save() {
+    save () {
       this.$toast('提交反馈成功')
       return
-      addModel('feedback', this.model).then(({data}) => {
+      addModel('feedback', this.model).then(({ data }) => {
         this.$toast('提交反馈成功')
         this.$router.go(-1)
       })
-    },
-  },
+    }
+  }
 }

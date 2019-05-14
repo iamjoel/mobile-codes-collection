@@ -12,7 +12,7 @@
         <div class="color__value">#FF9B28</div>
       </div>
     </div>
-    
+
     <div class="demo__title">辅助颜色</div>
     <div class="ly ph-20rem">
       <div class="color">
@@ -84,44 +84,33 @@
 
     <!-- <h2 class="demo-classify__title">弹出框</h2> -->
     <h2 class="demo-classify__title">表单</h2>
-    <van-field
-      label="用户名"
-      placeholder="请输入用户名"
-    />
-    <van-field
-      type="password"
-      label="密码"
-      placeholder="请输入密码"
-    />
+    <van-field label="用户名" placeholder="请输入用户名" />
+    <van-field type="password" label="密码" placeholder="请输入密码" />
     <div class="p-20rem">
       <van-button type="primary" size="large">提交</van-button>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
 <style scoped>
-  .color {
-    display: flex;
-    align-items: center;
-    margin-right: .2rem;
-  }
-  .color__show{
-    width: .5rem;
-    height: .5rem;
-    border-radius: 50%;
-    margin-right: .2rem;
-  }
+.color {
+  display: flex;
+  align-items: center;
+  margin-right: 0.2rem;
+}
+.color__show {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.2rem;
+}
 </style>

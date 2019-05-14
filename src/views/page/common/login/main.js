@@ -1,41 +1,40 @@
-import {urls} from '@/setting'
+import { urls } from '@/setting'
 
 export default {
-  data() {
+  data () {
     return {
       model: {
         tel: null,
-        password: null,
-      },
+        password: null
+      }
     }
   },
   methods: {
-    login() {
+    login () {
       this.$toast('登录')
     },
-    isValid() {
+    isValid () {
       var errMsg = false
       let model = this.model
-      if(!this.checkPhone(model.tel)) {
+      if (!this.checkPhone(model.tel)) {
         errMsg = '请输入合法的手机号'
-      } else if(!model.password) {
+      } else if (!model.password) {
         errMsg = '请输入密码'
       }
-      if(errMsg) {
+      if (errMsg) {
         this.$toast(errMsg)
         return false
       } else {
         return true
       }
     },
-    checkPhone() {
+    checkPhone () {
       let model = this.model
-      if(!model.tel || !/^\d{11}$/.test(model.tel)) {
+      if (!model.tel || !/^\d{11}$/.test(model.tel)) {
         return false
       } else {
         return true
       }
-    },
-   
+    }
   }
 }

@@ -3,27 +3,26 @@
     <section class="demo">
       <h2 class="demo__title">基础用法</h2>
       <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
-       <van-cell-group>
-        <van-cell :title="item" v-for="item in list" :key="item" />
-      </van-cell-group>
+        <van-cell-group>
+          <van-cell :title="item" v-for="item in list" :key="item" />
+        </van-cell-group>
       </van-pull-refresh>
     </section>
-    
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       list: [],
-      isLoading: false,
-    }  
+      isLoading: false
+    }
   },
   methods: {
-    onRefresh() {
+    onRefresh () {
       var res = []
-      for(var i = 0; i < 5; i++) {
+      for (var i = 0; i < 5; i++) {
         res.push(this.getRandomNum() + '')
       }
       setTimeout(() => {
@@ -31,11 +30,11 @@ export default {
         this.list = res
       }, 1000)
     },
-    getRandomNum() {
+    getRandomNum () {
       return Math.ceil(Math.random() * 1000)
-    },
+    }
   },
-  mounted() {
+  mounted () {
     this.onRefresh()
   }
 }

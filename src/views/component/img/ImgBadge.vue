@@ -4,22 +4,20 @@
       <van-tag type="danger">热卖</van-tag>
     </ImgBadge>
 
-    <ImgBadge class="mb-10"
-      postion="top-right"
-      >
+    <ImgBadge class="mb-10" postion="top-right">
       <van-tag type="danger">热卖</van-tag>
     </ImgBadge>
 
-    <ImgBadge class="mb-10"
+    <ImgBadge
+      class="mb-10"
       postion="bottom-left"
       img-width="2rem"
       img-height="1rem"
-      >
+    >
       <van-tag type="danger">热卖</van-tag>
     </ImgBadge>
 
-    <ImgBadge class="mb-10"
-      postion="bottom-right">
+    <ImgBadge class="mb-10" postion="bottom-right">
       <van-tag type="danger">热卖</van-tag>
     </ImgBadge>
   </div>
@@ -30,7 +28,7 @@ import ImgBadge from '@/components/image-badge'
 export default {
   components: {
     ImgBadge
-  },
+  }
 }
 </script>
 

@@ -8,12 +8,13 @@
   -webkit-overflow-scrolling: touch; /* 修复 ios 上因为内容太多，滚动条滚动生涩的问题。*/
 }
 .content {
-  padding: .2rem;
+  padding: 0.2rem;
 }
 .main h1 {
-  margin: .3rem 0;
+  margin: 0.3rem 0;
   font-size: 18px;
-  font-family: tahoma,arial,"STXihei","Microsoft YaHei New", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", SimSun;
+  font-family: tahoma, arial, 'STXihei', 'Microsoft YaHei New',
+    'Microsoft Yahei', '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', SimSun;
   font-weight: bold;
   text-align: center;
   line-height: 1;
@@ -23,6 +24,6 @@
   margin-bottom: 1em;
 }
 
-.main h2{
-  margin-bottom: .2rem;
+.main h2 {
+  margin-bottom: 0.2rem;
 }

@@ -1,14 +1,14 @@
 <template>
   <div class="main">
     <div class="demo__title">基本用法</div>
-    当前：第{{currentPage1}}页
+    当前：第{{ currentPage1 }}页
     <!-- 
       total-items: 总共多少条
       items-per-page: 一页多少条
     -->
-    <van-pagination 
-      v-model="currentPage1" 
-      :total-items="101" 
+    <van-pagination
+      v-model="currentPage1"
+      :total-items="101"
       :items-per-page="5"
       @change="pageChange"
     />
@@ -18,9 +18,9 @@
       force-ellipses: 显示省略号
       最多显示4个页码(show-page-size)，否则在iphone5(320px) 上会破坏布局。
     -->
-    <van-pagination 
-      v-model="currentPage2" 
-      :total-items="88" 
+    <van-pagination
+      v-model="currentPage2"
+      :total-items="88"
       :items-per-page="5"
       :show-page-size="4"
       force-ellipses
@@ -28,7 +28,11 @@
 
     <div class="demo__title">分页UI</div>
     <div class="pagination ly-m ly-c">
-      <a href="###" class="pagination__btn pagination__btn--op pagination__btn--disabled">上一页</a>
+      <a
+        href="###"
+        class="pagination__btn pagination__btn--op pagination__btn--disabled"
+        >上一页</a
+      >
       <a href="###" class="pagination__btn pagination__btn--current">1</a>
       <a href="###" class="pagination__btn">2</a>
       <a href="###" class="pagination__btn">3</a>
@@ -43,14 +47,14 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       currentPage1: 1,
       currentPage2: 1
-    }  
+    }
   },
   methods: {
-    pageChange(pageAt) {
+    pageChange (pageAt) {
       console.log(`获取第${pageAt}页的数据。`)
     }
   }
@@ -66,23 +70,24 @@ export default {
 }
 
 .pagination__btn {
-  width: .5rem;
+  width: 0.5rem;
   text-align: center;
   border: 1px solid #cfcfcf;
 }
-.pagination__btn, .pagination__more {
-  margin-right: .15rem;
-  height: .58rem;
-  line-height: .58rem;
+.pagination__btn,
+.pagination__more {
+  margin-right: 0.15rem;
+  height: 0.58rem;
+  line-height: 0.58rem;
   color: #333;
 }
-.pagination__btn:last-child{
+.pagination__btn:last-child {
   margin-right: 0;
 }
 
 .pagination__btn--current {
   background-color: #70a3f0;
-  border-color: #70a3f0; 
+  border-color: #70a3f0;
   color: #fff;
 }
 .pagination__btn--op {

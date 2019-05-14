@@ -1,5 +1,5 @@
 .main {
-  padding: .2rem;
+  padding: 0.2rem;
   background-color: #fff;
   min-height: 100vh;
 }
@@ -17,5 +17,5 @@
 }
 
 .rich-editor-result {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }

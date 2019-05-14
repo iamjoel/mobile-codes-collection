@@ -56,21 +56,21 @@ var items = [
   }
 ]
 export default {
-  data() {
+  data () {
     return {
       items: items,
       // 左侧高亮元素的index
       mainActiveIndex: 0,
       // 被选中元素的id
       activeId: 1001
-    };
+    }
   },
   methods: {
-    onNavClick(index) {
-      this.mainActiveIndex = index;
+    onNavClick (index) {
+      this.mainActiveIndex = index
     },
-    onItemClick(data) {
-      this.activeId = data.id;
+    onItemClick (data) {
+      this.activeId = data.id
     }
   }
 }

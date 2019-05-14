@@ -1,13 +1,9 @@
-import {fetchModel} from '@/service/api'
+import { fetchModel } from '@/service/api'
 
 export default {
-  data() {
-    return {
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  },
-  mounted() {
-  }
+  methods: {},
+  mounted () {}
 }

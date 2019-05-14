@@ -1,58 +1,55 @@
-.register-page{
-	padding-top: .8rem;
-	height: 100vh;
-	background: #ffffff;
+.register-page {
+  padding-top: 0.8rem;
+  height: 100vh;
+  background: #ffffff;
 }
 
 .full {
-	min-height: 100vh;
-	width: 6.4rem;
+  min-height: 100vh;
+  width: 6.4rem;
 }
 
-.form__item{
-	height: .8rem;
-	padding: .1rem 0 .1rem .5rem;
-	border-bottom:.01rem solid #f0f0f0;
+.form__item {
+  height: 0.8rem;
+  padding: 0.1rem 0 0.1rem 0.5rem;
+  border-bottom: 0.01rem solid #f0f0f0;
 }
 
-.form__item-input{
-	height: 100%;
-	border: none;
-	font-size: 13px;
-	color: #a0a0a0;
+.form__item-input {
+  height: 100%;
+  border: none;
+  font-size: 13px;
+  color: #a0a0a0;
 }
 
-.get-code-btn{
-	margin-right: .2rem;
-	padding: 0 .2rem;
-	height: .4rem;
-  line-height: .4rem;
-	border: .01rem solid #ededed;
-	border-radius: .2rem;
-	color: #909090;
+.get-code-btn {
+  margin-right: 0.2rem;
+  padding: 0 0.2rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border: 0.01rem solid #ededed;
+  border-radius: 0.2rem;
+  color: #909090;
 }
 
-.login-btn{
-	display: block;
-	margin: .7rem auto .3rem;
-	text-align: center;
-	width: 4.35rem;
-	height: .75rem;
-	line-height: .75rem;
-	background-size: 100% 100%;
-	background-image: url(./images/login-btn-img.png);
-	background-repeat: no-repeat;
-	font-size: 16px;
-	color: #ffffff;
+.login-btn {
+  display: block;
+  margin: 0.7rem auto 0.3rem;
+  text-align: center;
+  width: 4.35rem;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  background-size: 100% 100%;
+  background-image: url(./images/login-btn-img.png);
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: #ffffff;
 }
 
-.strong-text{
-	color: #ff8b33;
+.strong-text {
+  color: #ff8b33;
 }
 
-.tip{
-	font-size: 15px;
+.tip {
+  font-size: 15px;
 }
-
-
-

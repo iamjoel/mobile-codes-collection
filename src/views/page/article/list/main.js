@@ -10,12 +10,8 @@ export default {
   components: {
     Media
   },
-  data() {
-    return {
-
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }

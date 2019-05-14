@@ -1,21 +1,16 @@
-import { addModel} from '@/service/api'
+import { addModel } from '@/service/api'
 import Vue from 'vue'
 import List from '@lucky-joel/vue-list'
 Vue.use(List)
 
 var openid = '1'
 export default {
-  data() {
+  data () {
     return {
       isShowComment: false,
-      isShowBox: false,
-    }  
+      isShowBox: false
+    }
   },
-  methods: {
-    
-  },
-  mounted() {
-    
-  }
-
+  methods: {},
+  mounted () {}
 }

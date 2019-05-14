@@ -11,14 +11,14 @@
       <div class="demo__title">
         禁用状态
       </div>
-      <van-switch v-model="checked" disabled/>
+      <van-switch v-model="checked" disabled />
     </section>
 
     <section class="demo">
       <div class="demo__title">
         大尺寸
       </div>
-      <van-switch v-model="checked" size="50px"/>
+      <van-switch v-model="checked" size="50px" />
     </section>
 
     <section class="demo">
@@ -26,10 +26,10 @@
         自定义颜色
       </div>
       <div class="custom">
-        <van-switch v-model="checked"/>
+        <van-switch v-model="checked" />
       </div>
     </section>
-    
+
     <section class="demo">
       <div class="demo__title">
         切换前确认
@@ -41,26 +41,28 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      checked: true,
-    }  
+      checked: true
+    }
   },
   methods: {
-    onInput(checked) {
-      this.$dialog.confirm({
-        title: '提醒',
-        message: '是否切换开关？'
-      }).then(() => {
-        this.checked = checked;
-      });
+    onInput (checked) {
+      this.$dialog
+        .confirm({
+          title: '提醒',
+          message: '是否切换开关？'
+        })
+        .then(() => {
+          this.checked = checked
+        })
     }
   }
 }
 </script>
 
 <style>
-  .custom .van-switch--on {
-    background-color: #2196f3;
-  }
+.custom .van-switch--on {
+  background-color: #2196f3;
+}
 </style>

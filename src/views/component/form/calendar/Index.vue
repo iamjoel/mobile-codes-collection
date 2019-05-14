@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <calendar >
+    <calendar>
       <template slot-scope="data">
-        <span>{{data.data}}</span>
+        <span>{{ data.data }}</span>
       </template>
     </calendar>
   </div>
@@ -14,14 +14,10 @@ export default {
   components: {
     Calendar
   },
-  data() {
-    return {
-
-    }  
+  data () {
+    return {}
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 

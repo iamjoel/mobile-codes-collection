@@ -1,17 +1,14 @@
 <template>
-  <div class="main">
-  </div>
+  <div class="main"></div>
 </template>
 
 <script>
-import {fetchModel} from '@/service/api'
+import { fetchModel } from '@/service/api'
 export default {
-  data() {
-    return {
-
-    }  
+  data () {
+    return {}
   },
-  async mounted() {
+  async mounted () {
     // 串行
     {
       let singer1 = await fetchModel('singer', 1)
@@ -21,28 +18,30 @@ export default {
       let singer3 = await fetchModel('singer', 3)
       console.log(`串行: 歌手3:` + singer1.data.data.name)
     }
-    
+
     // 串行的错误处理
     {
       try {
         let singer1 = await fetchModel('singer', 1)
         console.log(`串行: 歌手1:` + singer1.data.data.name)
         await makeError('串行出错')
-      } catch(e) {
+      } catch (e) {
         console.log('error:' + e)
       }
     }
-    
+
     // 并行
     {
       var promises = [1, 2, 3].map(id => fetchModel('singer', id))
       var results = await Promise.all(promises)
-      var singerNames = results.map(data => {
-        return data.data.data.name
-      }).join(',')
+      var singerNames = results
+        .map(data => {
+          return data.data.data.name
+        })
+        .join(',')
       console.log(`并行: 歌手们: ${singerNames}`)
     }
-    
+
     // 并行的错误处理
     {
       try {
@@ -50,23 +49,24 @@ export default {
           return id == 2 ? makeError('并行出错') : fetchModel('singer', id)
         })
         var results = await Promise.all(promises)
-        var singerNames = results.map(data => {
-          return data.data.data.name
-        }).join(',')
+        var singerNames = results
+          .map(data => {
+            return data.data.data.name
+          })
+          .join(',')
         console.log(`并行: 歌手们: ${singerNames}`)
-      } catch(e) {
+      } catch (e) {
         console.log('error:' + e)
       }
     }
 
-    function makeError(errMsg) {
+    function makeError (errMsg) {
       return new Promise((resolve, reject) => {
-        setTimeout(()=> {
+        setTimeout(() => {
           reject(errMsg)
         }, 1000)
       })
     }
-
   }
 }
 </script>

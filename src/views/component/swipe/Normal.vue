@@ -5,7 +5,7 @@
       <div class="swipe mb-10rem">
         <van-swipe :autoplay="3000" class="h-100per ta-c">
           <van-swipe-item v-for="i in 5" :key="i">
-            <img class="img" src="/static/demo/2.jpeg"/>
+            <img class="img" src="/static/demo/2.jpeg" />
           </van-swipe-item>
         </van-swipe>
       </div>
@@ -17,7 +17,7 @@
         <!-- duration 的默认值是 500 -->
         <van-swipe :autoplay="3000" :duration="800" class="h-100per ta-c">
           <van-swipe-item v-for="i in 5" :key="i">
-            <img class="img" src="/static/demo/2.jpeg"/>
+            <img class="img" src="/static/demo/2.jpeg" />
           </van-swipe-item>
         </van-swipe>
       </div>
@@ -28,7 +28,7 @@
       <div class="swipe mb-10rem">
         <van-swipe :autoplay="3000" class="h-100per ta-c" vertical>
           <van-swipe-item v-for="i in 5" :key="i">
-            <img class="img" src="/static/demo/2.jpeg"/>
+            <img class="img" src="/static/demo/2.jpeg" />
           </van-swipe-item>
         </van-swipe>
       </div>
@@ -39,7 +39,7 @@
       <div class="swipe mb-10rem">
         <van-swipe :autoplay="0" class="h-100per ta-c">
           <van-swipe-item v-for="i in 5" :key="i">
-            <img class="img" src="/static/demo/2.jpeg"/>
+            <img class="img" src="/static/demo/2.jpeg" />
           </van-swipe-item>
         </van-swipe>
       </div>
@@ -50,34 +50,31 @@
       <div class="swipe mb-10rem">
         <van-swipe :autoplay="0" class="h-100per ta-c" ref="swipe">
           <van-swipe-item v-for="i in 5" :key="i">
-            <img class="img" src="/static/demo/2.jpeg"/>
+            <img class="img" src="/static/demo/2.jpeg" />
           </van-swipe-item>
         </van-swipe>
       </div>
 
-      <van-pagination 
-        v-model="currentPage" 
-        :total-items="5" 
+      <van-pagination
+        v-model="currentPage"
+        :total-items="5"
         :items-per-page="1"
         prev-text="上一张"
         next-text="下一张"
         @change="$refs.swipe.swipeTo(currentPage - 1)"
       />
     </section>
-    
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       currentPage: 1
-    }  
+    }
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 

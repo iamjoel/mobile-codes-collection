@@ -4,53 +4,53 @@
 }
 
 .date__normal {
-  padding: .25rem .3rem;
+  padding: 0.25rem 0.3rem;
   color: #333;
   border-right: 1px solid #ebebeb;
 }
 
 .date__normal-text {
-  padding-right: .22rem;
+  padding-right: 0.22rem;
   background-image: url(./images/icon-down.png);
   background-repeat: no-repeat;
-  background-size: .13rem .08rem;
+  background-size: 0.13rem 0.08rem;
   background-position-x: right;
   background-position-y: center;
 }
 
 .date__time {
   flex-grow: 1;
-  padding: 0 .3rem;
+  padding: 0 0.3rem;
 }
 
 .date__time-start {
   display: block;
-  padding: .25rem 0;
+  padding: 0.25rem 0;
   color: #333;
 }
 
 .date__time-start-text {
-  padding-right: .45rem;
+  padding-right: 0.45rem;
   background-image: url(./images/icon-down.png);
   background-repeat: no-repeat;
-  background-size: .13rem .08rem;
+  background-size: 0.13rem 0.08rem;
   background-position-x: right;
   background-position-y: center;
 }
 
 .date__time-text {
-  margin-left: .1rem;
-  margin-right: .25rem;
+  margin-left: 0.1rem;
+  margin-right: 0.25rem;
 }
 
 .date__time-end {
   display: block;
   flex-grow: 1;
-  padding: .25rem 0;
+  padding: 0.25rem 0;
   color: #333;
   background-image: url(./images/icon-down.png);
   background-repeat: no-repeat;
-  background-size: .13rem .08rem;
+  background-size: 0.13rem 0.08rem;
   background-position-x: right;
   background-position-y: center;
 }

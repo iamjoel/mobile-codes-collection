@@ -4,8 +4,11 @@
       暂无数据
     </no-data>
     <no-data v-show="!isLoading && list.length === 0">
-      暂无收藏去 <van-button size="mini" @click="$router.push('/classify-list')">挑一些</van-button> 吧
-
+      暂无收藏去
+      <van-button size="mini" @click="$router.push('/classify-list')"
+        >挑一些</van-button
+      >
+      吧
     </no-data>
   </div>
 </template>
@@ -17,15 +20,13 @@ export default {
   components: {
     noData
   },
-  data() {
+  data () {
     return {
       isLoading: false,
       list: []
-    }  
+    }
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 

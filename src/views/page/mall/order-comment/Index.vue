@@ -2,11 +2,7 @@
   <div class="main create-comment-page">
     <div class="field-group ly ly-m">
       <div class="field-group__label">服务评价</div>
-      <van-rate 
-        v-model="model.star"
-        color="#ff6666"
-        void-color="#e5e5e5"
-      />
+      <van-rate v-model="model.star" color="#ff6666" void-color="#e5e5e5" />
     </div>
     <textarea
       type="textarea"
@@ -16,7 +12,9 @@
       class="field__input"
     ></textarea>
     <div class="ly ly-c mv-20rem ph-10rem">
-      <van-button size="large" type="primary" @click="comment">提交评价</van-button>
+      <van-button size="large" type="primary" @click="comment"
+        >提交评价</van-button
+      >
     </div>
   </div>
 </template>

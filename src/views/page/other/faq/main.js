@@ -1,10 +1,8 @@
 export default {
-  data() {
+  data () {
     return {
       activeNames: []
-    }  
+    }
   },
-  methods: {
-    
-  }
+  methods: {}
 }

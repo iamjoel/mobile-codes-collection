@@ -1,16 +1,16 @@
-import {urls} from '@/setting'
+import { urls } from '@/setting'
 import * as types from '@/store/mutation-types'
 
 const COUNT_DOWN_NUM = 60
 export default {
-  data() {
+  data () {
     return {
       isAgree: true,
       model: {
         openid: this.$store.state.openid,
         tel: null,
         code: null,
-        codeId: null 
+        codeId: null
       },
       hasSend: false,
       countDown: COUNT_DOWN_NUM,
@@ -18,14 +18,14 @@ export default {
     }
   },
   methods: {
-    register() {
-      if(!this.isAgree) {
+    register () {
+      if (!this.isAgree) {
         this.$toast('请阅读并同意《用户协议》内容')
       } else {
-        if(this.isValid()) {
+        if (this.isValid()) {
           this.$toast('注册成功')
           return // test
-          this.$http.post(urls.register, this.model).then(({data}) => {
+          this.$http.post(urls.register, this.model).then(({ data }) => {
             this.$toast('注册成功')
             this.$store.commit(types.USER_INFO, {
               ...this.$store.state.user,
@@ -39,37 +39,37 @@ export default {
         }
       }
     },
-    isValid() {
+    isValid () {
       var errMsg = false
       let model = this.model
-      if(!this.checkPhone(model.tel)) {
+      if (!this.checkPhone(model.tel)) {
         errMsg = '请输入合法的手机号'
-      } else if(!model.code) {
+      } else if (!model.code) {
         errMsg = '请输入验证码'
       }
-      if(errMsg) {
+      if (errMsg) {
         this.$toast(errMsg)
         return false
       } else {
         return true
       }
     },
-    checkPhone() {
+    checkPhone () {
       let model = this.model
-      if(!model.tel || !/^\d{11}$/.test(model.tel)) {
+      if (!model.tel || !/^\d{11}$/.test(model.tel)) {
         return false
       } else {
         return true
       }
     },
-    send() {
-      if(!this.checkPhone()) {
+    send () {
+      if (!this.checkPhone()) {
         this.$toast('请输入合法的手机号')
         return
       }
       this.hasSend = true
       var countDownId = setInterval(() => {
-        if(this.countDown <= 1) {
+        if (this.countDown <= 1) {
           clearInterval(countDownId)
           this.hasSend = false
           this.countDown = COUNT_DOWN_NUM
@@ -87,7 +87,6 @@ export default {
       //   this.$toast('已发送')
       //   this.model.codeId = data.data
       // })
-      
     }
   }
 }

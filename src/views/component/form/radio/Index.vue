@@ -38,11 +38,13 @@
         Label 在左边
       </div>
       <van-radio-group v-model="radio">
-        <van-radio name="1" class="mb-10" label-position="left">单选框 1</van-radio>
+        <van-radio name="1" class="mb-10" label-position="left"
+          >单选框 1</van-radio
+        >
         <van-radio name="2" label-position="left">单选框 2</van-radio>
       </van-radio-group>
     </section>
-    
+
     <section class="demo">
       <div class="demo__title">
         自定义颜色
@@ -54,7 +56,7 @@
         </van-radio-group>
       </div>
     </section>
-    
+
     <section class="demo">
       <div class="demo__title">
         与cell组件一起使用
@@ -75,22 +77,20 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       radio: '1'
-    }  
+    }
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
 <style>
-  .line .van-radio-group {
-    display: flex;
-  }
-  .custom .van-icon-checked {
-    color: #2196f3;
-  }
+.line .van-radio-group {
+  display: flex;
+}
+.custom .van-icon-checked {
+  color: #2196f3;
+}
 </style>

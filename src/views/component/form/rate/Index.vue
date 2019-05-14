@@ -7,13 +7,13 @@
 
     <section class="demo">
       <h2 class="demo__title">禁用状态</h2>
-      <van-rate v-model="value"  disabled/>
+      <van-rate v-model="value" disabled />
     </section>
 
     <section class="demo">
       <h2 class="demo__title">禁用状态自定义颜色</h2>
       <div class="custom">
-        <van-rate v-model="value"  disabled/>
+        <van-rate v-model="value" disabled />
       </div>
     </section>
 
@@ -32,19 +32,17 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       value: 3
-    }  
+    }
   },
-  methods: {
-    
-  }
+  methods: {}
 }
 </script>
 
 <style>
-  .custom .van-rate__item {
-    fill: #f00;
-  }
+.custom .van-rate__item {
+  fill: #f00;
+}
 </style>

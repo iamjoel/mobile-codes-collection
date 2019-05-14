@@ -9,11 +9,11 @@ Vue.use(VueI18n)
 const i18n = new VueI18n({
   locale: 'zh',
   messages: {
-    zh: {// 中文
-
+    zh: {
+      // 中文
     },
-    en: {// 英文
-
+    en: {
+      // 英文
     }
   }
 })
@@ -21,7 +21,7 @@ const i18n = new VueI18n({
 // vant ui
 import Vant from 'vant'
 import 'vant/lib/index.css'
-import { Lazyload, Toast, ImagePreview } from 'vant';
+import { Lazyload, Toast, ImagePreview } from 'vant'
 Vue.use(Vant)
 // lazyLoad https://www.youzanyun.com/zanui/vant#/zh-CN/lazyload
 Vue.use(Lazyload, {
@@ -29,13 +29,13 @@ Vue.use(Lazyload, {
   // error: '' // 加载完成的图片样式
 })
 
-import {IMGS_PREFIX} from '@/setting'
+import { IMGS_PREFIX } from '@/setting'
 Vue.prototype.$imgPrefix = IMGS_PREFIX
 Vue.prototype.$preview = url => {
-  if(typeof url !== 'string' ) {
+  if (typeof url !== 'string') {
     return
   }
-  if(!/^http/.test(url.trim())) {
+  if (!/^http/.test(url.trim())) {
     url = `${IMGS_PREFIX}/${url}`
   }
   ImagePreview([url])
@@ -43,9 +43,9 @@ Vue.prototype.$preview = url => {
 // 图片尺寸验证
 Vue.prototype.$valiFileSize = file => {
   var fileSize = file.size
-  if(fileSize > 1024*1024*3) {
-    Toast('图片大小不能超过3M');
-    return false
+  if (fileSize > 1024 * 1024 * 3) {
+    Toast('图片大小不能超过3M')
+    return false
   } else {
     return true
   }
@@ -53,7 +53,7 @@ Vue.prototype.$valiFileSize = file => {
 
 Vue.prototype.$showLoading = () => {
   Toast.loading({
-    duration: 0,       // 持续展示 toast
+    duration: 0, // 持续展示 toast
     forbidClick: true, // 禁用背景点击
     mask: true,
     loadingType: 'spinner',
@@ -73,7 +73,7 @@ import axios from 'axios'
 require('@/service/interceptor') // axios 拦截器，做通用报错等
 Vue.prototype.$http = axios
 
-import {SERVER_PREFIX} from '@/setting'
+import { SERVER_PREFIX } from '@/setting'
 Vue.prototype.$SERVER_PREFIX = SERVER_PREFIX
 
 require('@/filters')
@@ -81,15 +81,14 @@ require('@/filters')
 import store from '@/store'
 
 import router from './router'
-router.afterEach((to,from,next) => { // 进入新页面时，页面总是滚动到顶部
-  window.scrollTo(0,0);
+router.afterEach((to, from, next) => {
+  // 进入新页面时，页面总是滚动到顶部
+  window.scrollTo(0, 0)
 })
 
 import App from './App.vue'
 
-
-
-var vm =  new Vue({
+var vm = new Vue({
   el: '#app',
   i18n,
   router,
@@ -99,8 +98,7 @@ var vm =  new Vue({
 })
 
 // 登录成功的跳转
-Vue.prototype.$loginedJump = function(url) {
+Vue.prototype.$loginedJump = function (url) {
   var jumpUrl = this.$store.state.user.id ? url : '/login'
   this.$router.push(jumpUrl)
 }.bind(vm)
-
