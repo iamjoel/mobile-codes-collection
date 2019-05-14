@@ -1,0 +1,48 @@
+.address__item {
+  padding: 10px;
+  background-color: #fff;
+}
+.address__info {
+  flex-grow: 1;
+  color: #333;
+  line-height: 1.2;
+}
+
+.address__name {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.address__tel {
+  color: #888;
+}
+
+.address__op {
+  margin-left: 10px;
+  flex-shrink: 0;
+  line-height: 1.5;
+  padding-left: 10px;
+  border-left: 1px solid #888;
+  color: #888;
+}
+
+.address__op a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.default-tag {
+  flex-shrink: 0;
+  margin-left: 5px;
+  padding: 1px 5px;
+  background-color: #f9c7c7;
+  color: #f60;
+}
+
+.no-data {
+  padding: 5px 0;
+  text-align: center;
+  line-height: 2;
+  color: #999;
+}

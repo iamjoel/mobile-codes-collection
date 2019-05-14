@@ -140,6 +140,17 @@ var routes = [
     }
   },
   {
+    path: `/${PREFIX}/mall/address`,
+    meta: {
+      title: '管理收货地址',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/address')
+    }
+  },
+  {
     path: `/${PREFIX}/mall/cart`,
     meta: {
       title: '购物车',
