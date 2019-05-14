@@ -1,4 +1,13 @@
 # 移动端代码库
+<p align="center">
+  <a href="https://github.com/prettier/prettier">
+    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier">
+  </a>
+  <a href="https://standardjs.com">
+    <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="JavaScript Style Guide">
+  </a>
+</p>
+
 ## 代码内容包括
 <details>
   <summary>组件(数量50+)</summary>
