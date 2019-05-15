@@ -1,0 +1,48 @@
+.cart_item {
+    background: #fff;
+    border-radius: 4px;
+    margin: 10px 0.15rem;
+}
+
+.desc {
+    flex:1;
+}
+.product_img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.desc_right {
+    flex:1;
+}
+
+.sku {
+    color: #999;
+    padding: 4px 5px;
+    background: #F2F2F1;
+}
+
+.price {
+    color: #F18700
+}
+
+.del_icon{
+    width: 0.25rem;
+}
+
+.btm {
+    bottom:0.862rem;
+}
+
+.rela {
+    position: relative;
+}
+
+.click-top{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+}
