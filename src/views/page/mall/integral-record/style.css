@@ -1,0 +1,85 @@
+.head {
+	margin:.1rem 0 .15rem;
+	padding: .25rem 0;
+	background-color: #ffffff;
+}
+
+.integral-bg {
+  margin: .25rem .3rem;
+  background-color: #fd4b75;
+  border-radius: 7px;
+  color: #ffffff;
+}
+
+.integral {
+  padding: .4rem 0;
+  border-bottom: 1px solid #fc537a;
+}
+
+.integral-title {
+  margin-bottom: .3rem;
+}
+
+.integral-content {
+	font-size: 32px;
+}
+
+.income,.expenditure {
+	flex-grow: 1;
+	padding: .25rem 0;
+}
+
+.parting-line {
+	width: 1px;
+	height: .5rem;
+	background-color: #fc4a74;
+}
+
+.income-content,.expenditure-content {
+	margin-bottom: .1rem;
+}
+
+.integral-list__title {
+	position: relative;
+	padding-left: .3rem;
+	height: .7rem;
+	line-height: .7rem;
+	background-color: #ffffff;
+	color: #0f0f0f;
+	font-weight: bold;
+}
+
+.integral-list__title:before  {
+	position: absolute;
+	content: '';
+	left: 0;
+	width: .1rem;
+	height: 100%;
+	background-color: #f24c59;
+}
+
+.integral-list-item {
+	border-top: 2px solid #f6f6f6;
+	padding: .3rem .25rem;
+	background-color: #ffffff;
+}
+
+.integral-list-item__title {
+	margin-bottom: .25rem;
+	color: #252525;
+}
+
+.integral-list-item__data {
+	color: #adadad;
+}
+
+.integral-list-item__content {
+	color: #f0303f;
+}
+
+.integral-list-item__content--expenditure {
+	color: #999999;
+}
+
+
+

@@ -161,7 +161,39 @@ var routes = [
       lazyLoading(resolve, 'mall/cart')
     }
   },
-
+  {
+    path: `/${PREFIX}/mall/integral-record`,
+    meta: {
+      title: '积分记录',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/integral-record')
+    }
+  },
+  {
+    path: `/${PREFIX}/mall/my-commission`,
+    meta: {
+      title: '我的佣金',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/my-commission')
+    }
+  },
+  {
+    path: `/${PREFIX}/mall/contact-service`,
+    meta: {
+      title: '联系客服',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/contact-service')
+    }
+  },
   {
     path: `/${PREFIX}/seller/report/order`,
     meta: {

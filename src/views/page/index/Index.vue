@@ -152,6 +152,32 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">购物车</div>
       </a>
+      <a
+        href="javascript:void(0)"
+        @click="$router.push('/page/mall/integral-record')"
+        class="nav__item"
+      >
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">积分记录</div>
+      </a>
+      <a
+        href="javascript:void(0)"
+        @click="$router.push('/page/mall/my-commission')"
+        class="nav__item"
+      >
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">我的佣金</div>
+      </a>
+    </div>
+    <div class="ly ly-multi nav">
+      <a
+        href="javascript:void(0)"
+        @click="$router.push('/page/mall/contact-service')"
+        class="nav__item"
+      >
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">联系客服</div>
+      </a>
     </div>
     <h2 class="demo-classify__title">商家相关</h2>
     <div class="ly ly-multi nav">

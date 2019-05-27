@@ -1,0 +1,32 @@
+.contact-service {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.wx-icon {
+  margin: .9rem 0 .4rem;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url(./images/wx.jpg);
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.contact-service__title {
+  margin-bottom: .2rem;
+  font-size: 13px;
+}
+
+.contact-service__content {
+  margin-bottom: .4rem;
+}
+
+.copy-btn {
+  display: inline-block;
+  padding: .18rem .7rem;
+  background-color: #f24c59;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #ffffff;
+}
