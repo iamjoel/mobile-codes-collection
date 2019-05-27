@@ -66,6 +66,7 @@ export default {
         origin = new qq.maps.Point(0, 0),
         markerIcon = new qq.maps.MarkerImage(
           'https://3gimg.qq.com/lightmap/api_v2/2/4/99/theme/default/imgs/marker.png',
+          // 'https://infinityicon.infinitynewtab.com/user-share-icon/6e49210c084629259f22609980c48ecf.png',
           size,
           origin,
           anchor
@@ -97,13 +98,19 @@ export default {
     }
   },
   mounted () {
-    var map = new BMap.Map('map-container')
     // map/120.614/31.3661
+    // 百度
+    var map = new BMap.Map('map-container')
     var point = new BMap.Point(this.$route.params.lng, this.$route.params.lat)
     map.centerAndZoom(point, 15)
     var marker = new BMap.Marker(point)
     map.addOverlay(marker)
     // 微信地图 https://apis.map.qq.com/tools/poimarker?type=0&marker=coord:39.96554,116.26719;title:成都;addr:北京市海淀区复兴路32号院|coord:39.87803,116.19025;title:成都园;addr:北京市丰台区射击场路15号北京园博园|coord:39.88129,116.27062;title:老成都;addr:北京市丰台区岳各庄梅市口路西府景园六号楼底商|coord:39.9982,116.19015;title:北京园博园成都园;addr:北京市丰台区园博园内&key=your key&referer=myapp
+
+    // this.loadMap([{
+    //   lat: this.$route.params.lat,
+    //   lng: this.$route.params.lng 
+    // }])
 
     this.getMapJumpUrl()
   }
