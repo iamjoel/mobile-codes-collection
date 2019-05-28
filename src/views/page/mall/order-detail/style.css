@@ -1,0 +1,161 @@
+.head {
+  padding: .45rem 0;
+  background-color: #fe567e;
+}
+
+.head__title {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.head__title:before {
+  position: absolute;
+  content: '';
+  top: -.05rem;
+  left: -.6rem;
+  width: .42rem;
+  height: .35rem;
+  background-image: url(./images/head-truck.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.transport {
+  padding: .35rem .2rem .35rem .3rem;
+  background-color: #ffffff;
+  border-bottom: 3px solid #f7f7f7;
+}
+
+.transport__icon {
+  margin-right: .3rem;
+  background-image: url(./images/truck.png);
+  width: .4rem;
+  height: .3rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.transport__status {
+  display: block;
+  color: #424242;
+  line-height: 1.5;
+}
+
+.transport__icon--right {
+  margin-left: .45rem;
+  background-image: url(./images/right.png);
+  width: .15rem;
+  height: .25rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.transport-address {
+  margin-bottom: .1rem;
+  padding: .25rem .75rem .25rem .32rem;
+  background-color: #ffffff;
+  color: #0a0a0a;
+}
+
+.transport-address__icon {
+  margin-right: .35rem;
+  display: block;
+  background-image: url(./images/location.png);
+  width: .3rem ;
+  height: .35rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.addressee-information {
+  line-height: 1.5;
+  color: #0a0a0a;
+}
+
+.addressee-information__name {
+  margin-right: .35rem;
+}
+
+.product-card {
+  padding: .15rem;
+  background-color: #ffffff;
+}
+
+.product-card__icon {
+  margin-right: .22rem;
+  background-image: url(./images/commodity-img.png);
+  width: 1.7rem;
+  height: 1.7rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.product-card__information-title {
+  margin: .15rem 0 .35rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.product-sku {
+  color: #9a9a9a;
+}
+
+.product-sku__title {
+  margin-right: .2rem;
+}
+
+.payment-information {
+  margin-bottom: .1rem;
+  padding: .3rem .2rem;
+  border-top: 1px solid #f5f5f5;
+  background-color: #ffffff;
+}
+
+.payment-information__item {
+  margin-bottom: .35rem;
+}
+
+.payment-information__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.payment-information__item-value {
+  color: #f02736;
+}
+
+.order-information {
+  padding: .3rem .2rem;
+  background-color: #ffffff;
+  color: #252525;
+}
+
+.order-information__item {
+  margin-bottom: .3rem;
+  color: #3c3c3c;
+}
+
+.order-information__item-value {
+  margin-left: .2rem;
+}
+
+.refund-btn {
+  display: inline-block;
+  margin: .3rem 0;
+  text-decoration: underline;
+  color: #2d2d2d;
+}
+
+.affirm-btn {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: .3rem 0;
+  background-color: #f24c59;
+  color: #ffffff;
+  font-size: 15px;
+}
+

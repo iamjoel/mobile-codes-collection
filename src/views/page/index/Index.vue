@@ -108,6 +108,22 @@
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">商品详情</div>
       </a>
+      <a
+        href="javascript:void(0)"
+        @click="$router.push('/page/mall/confirm-order')"
+        class="nav__item"
+      >
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">确认订单</div>
+      </a>
+      <a
+        href="javascript:void(0)"
+        @click="$router.push('/page/mall/payment')"
+        class="nav__item"
+      >
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">支付</div>
+      </a>
     </div>
     <div class="ly ly-multi nav">
       <a
@@ -133,6 +149,14 @@
       >
         <van-icon name="wap-nav" />
         <div class="mt-10 ta-c">订单评论</div>
+      </a>
+      <a
+        href="javascript:void(0)"
+        @click="$router.push('/page/mall/order-detail')"
+        class="nav__item"
+      >
+        <van-icon name="wap-nav" />
+        <div class="mt-10 ta-c">订单详情</div>
       </a>
     </div>
     <div class="ly ly-multi nav">

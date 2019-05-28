@@ -1,4 +1,4 @@
-.head-bg {
+.summary__swipe {
   background-color: #fd4a73;
   margin: .3rem;
   padding: .5rem 0 .3rem;
@@ -6,12 +6,12 @@
   border-radius: 7px;
 }
 
-.balance {
+.summary__price {
   margin: .3rem 0 .4rem;
   font-size: 30px;
 }
 
-.apply-btn {
+.summary__btn {
   display: inline-block;
   padding: .15rem .35rem;
   border: .03rem solid #ffffff;
@@ -19,11 +19,11 @@
   color: #ffffff;
 }
 
-.commission-list {
+.detail-list {
   background-color: #ffffff;
 }
 
-.commission-list__title {
+.detail-list__title {
   position: relative;
   padding-left: .25rem;
   height: .7rem;
@@ -32,7 +32,7 @@
   font-weight: bold;
 }
 
-.commission-list__title:before {
+.detail-list__title:before {
   position: absolute;
   content: '';
   left: 0;
@@ -41,24 +41,24 @@
   background-color: #f24c59;
 }
 
-.commission-list__item {
+.item {
   padding: .3rem .25rem;
   border-top: 2px solid #f6f6f6;
 }
 
-.commission-list__item__title {
+.item__title {
   margin-bottom: .25rem;
   color: #2e2e2e;
 }
 
-.commission-list__item__date {
+.item__date {
   color: #848484;
 }
 
-.commission-list__item__income {
+.item__income {
   color: #f02e3d;
 }
 
-.commission-list__item__expenditure {
+.item__outcome {
   color: #121212;
 }

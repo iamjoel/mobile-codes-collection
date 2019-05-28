@@ -1,30 +1,30 @@
-.head {
+.summary {
 	margin:.1rem 0 .15rem;
 	padding: .25rem 0;
 	background-color: #ffffff;
 }
 
-.integral-bg {
+.integral {
   margin: .25rem .3rem;
   background-color: #fd4b75;
   border-radius: 7px;
   color: #ffffff;
 }
 
-.integral {
+.integral__inner {
   padding: .4rem 0;
   border-bottom: 1px solid #fc537a;
 }
 
-.integral-title {
+.integral__inner-title {
   margin-bottom: .3rem;
 }
 
-.integral-content {
+.integral__inner-content {
 	font-size: 32px;
 }
 
-.income,.expenditure {
+.income,.outcome {
 	flex-grow: 1;
 	padding: .25rem 0;
 }
@@ -35,7 +35,7 @@
 	background-color: #fc4a74;
 }
 
-.income-content,.expenditure-content {
+.income__content,.outcome__content {
 	margin-bottom: .1rem;
 }
 
@@ -77,7 +77,7 @@
 	color: #f0303f;
 }
 
-.integral-list-item__content--expenditure {
+.integral-list-item__content--outcome {
 	color: #999999;
 }
 

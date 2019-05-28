@@ -107,6 +107,28 @@ var routes = [
     }
   },
   {
+    path: `/${PREFIX}/mall/confirm-order`,
+    meta: {
+      title: '确认订单',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/confirm-order')
+    }
+  },
+  {
+    path: `/${PREFIX}/mall/payment`,
+    meta: {
+      title: '支付',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/payment')
+    }
+  },
+  {
     path: `/${PREFIX}/mall/order-list`,
     meta: {
       title: '订单列表',
@@ -126,6 +148,17 @@ var routes = [
     },
     component: resolve => {
       lazyLoading(resolve, 'mall/order-comment')
+    }
+  },
+  {
+    path: `/${PREFIX}/mall/order-detail`,
+    meta: {
+      title: '订单详情',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/order-detail')
     }
   },
   {
