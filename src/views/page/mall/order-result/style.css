@@ -1,85 +1,57 @@
-.box {
-  margin: 0.25rem;
-  background-color: #fff;
-}
 
-.box__title {
-  padding-left: 0.18rem;
-  height: 1.02rem;
-  line-height: 1.02rem;
-  border-bottom: 1px solid #f8f8f8;
+.box {
+  height: 100vh;
+  background-color: #ffffff;
 }
 
 .result {
-  position: relative;
-  text-align: center;
-  padding-left: 0.78rem;
-  height: 1.83rem;
-  line-height: 1.83rem;
-  font-size: 15px;
-  color: #333;
-  border-bottom: 1px solid #f8f8f8;
+  padding-top: .8rem;
+  margin-bottom: 1.2rem;
 }
 
-.result--success:before {
-  content: '';
-  position: absolute;
-  top: 0.64rem;
-  left: 1.97rem;
-  width: 0.55rem;
-  height: 0.55rem;
-  background-image: url(./images/success.png);
+.success {
+  background-image: url(./images/pay-success.png);
+}
+
+.fail {
+  background-image: url(./images/pay-fail.png);
+}
+
+.result__icon {
+  display: inline-block;
+  width: 2.65rem;
+  height: 2.1rem;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
-.result--fail:before {
-  content: '';
-  position: absolute;
-  top: 0.64rem;
-  left: 1.97rem;
-  width: 0.55rem;
-  height: 0.55rem;
-  background-image: url(./images/fail.png);
-  background-size: 100% 100%;
+.result--success,.result--fail {
+  margin: .6rem 0 .5rem 0;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.btns {
-  padding: 0.4rem;
+.result__content {
+  line-height: 1.5;
+  color: #aeaeae;
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.3rem;
-  height: 0.68rem;
-  border-radius: 0.12rem;
-  font-size: 13px;
-}
-
-.btn--return {
-  color: #333;
-  background-color: #f8f8f8;
+  display: inline-block;
+  padding: .25rem 0;
+  width: 3.85rem;
+  border-radius: 30px;
 }
 
 .btn--fill {
-  color: #fff;
-  background-color: #77c864;
+  margin-bottom: .3rem;
+  background-color: #f24c59;
+  color: #ffffff;
+  border: .03rem solid #f24c59;
 }
 
-.return {
-  padding: 0.4rem 0;
-}
-
-.fail-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 4.27rem;
-  height: 0.68rem;
-  font-size: 13px;
-  color: #fff;
-  background-color: #ff6666;
-  border-radius: 0.12rem;
+.btn--return {
+  border: .03rem solid #f24c59;
+  color: #f24c59;
 }

@@ -228,6 +228,17 @@ var routes = [
     }
   },
   {
+    path: `/${PREFIX}/mall/logistics-detail`,
+    meta: {
+      title: '物流详情',
+      activeTypeIndex: 1,
+      isShowFooter: false
+    },
+    component: resolve => {
+      lazyLoading(resolve, 'mall/logistics-detail')
+    }
+  },
+  {
     path: `/${PREFIX}/seller/report/order`,
     meta: {
       title: '订单报表',
