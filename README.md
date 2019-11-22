@@ -35,6 +35,7 @@
   * 多选(Checkbox)。
   * 开关(Switch)。
   * 选择器(Picker)单选。 对应 PC的 Select。
+  * 选择器(Picker)数据很多的单选。
   * 选择器(Picker)多选。
   * 日期&时间。
   * 日历。
