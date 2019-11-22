@@ -27,7 +27,7 @@
     "moment": "^2.18.1",
     "stickybits": "^3.3.2",
     "todomvc-app-css": "1.0.1",
-    "vant": "^1.1.15",
+    "vant": "^2.1.8",
     "vue": "^2.5.0",
     "vue-directive-tooltip": "^1.4.5",
     "vue-echarts": "^3.0.9",
