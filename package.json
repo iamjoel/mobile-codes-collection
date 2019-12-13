@@ -36,7 +36,7 @@
     "vue-router": "^3.0.0",
     "vue-slider-component": "^2.7.5",
     "vuex": "^2.4.0",
-    "yarn": "^1.0.0"
+    "yarn": "^1.21.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
