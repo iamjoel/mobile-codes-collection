@@ -12,7 +12,9 @@
     "start": "node build/dev-server.js",
     "watch": "onchange '**/*.+(js|css|vue)' -- prettier-standard '**/*+(js|css|vue)'",
     "format": "prettier-standard '**/*+(js|css|vue)'",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@lucky-joel/vue-fetch-model": "^1.1.1",
@@ -21,7 +23,7 @@
     "axios": "^0.16.2",
     "bricks.js": "^1.8.0",
     "css-utils-collection": "^1.5.1",
-    "jquery": "3.4.0",
+    "jquery": "3.5.0",
     "md5": "^2.2.1",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.18.1",
@@ -36,7 +38,8 @@
     "vue-router": "^3.0.0",
     "vue-slider-component": "^2.7.5",
     "vuex": "^2.4.0",
-    "yarn": "^1.0.0"
+    "yarn": "^1.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -85,5 +88,6 @@
   "browserslist": [
     "Android >= 4.0",
     "iOS >= 7"
-  ]
+  ],
+  "snyk": true
 }
